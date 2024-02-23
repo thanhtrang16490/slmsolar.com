@@ -55,7 +55,7 @@ const ServiceSlider = () => {
                 </Typography.Title>
               </Row>
               <Row >
-                <Typography.Paragraph style={{ margin: '90px 100px 0px 20px', textAlign: 'justify' }}>
+                <Typography.Paragraph style={{ margin: '90px 100px 0px 20px', textAlign: 'left' }}>
                   {item.content}
                 </Typography.Paragraph>
               </Row>
