@@ -76,10 +76,10 @@ const QuestionAndAnswer = () => {
                                 </div>
                             </Row>
                             <div>
-                                <Typography.Title style={{ margin: '10px 20px' }} level={5}>
+                                <Typography.Title style={{ margin: '10px 20px', fontSize: '14px' }} level={5}>
                                     {item.title}
                                 </Typography.Title>
-                                <Typography.Paragraph style={{ margin: '10px 20px', textAlign: 'justify' }}>
+                                <Typography.Paragraph style={{ margin: '10px 20px', textAlign: 'justify', fontSize: '14px' }}>
                                     {item.content}
                                 </Typography.Paragraph>
                             </div>
