@@ -1,6 +1,5 @@
 'use client'
 import React, { useState, useEffect } from 'react';
-
 import { Button, Drawer, Space } from 'antd';
 import { MenuOutlined } from '@mui/icons-material';
 import Image from 'next/image';
@@ -56,7 +55,7 @@ const TopNavigation = () => {
                 }}>
 
                     <Link href='/'>
-                        <Image alt='slmsolar logo' src='/img/solarmax-logo.png' width={120} height={24} style={{ position: 'absolute', top: '15px', left: '20px', zIndex: 1 }} />
+                        <Image alt='slmsolar logo' src='/img/solarmax-logo.svg' width={120} height={30} style={{ position: 'absolute', top: '15px', left: '20px', zIndex: 1 }} />
                     </Link>
                     <Button type="link" onClick={showDrawer} style={{ color: '#000', position: 'absolute', top: '13px', right: '20px', zIndex: 1 }}>
                         <MenuOutlined />

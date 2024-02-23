@@ -7,23 +7,23 @@ import Image from "next/image";
 
 const serviceData = [
   {
-    image: '/img/off-grid.png',
-    title: 'TƯ VẤN - MIỄN PHÍ',
-    content: 'Solarmax tư vấn nhu cầu sử dụng điện của gia đình bạn, đưa ra giải pháp hệ NLMT công suất phù hợp'
+    image: '/img/support-icon.svg',
+    title: 'TƯ VẤN MIỄN PHÍ',
+    content: 'Dựa trên dữ liệu: Hoá đơn tiền điện hàng tháng, mặt bằng lắp đặt, hướng nắng, hệ thống điện gia đình'
   },
   {
-    image: '/img/off-grid.png',
-    title: 'KHẢO SÁT - MIỄN PHÍ',
-    content: 'Solarmax luôn có mặt tại gia đình để đưa ra phương án lắp đặt tối ưu nhất, dựa vào Hóa đơn tiền điện hàng tháng, Mặt bằng lắp đặt, Hướng nắng, Hệ thống điện gia đình'
+    image: '/img/khao-sat.svg',
+    title: 'KHẢO SÁT MIỄN PHÍ',
+    content: 'Khảo sát trực tiếp mặt bằng lắp đặt, đo đạc và đưa ra phương án thi công phù hợp và tối ưu nhất'
   },
   {
-    image: '/img/off-grid.png',
-    title: 'LẮP ĐẶT - TRỌN GÓI',
-    content: 'Solarmax là tổng thầu EPC các dự án NLMT hệ gia đình 3kW-50kW, hệ công nghiệp từ 100kW- 5 MW'
+    image: '/img/lap-dat-icon.svg',
+    title: 'LẮP ĐẶT TRỌN GÓI',
+    content: 'Tổng thầu EPC các dự án NLMT hệ gia đình 3kW-50kW, hệ công nghiệp từ 100kW - 5 MW'
   },
   {
-    image: '/img/off-grid.png',
-    title: 'BẢO HÀNH - TRỌN ĐỜI',
+    image: '/img/bao-hanh-icon.svg',
+    title: 'BẢO HÀNH 24/7',
     content: 'Solarmax cam kết bảo hành sản phẩm và hỗ trợ gia đình trong suốt thời gian sử dụng 24/7'
   },
 
@@ -44,27 +44,21 @@ const ServiceSlider = () => {
               width: '100%',
               margin: '20px 15px 0px 15px',
               height: '100%',
-              padding: '0px',
-              background: '#fff',
-              borderRadius: '8px',
-              boxShadow: '0 1px 2px 0 rgba(60,64,67,.1), 0 2px 6px 2px rgba(60,64,67,.15)'
             }}>
 
               <Row style={{ position: 'relative' }}>
-                <div style={{ padding: '0px', width: '100%', paddingTop: '56%', position: 'relative' }}>
-                  <Image style={{ borderRadius: '8px' }} alt='bam-tai' layout="fill" objectFit="cover" src={item.image} />
-                </div>
-                <Typography.Title style={{ position: 'absolute', margin: '10px 20px' }} level={5}>
+                <Image style={{ position: 'absolute', margin: '0px 20px 0px 20px' }} src={item.image} alt={item.title} width={45} height={45} />
+              </Row>
+              <Row style={{ position: 'relative' }}>
+                <Typography.Title style={{ position: 'absolute', margin: '60px 20px 0px 20px' }} level={5}>
                   {item.title}
                 </Typography.Title>
               </Row>
-
-
-              <Typography.Paragraph style={{ margin: '10px 20px', textAlign: 'justify' }}>
-                {item.content}
-              </Typography.Paragraph>
-
-
+              <Row >
+                <Typography.Paragraph style={{ margin: '90px 100px 0px 20px', textAlign: 'justify' }}>
+                  {item.content}
+                </Typography.Paragraph>
+              </Row>
             </Col>
           </Row>
         )
