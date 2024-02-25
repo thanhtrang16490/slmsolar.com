@@ -8,6 +8,8 @@ import Hero from "./component/home/hero";
 import Advantage from "./component/home/advantage";
 import Hybrid from "./component/home/hybrid";
 import Ongrid from "./component/home/ongrid";
+import Combo from "./component/home/combo";
+
 
 
 
@@ -28,11 +30,14 @@ export default function Home() {
           <div style={{ marginTop: '70px' }}>
             <Advantage />
           </div>
-          <div style={{ marginTop: '70px' }}>
+          <div style={{ marginTop: '20px' }}>
             <Hybrid />
           </div>
-          <div style={{ marginTop: '70px' }}>
+          <div style={{ marginTop: '20px' }}>
             <Ongrid />
+          </div>
+          <div style={{ marginTop: '20px' }}>
+            <Combo />
           </div>
 
           <Typography.Title style={{ margin: '20px auto', fontSize: '20px' }} >Câu hỏi thường gặp</Typography.Title>

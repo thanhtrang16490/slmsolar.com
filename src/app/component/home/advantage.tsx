@@ -31,7 +31,7 @@ const Advantage = () => {
       <Row>
 
 
-        <video width="100%" height="420" preload="auto" autoPlay muted loop>
+        <video width="100%" height="420" preload="auto" autoPlay muted loop playsInline>
           <source src="/img/solar-assessment-mobile.mp4" type="video/mp4" />
           <track
             src="/img/solar-assessment-mobile.mp4"
