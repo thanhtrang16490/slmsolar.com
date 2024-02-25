@@ -6,6 +6,8 @@ import MetricSlider from "./component/home/metric.slider";
 import ServiceSlider from "./component/home/service.slider";
 import Hero from "./component/home/hero";
 import Advantage from "./component/home/advantage";
+import Hybrid from "./component/home/hybrid";
+import Ongrid from "./component/home/ongrid";
 
 
 
@@ -19,12 +21,20 @@ export default function Home() {
           <div style={{ marginTop: '70px' }}>
             <Hero />
           </div>
+
           <div style={{ marginTop: '0px' }}>
             <ServiceSlider />
           </div>
           <div style={{ marginTop: '70px' }}>
             <Advantage />
           </div>
+          <div style={{ marginTop: '70px' }}>
+            <Hybrid />
+          </div>
+          <div style={{ marginTop: '70px' }}>
+            <Ongrid />
+          </div>
+
           <Typography.Title style={{ margin: '20px auto', fontSize: '20px' }} >Câu hỏi thường gặp</Typography.Title>
           <QuestionAndAnswer />
           <Typography.Title style={{ margin: '20px auto', fontSize: '20px' }}>Tư vấn vấn - Báo giá</Typography.Title>
