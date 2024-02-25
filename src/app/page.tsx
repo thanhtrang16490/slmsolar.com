@@ -11,6 +11,7 @@ import Ongrid from "./component/home/ongrid";
 import Combo from "./component/home/combo.hybrid";
 import ComboHybrid from "./component/home/combo.hybrid";
 import ComboOngrid from "./component/home/combo.ongrid";
+import AdvantageSlider from "./component/home/advantage.slider";
 
 
 
@@ -46,6 +47,8 @@ export default function Home() {
           </div>
           <Typography.Title style={{ margin: '20px auto', fontSize: '20px' }} >Câu hỏi thường gặp</Typography.Title>
           <QuestionAndAnswer />
+          <Typography.Title style={{ margin: '20px auto', fontSize: '20px' }} ></Typography.Title>
+          <AdvantageSlider />
           <Typography.Title style={{ margin: '20px auto', fontSize: '20px' }}>Tư vấn vấn - Báo giá</Typography.Title>
           <MetricSlider />
         </Content>
