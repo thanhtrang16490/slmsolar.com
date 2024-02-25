@@ -29,14 +29,19 @@ const Advantage = () => {
   return (
     <>
       <Row>
-        <div style={{ position: 'relative', width: '100%', height: '500px' }}>
-          <Image
-            src='/img/advantage-video.png'
-            alt="Video"
-            layout='fill'
-            objectFit='cover'
+
+
+        <video width="100%" height="420" preload="auto" autoPlay muted loop>
+          <source src="/img/solar-assessment-mobile.mp4" type="video/mp4" />
+          <track
+            src="/img/solar-assessment-mobile.mp4"
+            kind="subtitles"
+            srcLang="en"
+            label="English"
           />
-        </div>
+          Your browser does not support the video tag.
+        </video>
+
 
       </Row>
       <Row style={{ paddingTop: '20px' }} gutter={5}>
