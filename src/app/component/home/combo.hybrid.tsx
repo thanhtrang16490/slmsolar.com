@@ -1,23 +1,58 @@
 
 
 import { Col, Row, Typography } from "antd";
-import { calc } from "antd/es/theme/internal";
 import Image from "next/image";
 
-const comboFeatureData =
+const comboOneFeatureData =
 {
     he: '5 kW',
     pha: '1 Pha',
     title: 'Tấm pin mặt trời',
     feature1: 'Thương hiệu Pin top 3 thế giới',
     feature2: 'Inverter Hybrid 5kW 1 pha',
-    feature3: 'Pin Lithium',
+    feature3: 'Pin Lithium FePO4 5kWh',
     price: '121,485,000',
 }
 
 
 
-const hybridData = [
+
+const comboOneData = [
+    {
+        image: <Image src='/img/solar-hybrid-icon.svg' alt="Hoàn vốn trong 4 năm" width={30} height={30} />,
+        title: <>Tấm pin<br />mặt trời</>,
+
+    },
+    {
+        image: <Image src='/img/inverter-icon.svg' alt="Sử dụng điện thả ga 20 năm kế tiếp" width={30} height={30} />,
+        title: <>inverter<br />hybrid</>
+
+
+    },
+    {
+        image: <Image src='/img/hybrid-lithium-icon.svg' alt="Chống nóng cho mái nhà giảm 6 độ" width={30} height={30} />,
+        title: <>Pin<br />Lithium</>
+
+    },
+    {
+        image: <Image src='/img/bao-hanh-5-nam.svg' alt="Chống nóng cho mái nhà giảm 6 độ" width={30} height={30} />,
+        title: <>năm<br />bảo hành</>
+
+    },
+]
+
+const comboTwoFeatureData =
+{
+    he: '10 kW',
+    pha: '3 Pha',
+    title: 'Tấm pin mặt trời',
+    feature1: 'Thương hiệu Pin top 3 thế giới',
+    feature2: 'Inverter Hybrid 10kW 3 pha',
+    feature3: 'Pin Lithium FePO4 5kWh',
+    price: '215,735,000',
+}
+
+const comboTwoData = [
     {
         image: <Image src='/img/solar-hybrid-icon.svg' alt="Hoàn vốn trong 4 năm" width={30} height={30} />,
         title: <>Tấm pin<br />mặt trời</>,
@@ -42,7 +77,9 @@ const hybridData = [
 ]
 
 
-const Combo = () => {
+
+
+const ComboHybrid = () => {
 
     return (
         <>
@@ -53,13 +90,13 @@ const Combo = () => {
                     <Row style={{ left: '15px', borderRadius: '4px', border: 'solid 1px #000', top: '10px', position: 'absolute', display: 'flex', alignItems: 'center', justifyContent: 'start' }}>
 
                         <Col>
-                            <Typography.Title style={{ color: '#000', margin: '0px 5px 0px 5px', textAlign: 'left', fontWeight: 300, fontSize: '18px' }}>{comboFeatureData.he}</Typography.Title>
+                            <Typography.Title style={{ color: '#000', margin: '0px 5px 0px 5px', textAlign: 'left', fontWeight: 300, fontSize: '18px' }}>{comboOneFeatureData.he}</Typography.Title>
                         </Col>
                     </Row>
                     <Row style={{ left: '75px', borderRadius: '4px', backgroundColor: '#000', top: '10px', position: 'absolute', display: 'flex', alignItems: 'center', justifyContent: 'start' }}>
 
                         <Col>
-                            <Typography.Title style={{ color: '#fff', margin: '0px 5px 0px 5px', textAlign: 'left', fontWeight: 300, fontSize: '18px' }}>{comboFeatureData.pha}</Typography.Title>
+                            <Typography.Title style={{ color: '#fff', margin: '0px 5px 0px 5px', textAlign: 'left', fontWeight: 300, fontSize: '18px' }}>{comboOneFeatureData.pha}</Typography.Title>
                         </Col>
                     </Row>
                     <Row style={{ left: '10px', top: '50px', position: 'absolute', width: '100%', display: 'flex', alignItems: 'center', justifyContent: 'start' }}>
@@ -67,7 +104,7 @@ const Combo = () => {
                             <Image src='/img/stick-green.svg' alt="Check" width={30} height={30} />
                         </Col>
                         <Col>
-                            <Typography.Title style={{ color: '#6e6e73', margin: '0px 5px 0px 5px', textAlign: 'left', fontWeight: 300, fontSize: '12px' }}>{comboFeatureData.feature1}</Typography.Title>
+                            <Typography.Title style={{ color: '#6e6e73', margin: '0px 5px 0px 5px', textAlign: 'left', fontWeight: 300, fontSize: '12px' }}>{comboOneFeatureData.feature1}</Typography.Title>
                         </Col>
                     </Row>
                     <Row style={{ left: '10px', top: '75px', position: 'absolute', width: '100%', display: 'flex', alignItems: 'center', justifyContent: 'start' }}>
@@ -75,7 +112,7 @@ const Combo = () => {
                             <Image src='/img/stick-green.svg' alt="Check" width={30} height={30} />
                         </Col>
                         <Col>
-                            <Typography.Title style={{ color: '#6e6e73', margin: '0px 5px 0px 5px', textAlign: 'left', fontWeight: 300, fontSize: '12px' }}>{comboFeatureData.feature2}</Typography.Title>
+                            <Typography.Title style={{ color: '#6e6e73', margin: '0px 5px 0px 5px', textAlign: 'left', fontWeight: 300, fontSize: '12px' }}>{comboOneFeatureData.feature2}</Typography.Title>
                         </Col>
                     </Row>
                     <Row style={{ left: '10px', top: '100px', position: 'absolute', width: '100%', display: 'flex', alignItems: 'center', justifyContent: 'start' }}>
@@ -83,17 +120,17 @@ const Combo = () => {
                             <Image src='/img/stick-green.svg' alt="Check" width={30} height={30} />
                         </Col>
                         <Col>
-                            <Typography.Title style={{ color: '#6e6e73', margin: '0px 5px 0px 5px', textAlign: 'left', fontWeight: 300, fontSize: '12px' }}>{comboFeatureData.feature3}</Typography.Title>
+                            <Typography.Title style={{ color: '#6e6e73', margin: '0px 5px 0px 5px', textAlign: 'left', fontWeight: 300, fontSize: '12px' }}>{comboOneFeatureData.feature3}</Typography.Title>
                         </Col>
                     </Row>
                     <Row style={{ left: '15px', borderRadius: '6px', border: 'solid 1px #000', top: '138px', position: 'absolute', display: 'flex', alignItems: 'center', justifyContent: 'start' }}>
 
                         <Col>
-                            <Typography.Title style={{ color: '#000', margin: '0px 5px 0px 5px', textAlign: 'left', fontWeight: 500, fontSize: '24px' }}>{comboFeatureData.price}</Typography.Title>
+                            <Typography.Title style={{ color: '#000', margin: '0px 5px 0px 5px', textAlign: 'left', fontWeight: 500, fontSize: '24px' }}>{comboOneFeatureData.price}</Typography.Title>
                         </Col>
                     </Row>
                     <Row style={{ bottom: '8px', left: '50%', translate: '-50% 0px', position: 'absolute', height: '50px', width: 'calc(100% - 16px)', backgroundColor: '#fff', borderRadius: '4px' }} >
-                        {hybridData.map((data, index) => (
+                        {comboOneData.map((data, index) => (
                             <Col
                                 style={{
                                     display: 'flex',
@@ -116,13 +153,13 @@ const Combo = () => {
                     <Row style={{ left: '15px', borderRadius: '4px', border: 'solid 1px #000', top: '10px', position: 'absolute', display: 'flex', alignItems: 'center', justifyContent: 'start' }}>
 
                         <Col>
-                            <Typography.Title style={{ color: '#000', margin: '0px 5px 0px 5px', textAlign: 'left', fontWeight: 300, fontSize: '18px' }}>{comboFeatureData.he}</Typography.Title>
+                            <Typography.Title style={{ color: '#000', margin: '0px 5px 0px 5px', textAlign: 'left', fontWeight: 300, fontSize: '18px' }}>{comboTwoFeatureData.he}</Typography.Title>
                         </Col>
                     </Row>
-                    <Row style={{ left: '75px', borderRadius: '4px', backgroundColor: '#000', top: '10px', position: 'absolute', display: 'flex', alignItems: 'center', justifyContent: 'start' }}>
+                    <Row style={{ left: '80px', borderRadius: '4px', backgroundColor: '#000', top: '10px', position: 'absolute', display: 'flex', alignItems: 'center', justifyContent: 'start' }}>
 
                         <Col>
-                            <Typography.Title style={{ color: '#fff', margin: '0px 5px 0px 5px', textAlign: 'left', fontWeight: 300, fontSize: '18px' }}>{comboFeatureData.pha}</Typography.Title>
+                            <Typography.Title style={{ color: '#fff', margin: '0px 5px 0px 5px', textAlign: 'left', fontWeight: 300, fontSize: '18px' }}>{comboTwoFeatureData.pha}</Typography.Title>
                         </Col>
                     </Row>
                     <Row style={{ left: '10px', top: '50px', position: 'absolute', width: '100%', display: 'flex', alignItems: 'center', justifyContent: 'start' }}>
@@ -130,7 +167,7 @@ const Combo = () => {
                             <Image src='/img/stick-green.svg' alt="Check" width={30} height={30} />
                         </Col>
                         <Col>
-                            <Typography.Title style={{ color: '#6e6e73', margin: '0px 5px 0px 5px', textAlign: 'left', fontWeight: 300, fontSize: '12px' }}>{comboFeatureData.feature1}</Typography.Title>
+                            <Typography.Title style={{ color: '#6e6e73', margin: '0px 5px 0px 5px', textAlign: 'left', fontWeight: 300, fontSize: '12px' }}>{comboTwoFeatureData.feature1}</Typography.Title>
                         </Col>
                     </Row>
                     <Row style={{ left: '10px', top: '75px', position: 'absolute', width: '100%', display: 'flex', alignItems: 'center', justifyContent: 'start' }}>
@@ -138,7 +175,7 @@ const Combo = () => {
                             <Image src='/img/stick-green.svg' alt="Check" width={30} height={30} />
                         </Col>
                         <Col>
-                            <Typography.Title style={{ color: '#6e6e73', margin: '0px 5px 0px 5px', textAlign: 'left', fontWeight: 300, fontSize: '12px' }}>{comboFeatureData.feature2}</Typography.Title>
+                            <Typography.Title style={{ color: '#6e6e73', margin: '0px 5px 0px 5px', textAlign: 'left', fontWeight: 300, fontSize: '12px' }}>{comboTwoFeatureData.feature2}</Typography.Title>
                         </Col>
                     </Row>
                     <Row style={{ left: '10px', top: '100px', position: 'absolute', width: '100%', display: 'flex', alignItems: 'center', justifyContent: 'start' }}>
@@ -146,17 +183,17 @@ const Combo = () => {
                             <Image src='/img/stick-green.svg' alt="Check" width={30} height={30} />
                         </Col>
                         <Col>
-                            <Typography.Title style={{ color: '#6e6e73', margin: '0px 5px 0px 5px', textAlign: 'left', fontWeight: 300, fontSize: '12px' }}>{comboFeatureData.feature3}</Typography.Title>
+                            <Typography.Title style={{ color: '#6e6e73', margin: '0px 5px 0px 5px', textAlign: 'left', fontWeight: 300, fontSize: '12px' }}>{comboTwoFeatureData.feature3}</Typography.Title>
                         </Col>
                     </Row>
                     <Row style={{ left: '15px', borderRadius: '6px', border: 'solid 1px #000', top: '138px', position: 'absolute', display: 'flex', alignItems: 'center', justifyContent: 'start' }}>
 
                         <Col>
-                            <Typography.Title style={{ color: '#000', margin: '0px 5px 0px 5px', textAlign: 'left', fontWeight: 500, fontSize: '24px' }}>{comboFeatureData.price}</Typography.Title>
+                            <Typography.Title style={{ color: '#000', margin: '0px 5px 0px 5px', textAlign: 'left', fontWeight: 500, fontSize: '24px' }}>{comboTwoFeatureData.price}</Typography.Title>
                         </Col>
                     </Row>
                     <Row style={{ bottom: '8px', left: '50%', translate: '-50% 0px', position: 'absolute', height: '50px', width: 'calc(100% - 16px)', backgroundColor: '#fff', borderRadius: '4px' }} >
-                        {hybridData.map((data, index) => (
+                        {comboOneData.map((data, index) => (
                             <Col
                                 style={{
                                     display: 'flex',
@@ -180,6 +217,6 @@ const Combo = () => {
 
 
 
-export default Combo;
+export default ComboHybrid;
 
 
