@@ -48,7 +48,19 @@ export default function Home() {
           </div>
           <Typography.Title style={{ margin: '20px auto', fontSize: '20px' }} >Câu hỏi thường gặp</Typography.Title>
           <QuestionAndAnswer />
-          <Typography.Title style={{ margin: '20px auto', fontSize: '20px' }} ></Typography.Title>
+          <div style={{ margin: '30px 16px', borderRadius: '8px', backgroundColor: '#000' }}>
+            <video width="100%" height="210" preload="auto" controls autoPlay muted loop playsInline>
+              <source src="/img/slm-video.mp4" type="video/mp4" />
+              <track
+                src="/img/slm-video.mp4"
+                kind="subtitles"
+                srcLang="en"
+                label="English"
+              />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+
           <AdvantageSlider />
           <Typography.Title style={{ margin: '20px auto', fontSize: '20px' }}>Tư vấn vấn - Báo giá</Typography.Title>
           <MetricSlider />
@@ -60,3 +72,4 @@ export default function Home() {
     </>
   )
 }
+
