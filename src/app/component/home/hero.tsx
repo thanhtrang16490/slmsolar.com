@@ -30,7 +30,14 @@ const Hero = () => {
                 }}>
 
                     <Row style={{ position: 'relative' }}>
-                        <Image style={{ position: 'absolute' }} src={heroData.image} alt={heroData.title} width={389} height={500} />
+                        <div style={{ padding: '250px', width: '100%', position: 'relative' }}>
+                            <Image
+                                src={heroData.image} alt={heroData.title}
+                                layout="fill"
+                                objectFit="cover"
+                            />
+                        </div>
+                        {/* <Image style={{ position: 'absolute' }} src={heroData.image} alt={heroData.title} width={389} height={500} /> */}
                         <div style={{ position: 'absolute', top: '90px', left: '50%', translate: '-50% -50px' }}>
                             <Typography.Title style={{ width: '350px', textAlign: 'center', fontSize: '24px', color: '#1D1D1F' }} level={5}>
                                 {heroData.title}
