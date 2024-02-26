@@ -12,6 +12,7 @@ import Combo from "./component/home/combo.hybrid";
 import ComboHybrid from "./component/home/combo.hybrid";
 import ComboOngrid from "./component/home/combo.ongrid";
 import AdvantageSlider from "./component/home/advantage.slider";
+import ContactHome from "./component/home/contact";
 
 
 
@@ -51,6 +52,8 @@ export default function Home() {
           <AdvantageSlider />
           <Typography.Title style={{ margin: '20px auto', fontSize: '20px' }}>Tư vấn vấn - Báo giá</Typography.Title>
           <MetricSlider />
+          <Typography.Title style={{ margin: '20px auto', fontSize: '20px' }}>Liên hệ</Typography.Title>
+          <ContactHome />
         </Content>
       </Layout>
 
