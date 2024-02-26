@@ -28,8 +28,8 @@ const ContactHome = () => {
                 }}>
 
                     <Row>
-                        <div style={{ position: 'absolute', top: '-40px', left: '-340px', zIndex: '1' }}>
-                            <Image src="/img/vietnam-map.png" alt="Vietnam map slmglobal" height={600} width={1000} />
+                        <div style={{ position: 'absolute', top: '-40px', left: '0px', zIndex: '1' }}>
+                            <Image src="/img/vietnam-map.png" alt="Vietnam map slmglobal" height={600} width={400} />
                         </div>
                         <div style={{ position: 'absolute', top: 45, left: '105px', zIndex: '3' }}>
                             <Link target='_blank' rel='noopener noreferrer' href="https://maps.app.goo.gl/Q4AAR2xs7yRA2kQT6"><StarFilled style={{ fontSize: '20px', color: 'orange' }} /></Link>

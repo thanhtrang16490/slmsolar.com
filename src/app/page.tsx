@@ -8,7 +8,6 @@ import Hero from "./component/home/hero";
 import Advantage from "./component/home/advantage";
 import Hybrid from "./component/home/hybrid";
 import Ongrid from "./component/home/ongrid";
-import Combo from "./component/home/combo.hybrid";
 import ComboHybrid from "./component/home/combo.hybrid";
 import ComboOngrid from "./component/home/combo.ongrid";
 import AdvantageSlider from "./component/home/advantage.slider";

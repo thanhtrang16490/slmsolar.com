@@ -35,7 +35,7 @@ const comboOneData = [
 
     },
     {
-        image: <Image src='/img/bao-hanh-5-nam.svg' alt="Chống nóng cho mái nhà giảm 6 độ" width={30} height={30} />,
+        image: <Image src='/img/bao-hanh-5-nam.svg' alt="Chống nóng cho mái nhà giảm 6 độ" width={40} height={30} />,
         title: <>năm<br />bảo hành</>
 
     },
@@ -101,7 +101,7 @@ const ComboHybrid = () => {
                     </Row>
                     <Row style={{ left: '10px', top: '50px', position: 'absolute', width: '100%', display: 'flex', alignItems: 'center', justifyContent: 'start' }}>
                         <Col>
-                            <Image src='/img/stick-green.svg' alt="Check" width={30} height={30} />
+                            <Image src='/img/stick-green-full.svg' alt="Check" width={20} height={20} />
                         </Col>
                         <Col>
                             <Typography.Title style={{ color: '#6e6e73', margin: '0px 5px 0px 5px', textAlign: 'left', fontWeight: 300, fontSize: '12px' }}>{comboOneFeatureData.feature1}</Typography.Title>
@@ -109,7 +109,7 @@ const ComboHybrid = () => {
                     </Row>
                     <Row style={{ left: '10px', top: '75px', position: 'absolute', width: '100%', display: 'flex', alignItems: 'center', justifyContent: 'start' }}>
                         <Col>
-                            <Image src='/img/stick-green.svg' alt="Check" width={30} height={30} />
+                            <Image src='/img/stick-green-full.svg' alt="Check" width={20} height={20} />
                         </Col>
                         <Col>
                             <Typography.Title style={{ color: '#6e6e73', margin: '0px 5px 0px 5px', textAlign: 'left', fontWeight: 300, fontSize: '12px' }}>{comboOneFeatureData.feature2}</Typography.Title>
@@ -117,7 +117,7 @@ const ComboHybrid = () => {
                     </Row>
                     <Row style={{ left: '10px', top: '100px', position: 'absolute', width: '100%', display: 'flex', alignItems: 'center', justifyContent: 'start' }}>
                         <Col>
-                            <Image src='/img/stick-green.svg' alt="Check" width={30} height={30} />
+                            <Image src='/img/stick-green-full.svg' alt="Check" width={20} height={20} />
                         </Col>
                         <Col>
                             <Typography.Title style={{ color: '#6e6e73', margin: '0px 5px 0px 5px', textAlign: 'left', fontWeight: 300, fontSize: '12px' }}>{comboOneFeatureData.feature3}</Typography.Title>
@@ -164,7 +164,7 @@ const ComboHybrid = () => {
                     </Row>
                     <Row style={{ left: '10px', top: '50px', position: 'absolute', width: '100%', display: 'flex', alignItems: 'center', justifyContent: 'start' }}>
                         <Col>
-                            <Image src='/img/stick-green.svg' alt="Check" width={30} height={30} />
+                            <Image src='/img/stick-green-full.svg' alt="Check" width={20} height={20} />
                         </Col>
                         <Col>
                             <Typography.Title style={{ color: '#6e6e73', margin: '0px 5px 0px 5px', textAlign: 'left', fontWeight: 300, fontSize: '12px' }}>{comboTwoFeatureData.feature1}</Typography.Title>
@@ -172,7 +172,7 @@ const ComboHybrid = () => {
                     </Row>
                     <Row style={{ left: '10px', top: '75px', position: 'absolute', width: '100%', display: 'flex', alignItems: 'center', justifyContent: 'start' }}>
                         <Col>
-                            <Image src='/img/stick-green.svg' alt="Check" width={30} height={30} />
+                            <Image src='/img/stick-green-full.svg' alt="Check" width={20} height={20} />
                         </Col>
                         <Col>
                             <Typography.Title style={{ color: '#6e6e73', margin: '0px 5px 0px 5px', textAlign: 'left', fontWeight: 300, fontSize: '12px' }}>{comboTwoFeatureData.feature2}</Typography.Title>
@@ -180,7 +180,7 @@ const ComboHybrid = () => {
                     </Row>
                     <Row style={{ left: '10px', top: '100px', position: 'absolute', width: '100%', display: 'flex', alignItems: 'center', justifyContent: 'start' }}>
                         <Col>
-                            <Image src='/img/stick-green.svg' alt="Check" width={30} height={30} />
+                            <Image src='/img/stick-green-full.svg' alt="Check" width={20} height={20} />
                         </Col>
                         <Col>
                             <Typography.Title style={{ color: '#6e6e73', margin: '0px 5px 0px 5px', textAlign: 'left', fontWeight: 300, fontSize: '12px' }}>{comboTwoFeatureData.feature3}</Typography.Title>
