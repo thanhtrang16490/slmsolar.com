@@ -1,3 +1,4 @@
+'use client'
 import { Button, Col, Divider, Layout, Row, Typography } from "antd"
 import { Content } from "antd/es/layout/layout"
 import { RightOutlined, ThunderboltOutlined } from '@ant-design/icons';

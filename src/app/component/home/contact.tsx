@@ -68,10 +68,9 @@ const ContactHome = () => {
 
                     <Row>
                         <div style={{ height: '100%', width: '100%', position: 'absolute', top: '-40px', left: '0px', zIndex: '1' }}>
-                            <Image
+                            <Image style={{ objectFit: "cover" }}
                                 src="/img/vietnam-map.png" alt="Vietnam map slmglobal"
-                                layout="fill"
-                                objectFit="cover"
+                                fill
                             />
                         </div>
 

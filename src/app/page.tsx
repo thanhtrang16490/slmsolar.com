@@ -1,5 +1,5 @@
 'use client'
-import { Layout, Typography } from "antd";
+import { Layout } from "antd";
 import QuestionAndAnswer from "./component/home/question.answer";
 import { Content } from "antd/es/layout/layout";
 import MetricSlider from "./component/home/metric.slider";
@@ -47,7 +47,7 @@ export default function Home() {
           </div>
           <QuestionAndAnswer />
           <div style={{ margin: '30px 16px', borderRadius: '8px', backgroundColor: '#000' }}>
-            <video width="100%" height="210" preload="auto" controls autoPlay muted loop playsInline>
+            <video width="100%" height="210" preload="none" controls>
               <source src="/img/slm-video.mp4" type="video/mp4" />
               <track
                 src="/img/slm-video.mp4"

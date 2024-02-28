@@ -112,7 +112,7 @@ const QuestionAndAnswer = () => {
                             <Row style={{ position: 'relative' }}>
 
                                 <div style={{ padding: '0px', width: '100%', paddingTop: '56%', position: 'relative' }}>
-                                    <Image style={{ borderRadius: '8px' }} alt='bam-tai' layout="fill" objectFit="cover" src={item.image} />
+                                    <Image style={{ borderRadius: '8px', objectFit: 'cover' }} alt={item.title} fill src={item.image} />
                                 </div>
 
                                 <div style={{ background: 'linear-gradient(to bottom, #ffffff00, #ffffff60 , #fff)', width: '100%', height: '60px', position: 'absolute', bottom: '-1px' }}>

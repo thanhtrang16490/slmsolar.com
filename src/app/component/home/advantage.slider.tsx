@@ -37,7 +37,7 @@ const AdvantageSlider = () => {
         <Col style={{ height: '360px', margin: '0px 15px 0 15px', padding: '15px', borderRadius: '8px', textAlign: 'center', position: 'relative', boxShadow: '0 1px 2px 0 rgba(60,64,67,.1), 0 2px 6px 2px rgba(60,64,67,.15)' }}>
           <div style={{ position: 'absolute', top: 0, left: '50%', translate: '-50% 0%', width: '100%', height: '360px' }}>
             <div style={{ width: '100%', paddingTop: '360px', position: 'relative' }}>
-              <Image style={{ borderRadius: '8px' }} alt='bam-tai' layout="fill" objectFit="cover" src='/img/ad1.png' />
+              <Image style={{ borderRadius: '8px', objectFit: "cover" }} alt='bam-tai' fill src='/img/ad1.png' />
             </div>
           </div>
         </Col>

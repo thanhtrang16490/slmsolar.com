@@ -84,8 +84,8 @@ const Ongrid = () => {
                     <Image
                         src='/img/ongrid-system.png'
                         alt="Video"
-                        layout='fill'
-                        objectFit='cover'
+                        fill
+                        style={{ objectFit: 'cover' }}
                     />
                 </div>
 

@@ -87,8 +87,8 @@ const Hybrid = () => {
                     <Image
                         src='/img/hybrid-system.png'
                         alt="Video"
-                        layout='fill'
-                        objectFit='cover'
+                        fill
+                        style={{ objectFit: 'cover' }}
                     />
                 </div>
 

@@ -1,4 +1,4 @@
-
+'use client'
 
 import { Col, Row, Typography } from "antd";
 import Image from "next/image";
