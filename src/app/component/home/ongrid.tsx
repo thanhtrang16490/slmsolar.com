@@ -39,7 +39,7 @@ const Ongrid = () => {
 
     return (
         <>
-            <Typography.Title style={{ textAlign: 'left', margin: '30px 0 20px 20px', fontSize: '30x' }} >Hệ thống <br />điện mặt trời <br />bám tải Ongrid</Typography.Title>
+            <Typography.Title style={{ textAlign: 'left', margin: '30px 0 20px 20px', fontSize: '30x' }} >Hệ thống <br />điện mặt trời <br />bám tải On-Grid</Typography.Title>
             <Row>
                 <div style={{ position: 'relative', width: '100%', height: '339px' }}>
                     <Image

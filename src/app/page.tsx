@@ -61,10 +61,8 @@ export default function Home() {
 
           <AdvantageSlider />
 
-          <Typography.Title style={{ margin: '20px auto', fontSize: '20px' }}>Tư vấn vấn - Báo giá</Typography.Title>
           <MetricSlider />
 
-          <Typography.Title style={{ margin: '20px auto', fontSize: '20px' }}>Liên hệ</Typography.Title>
           <ContactHome />
         </Content>
       </Layout>

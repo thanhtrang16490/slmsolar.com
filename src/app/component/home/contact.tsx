@@ -1,6 +1,6 @@
 
 
-import { Row, Col, Layout, Button } from 'antd';
+import { Row, Col, Layout, Button, Typography } from 'antd';
 import Image from "next/image";
 import { ShopFilled, StarFilled, PhoneOutlined, MailOutlined, EnvironmentOutlined, HomeOutlined } from '@ant-design/icons';
 import Link from "next/link";
@@ -13,7 +13,7 @@ const ContactHome = () => {
 
     return (
         <>
-
+            <Typography.Title style={{ textAlign: 'left', margin: '30px 0 20px 20px', fontSize: '30x' }} >Liên hệ</Typography.Title>
             <Row >
                 <Col style={{
 

@@ -9,7 +9,7 @@ const comboOneFeatureData =
     pha: '1 Pha',
     title: 'Tấm pin mặt trời',
     feature1: 'Thương hiệu Pin top 3 thế giới',
-    feature2: 'Inverter Hybrid 5kW 1 pha',
+    feature2: 'Inverter On-Grid 5kW 1 pha',
     price: '121,485,000',
 }
 
@@ -24,15 +24,11 @@ const comboOneData = [
     },
     {
         image: <Image src='/img/inverter-icon.svg' alt="Inverter" width={30} height={30} />,
-        title: <>inverter<br />hybrid</>
+        title: <>inverter<br />On-Grid</>
 
 
     },
-    {
-        image: <Image src='/img/hybrid-lithium-icon.svg' alt="Pin lithiun" width={30} height={30} />,
-        title: <>Pin<br />Lithium</>
 
-    },
     {
         image: <Image src='/img/bao-hanh-5-nam.svg' alt="Bảo hành 5 năm" width={40} height={30} />,
         title: <>năm<br />bảo hành</>
@@ -46,7 +42,7 @@ const comboTwoFeatureData =
     pha: '3 Pha',
     title: 'Tấm pin mặt trời',
     feature1: 'Thương hiệu Pin top 3 thế giới',
-    feature2: 'Inverter Hybrid 10kW 3 pha',
+    feature2: 'Inverter On-Grid 10kW 3 pha',
     price: '215,735,000',
 }
 
@@ -57,14 +53,13 @@ const comboTwoData = [
 
     },
     {
-        image: <Image src='/img/inverter-icon.svg' alt="Sử dụng điện thả ga 20 năm kế tiếp" width={30} height={30} />,
-        title: <>inverter<br />hybrid</>
+        image: <Image src='/img/inverter-icon.svg' alt="Inverter" width={30} height={30} />,
+        title: <>inverter<br />On-Grid</>
 
 
     },
-
     {
-        image: <Image src='/img/hybrid-lithium-icon.svg' alt="Chống nóng cho mái nhà giảm 6 độ" width={30} height={30} />,
+        image: <Image src='/img/bao-hanh-5-nam.svg' alt="Chống nóng cho mái nhà giảm 6 độ" width={30} height={30} />,
         title: <>năm<br />bảo hành</>
 
     },
@@ -78,7 +73,7 @@ const ComboOngrid = () => {
     return (
         <div style={{ padding: '20px 0 30px 0', backgroundColor: '#999' }}>
             <div >
-                <Typography.Title style={{ color: '#fff', textAlign: 'left', margin: '30px 0 20px 20px', fontSize: '30x' }} >Combo bám tải <br />Ongrid</Typography.Title>
+                <Typography.Title style={{ color: '#fff', textAlign: 'left', margin: '30px 0 20px 20px', fontSize: '30x' }} >Combo bám tải <br />On-Grid</Typography.Title>
                 <Row style={{ backgroundColor: '#E8E8EA', position: 'relative', height: '240px', borderRadius: '8px', margin: '0 10px', boxShadow: '0 1px 2px 0 rgba(60,64,67,.1), 0 2px 6px 2px rgba(60,64,67,.15)' }}>
 
                     <Row style={{ left: '65%', top: '10px', position: 'absolute', display: 'flex', alignItems: 'center', justifyContent: 'start' }}>
@@ -131,7 +126,7 @@ const ComboOngrid = () => {
                                     alignItems: 'center',
                                     justifyContent: 'center',
                                 }}
-                                key={index} xs={6} sm={6} md={6}>
+                                key={index} xs={8} sm={8} md={8}>
                                 {data.image}
                                 <Typography.Paragraph style={{ textAlign: 'left', fontSize: '10px' }}>{data.title}</Typography.Paragraph>
                             </Col>
@@ -185,7 +180,7 @@ const ComboOngrid = () => {
                         </Col>
                     </Row>
                     <Row style={{ bottom: '8px', left: '50%', translate: '-50% 0px', position: 'absolute', height: '50px', width: 'calc(100% - 16px)', backgroundColor: '#fff', borderRadius: '4px' }} >
-                        {comboOneData.map((data, index) => (
+                        {comboTwoData.map((data, index) => (
                             <Col
                                 style={{
                                     display: 'flex',
@@ -193,7 +188,7 @@ const ComboOngrid = () => {
                                     alignItems: 'center',
                                     justifyContent: 'center',
                                 }}
-                                key={index} xs={6} sm={6} md={6}>
+                                key={index} xs={8} sm={8} md={8}>
                                 {data.image}
                                 <Typography.Paragraph style={{ textAlign: 'left', fontSize: '10px' }}>{data.title}</Typography.Paragraph>
                             </Col>

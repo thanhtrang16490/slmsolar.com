@@ -1,6 +1,6 @@
 'use client'
 import React, { useState } from 'react';
-import { Button, Card, Slider, Statistic, Form, Input, Space, Select, Divider, ConfigProvider } from 'antd';
+import { Button, Card, Slider, Statistic, Form, Input, Space, Select, Divider, ConfigProvider, Typography } from 'antd';
 import type { SliderSingleProps } from 'antd';
 import { Col, Row } from "antd";
 import CountUp from 'react-countup';
@@ -106,94 +106,98 @@ const MetricSlider = () => {
     };
 
     return (
-        <Row>
-            <Col style={{ width: '100%', margin: '0 15px 0', minHeight: '500px', height: '100%', padding: '10px', background: '#fff', borderRadius: '8px', boxShadow: '0 1px 2px 0 rgba(60,64,67,.1), 0 2px 6px 2px rgba(60,64,67,.15)' }}>
+        <>
+            <Typography.Title style={{ textAlign: 'left', margin: '30px 0 20px 20px', fontSize: '30x' }} >Tư vấn <br />báo giá</Typography.Title>
+            <Row>
+                <Col style={{ width: '100%', margin: '0 15px 0', minHeight: '500px', height: '100%', padding: '10px', background: '#fff', borderRadius: '8px', boxShadow: '0 1px 2px 0 rgba(60,64,67,.1), 0 2px 6px 2px rgba(60,64,67,.15)' }}>
 
-                <Row gutter={5}>
-                    <Col span={13}>
-                        <Card  >
-                            <ConfigProvider
-                                theme={{
-                                    components: {
-                                        Statistic: {
-                                            contentFontSize: 20,
+                    <Row gutter={5}>
+                        <Col span={13}>
+                            <Card  >
+                                <ConfigProvider
+                                    theme={{
+                                        components: {
+                                            Statistic: {
+                                                contentFontSize: 20,
+                                            },
                                         },
-                                    },
-                                }}
-                            >
-                                <Statistic suffix='₫' title="Tiết kiệm / tháng:" value={saveMoneyValue} formatter={formatter} />
-                            </ConfigProvider>
-                        </Card>
-                    </Col>
-                    <Col span={11}>
-                        <Card >
-                            <ConfigProvider
-                                theme={{
-                                    components: {
-                                        Statistic: {
-                                            contentFontSize: 20,
+                                    }}
+                                >
+                                    <Statistic suffix='₫' title="Tiết kiệm / tháng:" value={saveMoneyValue} formatter={formatter} />
+                                </ConfigProvider>
+                            </Card>
+                        </Col>
+                        <Col span={11}>
+                            <Card >
+                                <ConfigProvider
+                                    theme={{
+                                        components: {
+                                            Statistic: {
+                                                contentFontSize: 20,
+                                            },
                                         },
-                                    },
-                                }}
-                            >
-                                <Statistic suffix='kWp' title="Công suất:" value={(Math.floor(capacityValue * 100) / 100).toString()} precision={1} />
-                            </ConfigProvider>
-                        </Card>
+                                    }}
+                                >
+                                    <Statistic suffix='kWp' title="Công suất:" value={(Math.floor(capacityValue * 100) / 100).toString()} precision={1} />
+                                </ConfigProvider>
+                            </Card>
 
-                    </Col>
-                </Row>
-                <Slider marks={marks} step={null} defaultValue={15} onChange={handleSliderChange} />
+                        </Col>
+                    </Row>
+                    <Slider marks={marks} step={null} defaultValue={15} onChange={handleSliderChange} />
 
-                <Form form={form} name="validateOnly" layout="vertical" autoComplete="off">
-                    <Divider />
-                    <h3>Thông tin tư vấn khách hàng</h3>
-                    <Form.Item name="check" rules={[{ required: true }]}>
-                        <Space wrap>
-                            <Select
-                                defaultValue={typeData[0] as TypeName}
-                                style={{ width: 120 }}
-                                onChange={handleProvinceChange}
-                                options={typeData.map((province) => ({ label: province, value: province }))}
-                            />
-                            <Select
-                                style={{ width: 120 }}
-                                value={secondCity as TypeName}
-                                onChange={onSecondCityChange}
-                                options={cities.map((city) => ({ label: city, value: city }))}
-                            />
-                        </Space>
-                    </Form.Item>
-
-
-                    <Form.Item name="name" rules={[{ required: true }]}>
-                        <Input placeholder="Vui lòng nhập họ tên" />
-                    </Form.Item>
-                    <Form.Item name="email" rules={[{ required: true }]}>
-                        <Input placeholder="Vui lòng nhập email" />
-                    </Form.Item>
-                    <Form.Item name="phone" rules={[{ required: true }]}>
-                        <Input placeholder="Vui lòng nhập số điện thoại" />
-                    </Form.Item>
-                    <Form.Item>
-
-                        <Row gutter={5}>
-                            <Col span={12}>
-                                <Link href='tel:+84962736891'>
-                                    <Button style={{ width: '100%' }} type="primary">Khảo sát trực tiếp</Button>
-                                </Link>
-                            </Col>
-                            <Col span={12}>
-                                <SubmitButton form={form} />
-                            </Col>
-                        </Row>
+                    <Form form={form} name="validateOnly" layout="vertical" autoComplete="off">
+                        <Divider />
+                        <h3>Thông tin tư vấn khách hàng</h3>
+                        <Form.Item name="check" rules={[{ required: true }]}>
+                            <Space wrap>
+                                <Select
+                                    defaultValue={typeData[0] as TypeName}
+                                    style={{ width: 120 }}
+                                    onChange={handleProvinceChange}
+                                    options={typeData.map((province) => ({ label: province, value: province }))}
+                                />
+                                <Select
+                                    style={{ width: 120 }}
+                                    value={secondCity as TypeName}
+                                    onChange={onSecondCityChange}
+                                    options={cities.map((city) => ({ label: city, value: city }))}
+                                />
+                            </Space>
+                        </Form.Item>
 
 
+                        <Form.Item name="name" rules={[{ required: true }]}>
+                            <Input placeholder="Vui lòng nhập họ tên" />
+                        </Form.Item>
+                        <Form.Item name="email" rules={[{ required: true }]}>
+                            <Input placeholder="Vui lòng nhập email" />
+                        </Form.Item>
+                        <Form.Item name="phone" rules={[{ required: true }]}>
+                            <Input placeholder="Vui lòng nhập số điện thoại" />
+                        </Form.Item>
+                        <Form.Item>
 
-                    </Form.Item>
-                </Form>
+                            <Row gutter={5}>
+                                <Col span={12}>
+                                    <Link href='tel:+84962736891'>
+                                        <Button style={{ width: '100%' }} type="primary">Khảo sát trực tiếp</Button>
+                                    </Link>
+                                </Col>
+                                <Col span={12}>
+                                    <SubmitButton form={form} />
+                                </Col>
+                            </Row>
 
-            </Col>
-        </Row>
+
+
+                        </Form.Item>
+                    </Form>
+
+                </Col>
+            </Row>
+        </>
+
     );
 };
 
