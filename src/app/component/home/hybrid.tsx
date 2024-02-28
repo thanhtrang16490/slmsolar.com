@@ -43,7 +43,7 @@ const Hybrid = () => {
 
     return (
         <>
-            <Typography.Title style={{ textAlign: 'center', margin: '20px auto', fontSize: '20px' }} >Hệ thống điện mặt trời độc lập Hybrid</Typography.Title>
+            <Typography.Title style={{ textAlign: 'left', margin: '30px 0 20px 20px', fontSize: '30x' }} >Hệ thống <br /> điện mặt trời <br />độc lập Hybrid</Typography.Title>
             <Row>
                 <div style={{ position: 'relative', width: '100%', height: '339px' }}>
                     <Image
@@ -76,7 +76,7 @@ const Hybrid = () => {
                         <>
                             <Row style={{ width: '100%', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
                                 <Col>
-                                    <Typography.Title style={{ color: '#6e6e73', margin: '0px 5px 0px 5px', textAlign: 'left', fontWeight: 300 }} level={5}>{item.title}</Typography.Title>
+                                    <Typography.Title style={{ color: '#000', margin: '0px 5px 0px 5px', textAlign: 'left', fontWeight: 300 }} level={5}>{item.title}</Typography.Title>
                                 </Col>
 
                                 <Col>

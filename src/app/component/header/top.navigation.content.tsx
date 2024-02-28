@@ -45,6 +45,11 @@ const productsData = [
 
 const newsData = [
     {
+        title: 'Dự án đã thực hiện',
+        path: '/projects',
+        icon: <Image src='/img/project-icon.svg' alt='device icon' width={30} height={30} />
+    },
+    {
         title: 'Bản tin về điện mặt trời',
         path: '/news',
         icon: <Image src='/img/news-1-icon.svg' alt='device icon' width={30} height={30} />
@@ -72,7 +77,7 @@ const TopNavigationContent = (onClose: any) => {
                                                 <div style={{ display: 'flex', alignItems: 'center' }}>
                                                     <Col>{item.icon}</Col>
                                                     <Col>
-                                                        <Typography.Title style={{ color: '#6e6e73', margin: '0px 5px 0px 5px', textAlign: 'left', fontWeight: 300 }} level={5}>{item.title}</Typography.Title>
+                                                        <Typography.Title style={{ color: '#000', margin: '0px 5px 0px 5px', textAlign: 'left', fontWeight: 300 }} level={5}>{item.title}</Typography.Title>
                                                     </Col>
                                                 </div>
                                                 <Col>
@@ -100,7 +105,7 @@ const TopNavigationContent = (onClose: any) => {
                                                 <div style={{ display: 'flex', alignItems: 'center' }}>
                                                     <Col>{item.icon}</Col>
                                                     <Col>
-                                                        <Typography.Title style={{ color: '#6e6e73', margin: '0px 5px 0px 5px', textAlign: 'left', fontWeight: 300 }} level={5}>{item.title}</Typography.Title>
+                                                        <Typography.Title style={{ color: '#000', margin: '0px 5px 0px 5px', textAlign: 'left', fontWeight: 300 }} level={5}>{item.title}</Typography.Title>
                                                     </Col>
                                                 </div>
                                                 <Col>
@@ -125,7 +130,7 @@ const TopNavigationContent = (onClose: any) => {
                                                 <div style={{ display: 'flex', alignItems: 'center' }}>
                                                     <Col>{item.icon}</Col>
                                                     <Col>
-                                                        <Typography.Title style={{ color: '#6e6e73', margin: '0px 5px 0px 5px', textAlign: 'left', fontWeight: 300 }} level={5}>{item.title}</Typography.Title>
+                                                        <Typography.Title style={{ color: '#000', margin: '0px 5px 0px 5px', textAlign: 'left', fontWeight: 300 }} level={5}>{item.title}</Typography.Title>
                                                     </Col>
                                                 </div>
                                                 <Col>

@@ -1,0 +1,13 @@
+.scroll-title {
+    position: absolute;
+    top: 50px;
+    width: 100%;
+    opacity: 0;
+    transition: top 1s ease-in-out, opacity 1s ease-in-out;
+    z-index: 100;
+}
+
+.scroll-title.show {
+    top: 0px;
+    opacity: 1;
+}

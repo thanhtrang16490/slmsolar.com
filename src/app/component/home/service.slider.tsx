@@ -1,7 +1,9 @@
-
+'use client'
 
 import { Col, Row, Typography } from "antd";
 import Image from "next/image";
+import React, { useState, useEffect } from 'react';
+import './service.slider.css';
 
 
 
@@ -30,7 +32,24 @@ const serviceData = [
 ]
 
 const ServiceSlider = () => {
+  const [showTitle, setShowTitle] = useState(false);
 
+  const checkScroll = () => {
+    if (window.pageYOffset > 250) { // Change this value based on when you want the title to appear
+      setShowTitle(true);
+    } else {
+      setShowTitle(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', checkScroll);
+
+    // Cleanup the event listener on component unmount
+    return () => {
+      window.removeEventListener('scroll', checkScroll);
+    };
+  }, []);
 
   return (
     <>
@@ -47,14 +66,19 @@ const ServiceSlider = () => {
             }}>
 
               <Row style={{ position: 'relative' }}>
-                <Image style={{ position: 'absolute', margin: '0px 20px 0px 20px' }} src={item.image} alt={item.title} width={45} height={45} />
+                <div className={`scroll-title ${showTitle ? 'show' : ''}`}>
+                  <Image style={{ position: 'absolute', margin: '0px 20px 0px 20px' }} src={item.image} alt={item.title} width={45} height={45} />
+                </div>
               </Row>
               <Row style={{ position: 'relative' }}>
-                <Typography.Title style={{ position: 'absolute', margin: '60px 20px 0px 20px' }} level={5}>
-                  {item.title}
-                </Typography.Title>
+                <div className={`scroll-title ${showTitle ? 'show' : ''}`}>
+                  <Typography.Title style={{ position: 'absolute', margin: '60px 20px 0px 20px' }} level={5}>
+                    {item.title}
+                  </Typography.Title>
+                </div>
               </Row>
               <Row >
+
                 <Typography.Paragraph style={{ margin: '90px 100px 0px 20px', textAlign: 'left' }}>
                   {item.content}
                 </Typography.Paragraph>

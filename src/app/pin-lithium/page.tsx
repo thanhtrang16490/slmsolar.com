@@ -77,7 +77,7 @@ export default function PinLithium() {
                         <Col style={{ borderRadius: '6px', background: '#F2F1F6', width: '60px', height: '70px' }}>{item.icon}</Col>
                         <Col>
                           <Typography.Title style={{ color: '#000', margin: '0px 5px 0px 5px', textAlign: 'left', fontWeight: 500 }} level={5}>{item.title}</Typography.Title>
-                          <Typography.Title style={{ color: '#6e6e73', margin: '0px 5px 0px 5px', textAlign: 'left', fontWeight: 300, fontSize: '14px' }} level={5}>{item.expert}</Typography.Title>
+                          <Typography.Title style={{ color: '#000', margin: '0px 5px 0px 5px', textAlign: 'left', fontWeight: 300, fontSize: '14px' }} level={5}>{item.expert}</Typography.Title>
                         </Col>
                       </Row>
                       <Col>

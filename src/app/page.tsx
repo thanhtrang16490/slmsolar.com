@@ -45,7 +45,6 @@ export default function Home() {
           <div style={{ marginTop: '20px' }}>
             <ComboOngrid />
           </div>
-          <Typography.Title style={{ margin: '20px auto', fontSize: '20px' }} >Câu hỏi thường gặp</Typography.Title>
           <QuestionAndAnswer />
           <div style={{ margin: '30px 16px', borderRadius: '8px', backgroundColor: '#000' }}>
             <video width="100%" height="210" preload="auto" controls autoPlay muted loop playsInline>
@@ -61,8 +60,10 @@ export default function Home() {
           </div>
 
           <AdvantageSlider />
+
           <Typography.Title style={{ margin: '20px auto', fontSize: '20px' }}>Tư vấn vấn - Báo giá</Typography.Title>
           <MetricSlider />
+
           <Typography.Title style={{ margin: '20px auto', fontSize: '20px' }}>Liên hệ</Typography.Title>
           <ContactHome />
         </Content>

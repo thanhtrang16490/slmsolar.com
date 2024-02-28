@@ -77,7 +77,7 @@ export default function News() {
                         <Col style={{ borderRadius: '6px', background: '#F2F1F6', width: '140px', height: '90px' }}>{item.image}</Col>
                         <Col>
                           <Typography.Title style={{ color: '#000', margin: '10px 5px 0px 10px', textAlign: 'left', fontWeight: 500 }} level={5}>{item.title}</Typography.Title>
-                          <Typography.Title style={{ color: '#6e6e73', margin: '0px 5px 0px 5px', textAlign: 'left', fontWeight: 300, fontSize: '14px' }} level={5}>{item.expert}</Typography.Title>
+                          <Typography.Title style={{ color: '#000', margin: '0px 5px 0px 5px', textAlign: 'left', fontWeight: 300, fontSize: '14px' }} level={5}>{item.expert}</Typography.Title>
                         </Col>
                       </Row>
                       {/* <Col>

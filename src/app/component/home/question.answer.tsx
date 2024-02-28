@@ -50,8 +50,10 @@ const QuestionAndAnswer = () => {
 
     return (
         <>
+            <Typography.Title style={{ textAlign: 'left', margin: '30px 0 20px 20px', fontSize: '30x' }} >Câu hỏi <br />thường gặp</Typography.Title>
             {questionAndAnswer.map((item, index) => {
                 return (
+
                     <Row >
                         <Col style={{
                             display: 'flex',

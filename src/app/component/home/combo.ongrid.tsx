@@ -62,11 +62,7 @@ const comboTwoData = [
 
 
     },
-    {
-        image: <Image src='/img/hybrid-lithium-icon.svg' alt="Chống nóng cho mái nhà giảm 6 độ" width={30} height={30} />,
-        title: <>Pin<br />Lithium</>
 
-    },
     {
         image: <Image src='/img/hybrid-lithium-icon.svg' alt="Chống nóng cho mái nhà giảm 6 độ" width={30} height={30} />,
         title: <>năm<br />bảo hành</>
@@ -80,10 +76,16 @@ const comboTwoData = [
 const ComboOngrid = () => {
 
     return (
-        <div style={{ padding: '20px 0 30px 0', backgroundColor: '#000' }}>
+        <div style={{ padding: '20px 0 30px 0', backgroundColor: '#999' }}>
             <div >
-                <Typography.Title style={{ color: '#fff', margin: '20px auto', fontSize: '20px', textAlign: 'center' }} >Combo bám tải "Ongrid"</Typography.Title>
+                <Typography.Title style={{ color: '#fff', textAlign: 'left', margin: '30px 0 20px 20px', fontSize: '30x' }} >Combo bám tải <br />Ongrid</Typography.Title>
                 <Row style={{ backgroundColor: '#E8E8EA', position: 'relative', height: '240px', borderRadius: '8px', margin: '0 10px', boxShadow: '0 1px 2px 0 rgba(60,64,67,.1), 0 2px 6px 2px rgba(60,64,67,.15)' }}>
+
+                    <Row style={{ left: '65%', top: '10px', position: 'absolute', display: 'flex', alignItems: 'center', justifyContent: 'start' }}>
+                        <Col>
+                            <Image src='/img/combo-hybrid.png' alt="Sử dụng điện thả ga 20 năm kế tiếp" width={100} height={170} />
+                        </Col>
+                    </Row>
 
                     <Row style={{ left: '15px', borderRadius: '4px', border: 'solid 1px #000', top: '10px', position: 'absolute', display: 'flex', alignItems: 'center', justifyContent: 'start' }}>
 
@@ -102,7 +104,7 @@ const ComboOngrid = () => {
                             <Image src='/img/stick-green-full.svg' alt="Check" width={20} height={20} />
                         </Col>
                         <Col>
-                            <Typography.Title style={{ color: '#6e6e73', margin: '0px 5px 0px 5px', textAlign: 'left', fontWeight: 300, fontSize: '12px' }}>{comboOneFeatureData.feature1}</Typography.Title>
+                            <Typography.Title style={{ color: '#000', margin: '0px 5px 0px 5px', textAlign: 'left', fontWeight: 300, fontSize: '12px' }}>{comboOneFeatureData.feature1}</Typography.Title>
                         </Col>
                     </Row>
                     <Row style={{ left: '10px', top: '95px', position: 'absolute', width: '100%', display: 'flex', alignItems: 'center', justifyContent: 'start' }}>
@@ -110,7 +112,7 @@ const ComboOngrid = () => {
                             <Image src='/img/stick-green-full.svg' alt="Check" width={20} height={20} />
                         </Col>
                         <Col>
-                            <Typography.Title style={{ color: '#6e6e73', margin: '0px 5px 0px 5px', textAlign: 'left', fontWeight: 300, fontSize: '12px' }}>{comboOneFeatureData.feature2}</Typography.Title>
+                            <Typography.Title style={{ color: '#000', margin: '0px 5px 0px 5px', textAlign: 'left', fontWeight: 300, fontSize: '12px' }}>{comboOneFeatureData.feature2}</Typography.Title>
                         </Col>
                     </Row>
 
@@ -141,6 +143,12 @@ const ComboOngrid = () => {
 
                 <Row style={{ backgroundColor: '#E8E8EA', position: 'relative', height: '240px', borderRadius: '8px', margin: '0 10px', boxShadow: '0 1px 2px 0 rgba(60,64,67,.1), 0 2px 6px 2px rgba(60,64,67,.15)' }}>
 
+                    <Row style={{ left: '65%', top: '10px', position: 'absolute', display: 'flex', alignItems: 'center', justifyContent: 'start' }}>
+                        <Col>
+                            <Image src='/img/combo-hybrid.png' alt="Sử dụng điện thả ga 20 năm kế tiếp" width={100} height={170} />
+                        </Col>
+                    </Row>
+
                     <Row style={{ left: '15px', borderRadius: '4px', border: 'solid 1px #000', top: '10px', position: 'absolute', display: 'flex', alignItems: 'center', justifyContent: 'start' }}>
 
                         <Col>
@@ -158,7 +166,7 @@ const ComboOngrid = () => {
                             <Image src='/img/stick-green-full.svg' alt="Check" width={20} height={20} />
                         </Col>
                         <Col>
-                            <Typography.Title style={{ color: '#6e6e73', margin: '0px 5px 0px 5px', textAlign: 'left', fontWeight: 300, fontSize: '12px' }}>{comboTwoFeatureData.feature1}</Typography.Title>
+                            <Typography.Title style={{ color: '#000', margin: '0px 5px 0px 5px', textAlign: 'left', fontWeight: 300, fontSize: '12px' }}>{comboTwoFeatureData.feature1}</Typography.Title>
                         </Col>
                     </Row>
                     <Row style={{ left: '10px', top: '95px', position: 'absolute', width: '100%', display: 'flex', alignItems: 'center', justifyContent: 'start' }}>
@@ -166,7 +174,7 @@ const ComboOngrid = () => {
                             <Image src='/img/stick-green-full.svg' alt="Check" width={20} height={20} />
                         </Col>
                         <Col>
-                            <Typography.Title style={{ color: '#6e6e73', margin: '0px 5px 0px 5px', textAlign: 'left', fontWeight: 300, fontSize: '12px' }}>{comboTwoFeatureData.feature2}</Typography.Title>
+                            <Typography.Title style={{ color: '#000', margin: '0px 5px 0px 5px', textAlign: 'left', fontWeight: 300, fontSize: '12px' }}>{comboTwoFeatureData.feature2}</Typography.Title>
                         </Col>
                     </Row>
 
