@@ -1,8 +1,27 @@
-
+'use client'
 
 import { Col, Row, Typography } from "antd";
 import Image from "next/image";
+import React from 'react';
+import { useState, useEffect } from 'react';
+import { motion, useAnimation } from 'framer-motion';
 
+const useScroll = () => {
+    const [scrollY, setScrollY] = useState(0);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            setScrollY(window.scrollY);
+        };
+
+        window.addEventListener('scroll', handleScroll);
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+
+    return scrollY;
+};
 const comboOneFeatureData =
 {
     he: '5 kW',
@@ -69,11 +88,32 @@ const comboTwoData = [
 
 
 const ComboOngrid = () => {
+    const scrollY = useScroll();
+    const controls = useAnimation();
+
+    React.useEffect(() => {
+        if (scrollY > 3800) {
+            controls.start("visible");
+        } else {
+            controls.start("hidden");
+        }
+    }, [controls, scrollY]);
 
     return (
         <div style={{ padding: '20px 0 30px 0', backgroundColor: '#999' }}>
             <div >
-                <Typography.Title style={{ color: '#000', textAlign: 'left', margin: '30px 0 20px 20px', fontSize: '30px', fontWeight: '600' }} >Combo  <br />Bám tải On-Grid</Typography.Title>
+                <motion.div
+                    animate={controls}
+                    initial="hidden"
+                    transition={{ duration: 0.5 }}
+                    variants={{
+                        visible: { opacity: 1, transform: 'translateY(0px)' },
+                        hidden: { opacity: 0, transform: 'translateY(50px)' }
+                    }}
+                >
+                    <Typography.Title style={{ color: '#000', textAlign: 'left', margin: '30px 0 20px 20px', fontSize: '30px', fontWeight: '600' }} >Combo  <br />Bám tải On-Grid</Typography.Title>
+                </motion.div>
+
                 <Row style={{ backgroundColor: '#E8E8EA', position: 'relative', height: '240px', borderRadius: '8px', margin: '0 10px', boxShadow: '0 1px 2px 0 rgba(60,64,67,.1), 0 2px 6px 2px rgba(60,64,67,.15)' }}>
 
                     <Row style={{ left: '65%', top: '10px', position: 'absolute', display: 'flex', alignItems: 'center', justifyContent: 'start' }}>

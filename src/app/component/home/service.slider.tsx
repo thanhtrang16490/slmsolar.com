@@ -52,10 +52,10 @@ const ServiceSlider = () => {
   const controls = useAnimation();
 
   React.useEffect(() => {
-    if (scrollY > 350) {
-      controls.start(i => ({ opacity: 1, transform: 'translateY(0px)', transition: { delay: i * 0.3 } }));
+    if (scrollY > 320) {
+      controls.start("visible");
     } else {
-      controls.start({ opacity: 0, transform: 'translateY(50px)' });
+      controls.start("hidden");
     }
   }, [controls, scrollY]);
 
@@ -66,8 +66,11 @@ const ServiceSlider = () => {
           <motion.div
             animate={controls}
             initial="hidden"
-            key={index}
-            custom={index}
+            transition={{ duration: 0.5 }}
+            variants={{
+              visible: { opacity: 1, transform: 'translateY(0px)' },
+              hidden: { opacity: 0, transform: 'translateY(50px)' }
+            }}
           >
             <Row >
               <Col style={{

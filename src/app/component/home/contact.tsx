@@ -1,19 +1,58 @@
-
-
-import { Row, Col, Layout, Button, Typography } from 'antd';
+'use client'
+import React from 'react';
+import { Row, Col, Button, Typography } from 'antd';
 import Image from "next/image";
-import { ShopFilled, StarFilled, PhoneOutlined, MailOutlined, EnvironmentOutlined, HomeOutlined } from '@ant-design/icons';
+import { StarFilled, MailOutlined, EnvironmentOutlined, HomeOutlined } from '@ant-design/icons';
 import Link from "next/link";
+import { useState, useEffect } from 'react';
+import { motion, useAnimation } from 'framer-motion';
 
+const useScroll = () => {
+    const [scrollY, setScrollY] = useState(0);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            setScrollY(window.scrollY);
+        };
+
+        window.addEventListener('scroll', handleScroll);
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+
+    return scrollY;
+};
 
 
 
 const ContactHome = () => {
+    const scrollY = useScroll();
+    const controls = useAnimation();
 
+    React.useEffect(() => {
+        if (scrollY > 8800) {
+            controls.start("visible");
+        } else {
+            controls.start("hidden");
+        }
+    }, [controls, scrollY]);
 
     return (
         <>
-            <Typography.Title style={{ textAlign: 'left', margin: '30px 0 10px 20px', fontSize: '30px', fontWeight: '600' }} >Liên hệ</Typography.Title>
+            <motion.div
+                animate={controls}
+                initial="hidden"
+                transition={{ duration: 0.5 }}
+                variants={{
+                    visible: { opacity: 1, transform: 'translateY(0px)' },
+                    hidden: { opacity: 0, transform: 'translateY(50px)' }
+                }}
+            >
+                <Typography.Title style={{ textAlign: 'left', margin: '30px 0 10px 20px', fontSize: '30px', fontWeight: '600' }} >Liên hệ</Typography.Title>
+
+            </motion.div>
+
             <Row >
                 <Col style={{
 
