@@ -1,10 +1,26 @@
 'use client'
-
+import React from 'react';
 import { Col, Row, Typography } from "antd";
 import Image from "next/image";
-import React, { useState, useEffect } from 'react';
-import './service.slider.css';
+import { useState, useEffect } from 'react';
+import { motion, useAnimation } from 'framer-motion';
 
+const useScroll = () => {
+  const [scrollY, setScrollY] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrollY(window.scrollY);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+  return scrollY;
+};
 
 
 const serviceData = [
@@ -32,63 +48,68 @@ const serviceData = [
 ]
 
 const ServiceSlider = () => {
-  const [showTitle, setShowTitle] = useState(false);
+  const scrollY = useScroll();
+  const controls = useAnimation();
 
-  const checkScroll = () => {
-    if (window.pageYOffset > 250) { // Change this value based on when you want the title to appear
-      setShowTitle(true);
+  React.useEffect(() => {
+    if (scrollY > 350) {
+      controls.start(i => ({ opacity: 1, transform: 'translateY(0px)', transition: { delay: i * 0.3 } }));
     } else {
-      setShowTitle(false);
+      controls.start({ opacity: 0, transform: 'translateY(50px)' });
     }
-  };
-
-  useEffect(() => {
-    window.addEventListener('scroll', checkScroll);
-
-    // Cleanup the event listener on component unmount
-    return () => {
-      window.removeEventListener('scroll', checkScroll);
-    };
-  }, []);
+  }, [controls, scrollY]);
 
   return (
     <>
       {serviceData.map((item, index) => {
         return (
-          <Row >
-            <Col style={{
-              display: 'flex',
-              flexDirection: 'column',
-              justifyContent: 'space-between',
-              width: '100%',
-              margin: '20px 15px 0px 15px',
-              height: '100%',
-            }}>
+          <motion.div
+            animate={controls}
+            initial="hidden"
+            key={index}
+            custom={index}
+          >
+            <Row >
+              <Col style={{
+                display: 'flex',
+                flexDirection: 'column',
+                justifyContent: 'space-between',
+                width: '100%',
+                margin: '20px 15px 0px 15px',
+                height: '100%',
+              }}>
 
-              <Row style={{ position: 'relative' }}>
-                <div className={`scroll-title ${showTitle ? 'show' : ''}`}>
+
+                <Row style={{ position: 'relative' }}>
+
                   <Image style={{ position: 'absolute', margin: '0px 20px 0px 20px' }} src={item.image} alt={item.title} width={45} height={45} />
-                </div>
-              </Row>
-              <Row style={{ position: 'relative' }}>
-                <div className={`scroll-title ${showTitle ? 'show' : ''}`}>
+
+                </Row>
+
+
+                <Row style={{ position: 'relative' }}>
+
                   <Typography.Title style={{ position: 'absolute', margin: '60px 20px 0px 20px' }} level={5}>
                     {item.title}
                   </Typography.Title>
-                </div>
-              </Row>
-              <Row >
 
-                <Typography.Paragraph style={{ margin: '90px 100px 0px 20px', textAlign: 'left' }}>
-                  {item.content}
-                </Typography.Paragraph>
-              </Row>
-            </Col>
-          </Row>
+                </Row>
+
+
+                <Row >
+                  <Typography.Paragraph style={{ margin: '90px 100px 0px 20px', textAlign: 'left' }}>
+                    {item.content}
+                  </Typography.Paragraph>
+                </Row>
+
+              </Col>
+            </Row>
+          </motion.div>
         )
       })
-
       }
+
+
     </>
 
   );

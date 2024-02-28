@@ -10,7 +10,7 @@ const comboOneFeatureData =
     title: 'Tấm pin mặt trời',
     feature1: 'Thương hiệu Pin top 3 thế giới',
     feature2: 'Inverter On-Grid 5kW 1 pha',
-    price: '121,485,000',
+    price: '12 triệu / 1kW',
 }
 
 
@@ -43,7 +43,7 @@ const comboTwoFeatureData =
     title: 'Tấm pin mặt trời',
     feature1: 'Thương hiệu Pin top 3 thế giới',
     feature2: 'Inverter On-Grid 10kW 3 pha',
-    price: '215,735,000',
+    price: '12 triệu / 1kW',
 }
 
 const comboTwoData = [

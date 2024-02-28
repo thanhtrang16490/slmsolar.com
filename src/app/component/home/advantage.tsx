@@ -29,7 +29,7 @@ const Advantage = () => {
   return (
     <>
       <Row >
-        <video style={{ backgroundColor: '#E6E5E8' }} width="100%" height="390" preload="auto" autoPlay muted loop playsInline>
+        <video style={{ backgroundColor: '#E4E4E7' }} width="100%" height="390" preload="auto" autoPlay muted loop playsInline>
           <source src="/img/solar-assessment-mobile.mp4" type="video/mp4" />
           <track
             src="/img/solar-assessment-mobile.mp4"
@@ -40,7 +40,7 @@ const Advantage = () => {
           Your browser does not support the video tag.
         </video>
       </Row>
-      <Row style={{ backgroundColor: '#E6E5E8', paddingTop: '5px' }} gutter={0}>
+      <Row style={{ backgroundColor: '#E4E4E7', paddingTop: '5px' }} gutter={0}>
         {serviceData.map((data, index) => (
           <Col
             style={{
@@ -56,7 +56,7 @@ const Advantage = () => {
           </Col>
         ))}
       </Row>
-      <Row style={{ backgroundColor: '#E6E5E8' }} >
+      <Row style={{ backgroundColor: '#E4E4E7' }} >
         <div style={{ margin: '20px 20px', backgroundColor: 'black', width: '100%', borderRadius: '8px', height: '50px', }}>
           <div style={{ margin: '0 35px', display: 'flex', justifyContent: 'space-evenly' }}>
             <Image src='/img/support-icon-white.svg' alt="Phone" width={50} height={50} />

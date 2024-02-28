@@ -7,6 +7,7 @@ import TopNavigation from './component/header/top.navigation'
 import { Barlow } from 'next/font/google'
 import './globals.css'
 
+
 const barlow = Barlow({
   weight: "400",
   subsets: ['latin'],

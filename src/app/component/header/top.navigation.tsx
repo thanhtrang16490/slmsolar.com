@@ -45,7 +45,7 @@ const TopNavigation = () => {
                 background: isScrolled ? 'rgba(225, 225, 225, 0.55)' : 'transparent',
                 backdropFilter: isScrolled ? 'blur(7.5px)' : 'none',
                 WebkitBackdropFilter: isScrolled ? 'blur(7.5px)' : 'none',
-                zIndex: '99',
+                zIndex: '999',
                 transition: 'background 0.7s ease-in-out',
                 boxShadow: isScrolled ? '0 0px 2px 0 rgba(60,64,67,.1), 0 0px 6px 0px rgba(60,64,67,.15)' : 'none'
             }}>
