@@ -73,7 +73,7 @@ const ComboOngrid = () => {
     return (
         <div style={{ padding: '20px 0 30px 0', backgroundColor: '#999' }}>
             <div >
-                <Typography.Title style={{ color: '#fff', textAlign: 'left', margin: '30px 0 20px 20px', fontSize: '30x' }} >Combo bám tải <br />On-Grid</Typography.Title>
+                <Typography.Title style={{ color: '#000', textAlign: 'left', margin: '30px 0 20px 20px', fontSize: '30px', fontWeight: '600' }} >Combo  <br />Bám tải On-Grid</Typography.Title>
                 <Row style={{ backgroundColor: '#E8E8EA', position: 'relative', height: '240px', borderRadius: '8px', margin: '0 10px', boxShadow: '0 1px 2px 0 rgba(60,64,67,.1), 0 2px 6px 2px rgba(60,64,67,.15)' }}>
 
                     <Row style={{ left: '65%', top: '10px', position: 'absolute', display: 'flex', alignItems: 'center', justifyContent: 'start' }}>

@@ -13,7 +13,7 @@ const ContactHome = () => {
 
     return (
         <>
-            <Typography.Title style={{ textAlign: 'left', margin: '30px 0 20px 20px', fontSize: '30x' }} >Liên hệ</Typography.Title>
+            <Typography.Title style={{ textAlign: 'left', margin: '30px 0 10px 20px', fontSize: '30px', fontWeight: '600' }} >Liên hệ</Typography.Title>
             <Row >
                 <Col style={{
 

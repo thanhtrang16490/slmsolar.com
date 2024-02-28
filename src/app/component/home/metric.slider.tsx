@@ -107,7 +107,7 @@ const MetricSlider = () => {
 
     return (
         <>
-            <Typography.Title style={{ textAlign: 'left', margin: '30px 0 20px 20px', fontSize: '30x' }} >Tư vấn <br />báo giá</Typography.Title>
+            <Typography.Title style={{ textAlign: 'left', margin: '30px 0 10px 20px', fontSize: '30px', fontWeight: '600' }} >Tư vấn & báo giá</Typography.Title>
             <Row>
                 <Col style={{ width: '100%', margin: '0 15px 0', minHeight: '500px', height: '100%', padding: '10px', background: '#fff', borderRadius: '8px', boxShadow: '0 1px 2px 0 rgba(60,64,67,.1), 0 2px 6px 2px rgba(60,64,67,.15)' }}>
 

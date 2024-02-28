@@ -50,7 +50,7 @@ const QuestionAndAnswer = () => {
 
     return (
         <>
-            <Typography.Title style={{ textAlign: 'left', margin: '30px 0 20px 20px', fontSize: '30x' }} >Câu hỏi <br />thường gặp</Typography.Title>
+            <Typography.Title style={{ lineHeight: '44px', textAlign: 'left', margin: '30px 0 10px 20px', fontSize: '30px', fontWeight: '600' }} >Câu hỏi <br />thường gặp</Typography.Title>
             {questionAndAnswer.map((item, index) => {
                 return (
 

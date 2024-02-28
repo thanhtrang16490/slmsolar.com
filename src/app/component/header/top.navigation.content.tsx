@@ -1,4 +1,4 @@
-import { Col, Divider, Layout, Row, Typography } from "antd"
+import { Button, Col, Divider, Layout, Row, Typography } from "antd"
 import { Content } from "antd/es/layout/layout"
 import { RightOutlined, ThunderboltOutlined } from '@ant-design/icons';
 import Link from "next/link";
@@ -7,22 +7,22 @@ import Image from "next/image";
 
 const serviceData = [
     {
-        title: <>Hệ bám tải Ongrid 1 pha</>,
+        title: <>Hệ bám tải <Button style={{ borderColor: 'black' }}>Ongrid</Button>  <Button style={{ backgroundColor: '#ddd' }}> 1 Pha</Button></>,
         path: '/bam-tai-mot-pha',
         icon: <Image src='/img/ongrid-1-icon.svg' alt='device icon' width={30} height={30} />
     },
     {
-        title: <>Hệ bám tải Ongrid 3 pha</>,
+        title: <>Hệ bám tải <Button style={{ borderColor: 'black' }}>Ongrid</Button>  <Button style={{ backgroundColor: '#000', color: '#fff' }}> 3 Pha</Button></>,
         path: '/bam-tai-ba-pha',
         icon: <Image src='/img/ongrid-2-icon.svg' alt='device icon' width={30} height={30} />
     },
     {
-        title: <>Hệ độc lập Hybrid 1 pha</>,
+        title: <>Hệ độc lập <Button style={{ borderColor: 'black' }}>Hybrid</Button>  <Button style={{ backgroundColor: '#ddd' }}> 1 Pha</Button></>,
         path: '/hybrid-mot-pha',
         icon: <Image src='/img/hybrid-1-icon.svg' alt='device icon' width={30} height={30} />
     },
     {
-        title: <>Hệ độc lập Hybrid 3 pha</>,
+        title: <>Hệ độc lập <Button style={{ borderColor: 'black' }}>Hybrid</Button>  <Button style={{ backgroundColor: '#000', color: '#fff' }}> 3 Pha</Button></>,
         path: '/hybrid-ba-pha',
         icon: <Image src='/img/hybrid-2-icon.svg' alt='device icon' width={30} height={30} />
     },

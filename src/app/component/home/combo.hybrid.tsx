@@ -84,7 +84,7 @@ const ComboHybrid = () => {
     return (
         <>
             <div>
-                <Typography.Title style={{ textAlign: 'left', margin: '30px 0 20px 20px', fontSize: '30x' }} >Combo độc lập <br /> Hybrid</Typography.Title>
+                <Typography.Title style={{ textAlign: 'left', margin: '30px 0 20px 20px', fontSize: '30x', fontWeight: '600' }} >Combo<br />Off-Grid / Hybrid</Typography.Title>
                 <Row style={{ backgroundColor: '#E8E8EA', position: 'relative', height: '240px', borderRadius: '8px', margin: '0 10px', boxShadow: '0 1px 2px 0 rgba(60,64,67,.1), 0 2px 6px 2px rgba(60,64,67,.15)' }}>
 
                     <Row style={{ left: '65%', top: '10px', position: 'absolute', display: 'flex', alignItems: 'center', justifyContent: 'start' }}>
