@@ -28,23 +28,28 @@ const ContactHome = () => {
                 }}>
 
                     <Row>
-                        <div style={{ position: 'absolute', top: '-40px', left: '0px', zIndex: '1' }}>
-                            <Image src="/img/vietnam-map.png" alt="Vietnam map slmglobal" height={600} width={400} />
+                        <div style={{ height: '100%', width: '100%', position: 'absolute', top: '-40px', left: '0px', zIndex: '1' }}>
+                            <Image
+                                src="/img/vietnam-map.png" alt="Vietnam map slmglobal"
+                                layout="fill"
+                                objectFit="cover"
+                            />
                         </div>
-                        <div style={{ position: 'absolute', top: 45, left: '105px', zIndex: '3' }}>
+
+                        <div style={{ position: 'absolute', top: 45, left: '95px', zIndex: '3' }}>
                             <Link target='_blank' rel='noopener noreferrer' href="https://maps.app.goo.gl/Q4AAR2xs7yRA2kQT6"><StarFilled style={{ fontSize: '20px', color: 'orange' }} /></Link>
                         </div>
-                        <div style={{ position: 'absolute', top: 70, left: '120px', zIndex: '3', height: '8px', width: '8px', backgroundColor: 'black', borderRadius: '99%' }}>
+                        <div style={{ position: 'absolute', top: 70, left: '115px', zIndex: '3', height: '8px', width: '8px', backgroundColor: 'black', borderRadius: '99%' }}>
                         </div>
-                        <div style={{ position: 'absolute', top: 102, left: '105px', zIndex: '3', height: '8px', width: '8px', backgroundColor: 'black', borderRadius: '99%' }}>
+                        <div style={{ position: 'absolute', top: 102, left: '90px', zIndex: '3', height: '8px', width: '8px', backgroundColor: 'black', borderRadius: '99%' }}>
                         </div>
-                        <div style={{ position: 'absolute', top: 45, left: '130px', zIndex: '3' }}>
+                        <div style={{ position: 'absolute', top: 45, left: '125px', zIndex: '3' }}>
                             SLM OFFICE
                         </div>
                         <div style={{ position: 'absolute', top: 65, left: '135px', zIndex: '3' }}>
                             Chi nhánh Hải Dương
                         </div>
-                        <div style={{ position: 'absolute', top: 97, left: '120px', zIndex: '3' }}>
+                        <div style={{ position: 'absolute', top: 97, left: '110px', zIndex: '3' }}>
                             Tổng kho Thanh Hoá
                         </div>
                     </Row>
