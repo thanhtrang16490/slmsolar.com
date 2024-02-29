@@ -74,8 +74,8 @@ export default function HybridMotPha() {
               width: '100%', height: '265px', margin: '50px 0px 0 0px', padding: '0px', textAlign: 'center', position: 'relative'
             }}>
               <div style={{ position: 'absolute', top: 0, left: '50%', translate: '-50% 0%', width: '100%', height: '600px' }}>
-                <Typography.Title style={{ textAlign: 'left', margin: '30px 0 0px 20px', fontSize: '30px', fontWeight: '600' }} >Điện mặt trời<br />Độc lập Hybrid<br />3 pha</Typography.Title>
-                <Typography.Paragraph style={{ textAlign: 'left', margin: '20px 70px 10px 20px', fontSize: '14px', fontWeight: '300' }} >Hệ thống điện mặt trời Hybrid, có bao gồm Pin lưu trữ Litium, nên có thể vận hành độc lập với nguồn lưới điện. Do vậy, khi mất điện lưới, hệ thống sẽ tự động vận hành dựa trên nguồn điện từ Pin Litium. </Typography.Paragraph>
+                <Typography.Title style={{ textAlign: 'left', margin: '30px 0 0px 20px', fontSize: '30px', fontWeight: '600' }} >Điện mặt trời<br />Độc lập Hybrid<br />1 pha</Typography.Title>
+                <Typography.Paragraph style={{ textAlign: 'left', margin: '20px 70px 10px 20px', fontSize: '14px', fontWeight: '300' }} >phù hợp khách hàng kinh doanh nhà trọ cho thuê, kinh doanh nhà hàng, cafe, karaoe, khách hàng tại khu du lịch ven sông, biển, trang trại trên núi. Diện tích mái tối thiểu từ 30 đến 50m2  </Typography.Paragraph>
               </div>
             </Col>
 

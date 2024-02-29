@@ -89,7 +89,7 @@ export default function BamTaiMotPha() {
             }}>
               <div style={{ position: 'absolute', top: 0, left: '50%', translate: '-50% 0%', width: '100%', height: '600px' }}>
                 <Typography.Title style={{ textAlign: 'left', margin: '30px 0 0px 20px', fontSize: '30px', fontWeight: '600' }} >Điện mặt trời<br />Bám trải On-Grid<br />1 pha</Typography.Title>
-                <Typography.Paragraph style={{ textAlign: 'left', margin: '20px 70px 10px 20px', fontSize: '14px', fontWeight: '300' }} >Hệ thống điện mặt trời Hybrid, có bao gồm Pin lưu trữ Litium, nên có thể vận hành độc lập với nguồn lưới điện. Do vậy, khi mất điện lưới, hệ thống sẽ tự động vận hành dựa trên nguồn điện từ Pin Litium. </Typography.Paragraph>
+                <Typography.Paragraph style={{ textAlign: 'left', margin: '20px 70px 10px 20px', fontSize: '14px', fontWeight: '300' }} >Hệ thống sử dụng nguồn điện 1 pha, diện tích mái tối thiểu 30 - 50m2. Phù hợp với đối tượng khách hàng hộ kinh doanh tạp hoá, quán ăn sáng, quán cafe, nhà có con nhỏ và người già cần sử dụng nhiều điều hoà với hoá đơn điện từ 3-5 triệu/tháng  </Typography.Paragraph>
               </div>
             </Col>
 
@@ -100,7 +100,7 @@ export default function BamTaiMotPha() {
 
 
 
-              <div style={{ marginTop: '15px' }}>
+              <div style={{ marginTop: '40px' }}>
 
                 <Row style={{ backgroundColor: '#E8E8EA', position: 'relative', height: '240px', borderRadius: '8px', margin: '0 10px', boxShadow: '0 1px 2px 0 rgba(60,64,67,.1), 0 2px 6px 2px rgba(60,64,67,.15)' }}>
 
