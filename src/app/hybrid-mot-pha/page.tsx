@@ -71,22 +71,17 @@ export default function HybridMotPha() {
           <Row style={{ position: 'relative' }}>
 
             <Col style={{
-              background: 'linear-gradient(to right, #6ef195 , #00e3fd)', width: '100%', height: '265px', margin: '0px 0px 0 0px', padding: '15px', textAlign: 'center', position: 'relative'
+              width: '100%', height: '265px', margin: '50px 0px 0 0px', padding: '0px', textAlign: 'center', position: 'relative'
             }}>
               <div style={{ position: 'absolute', top: 0, left: '50%', translate: '-50% 0%', width: '100%', height: '600px' }}>
-                <Typography.Title style={{ position: 'absolute', top: '100px', left: '50%', translate: '-50% -50%', width: '100%', textTransform: 'uppercase', color: '#fff' }} level={3}>Hybrid - 1 Pha</Typography.Title>
-                <Typography.Title style={{ position: 'absolute', top: '150px', left: '50%', translate: '-50% -50%', width: '300px', fontSize: '14px', color: '#fff', fontWeight: 300 }} level={5}>Combo sản phẩm</Typography.Title>
+                <Typography.Title style={{ textAlign: 'left', margin: '30px 0 0px 20px', fontSize: '30px', fontWeight: '600' }} >Điện mặt trời<br />Độc lập Hybrid<br />3 pha</Typography.Title>
+                <Typography.Paragraph style={{ textAlign: 'left', margin: '20px 70px 10px 20px', fontSize: '14px', fontWeight: '300' }} >Hệ thống điện mặt trời Hybrid, có bao gồm Pin lưu trữ Litium, nên có thể vận hành độc lập với nguồn lưới điện. Do vậy, khi mất điện lưới, hệ thống sẽ tự động vận hành dựa trên nguồn điện từ Pin Litium. </Typography.Paragraph>
               </div>
             </Col>
-            <div style={{ background: 'linear-gradient(to bottom, #ffffff00, #ffffff60 , #fff)', width: '100%', height: '60px', position: 'absolute', bottom: '-1px' }}>
-            </div>
+
           </Row>
           {comboOneFeatureData.map((data, index) => (
             <>
-
-
-
-
               <div style={{ marginTop: '15px' }}>
 
                 <Row style={{ backgroundColor: '#E8E8EA', position: 'relative', height: '240px', borderRadius: '8px', margin: '0 10px', boxShadow: '0 1px 2px 0 rgba(60,64,67,.1), 0 2px 6px 2px rgba(60,64,67,.15)' }}>

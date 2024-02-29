@@ -116,7 +116,7 @@ const Ongrid = () => {
                                 </Col>
 
                                 <Col>
-                                    <Image src={item.image} alt="Check" width={40} height={40} />
+                                    <Image src={item.image} alt="Check" width={30} height={30} />
                                 </Col>
                             </Row>
                             {index !== ongridContentData.length - 1 && <Divider style={{ margin: '5px 0' }} />}

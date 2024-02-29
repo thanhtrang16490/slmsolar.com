@@ -119,7 +119,7 @@ const Hybrid = () => {
                                 </Col>
 
                                 <Col>
-                                    <Image src='/img/stick-green.svg' alt="Check" width={40} height={40} />
+                                    <Image src='/img/stick-green.svg' alt="Check" width={30} height={30} />
                                 </Col>
                             </Row>
                             {index !== hybridContentData.length - 1 && <Divider style={{ margin: '5px 0' }} />}

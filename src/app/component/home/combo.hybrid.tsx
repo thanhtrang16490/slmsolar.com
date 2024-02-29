@@ -31,7 +31,8 @@ const comboOneFeatureData =
     feature1: 'Thương hiệu Pin top 3 thế giới',
     feature2: 'Inverter Hybrid 5kW 1 pha',
     feature3: 'Pin Lithium FePO4 5kWh',
-    price: '122,000,000',
+    price: <>122,000,000 <Image src='/img/dong-icon.svg' alt="vnd" width={18} height={18} /></>,
+
 }
 
 
@@ -69,7 +70,7 @@ const comboTwoFeatureData =
     feature1: 'Thương hiệu Pin top 3 thế giới',
     feature2: 'Inverter Hybrid 10kW 3 pha',
     feature3: 'Pin Lithium FePO4 5kWh',
-    price: '216,000,000',
+    price: <>216,000,000 <Image src='/img/dong-icon.svg' alt="vnd" width={18} height={18} /></>,
 }
 
 const comboTwoData = [
