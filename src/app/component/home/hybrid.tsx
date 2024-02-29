@@ -81,7 +81,7 @@ const Hybrid = () => {
                 }}
             >
                 <Typography.Title style={{ textAlign: 'left', margin: '30px 0 0px 20px', fontSize: '30px', fontWeight: '600' }} >Hệ thống <br /> điện mặt trời <br />Off-Grid / Hybrid</Typography.Title>
-                <Typography.Paragraph style={{ textAlign: 'left', margin: '20px 70px 10px 20px', fontSize: '14px', fontWeight: '300' }} >Hệ thống điện mặt trời Hybrid, có bao gồm Pin lưu trữ Litium, nên có thể vận hành độc lập với nguồn lưới điện. Do vậy, khi mất điện lưới, hệ thống sẽ tự động vận hành dựa trên nguồn điện từ Pin Litium. </Typography.Paragraph>
+                <Typography.Paragraph style={{ textAlign: 'left', margin: '20px 70px 10px 20px', fontSize: '14px', fontWeight: '300' }} >Hệ thống điện mặt trời Hybrid, có bao gồm Pin lưu trữ Lithium, nên có thể vận hành độc lập với nguồn lưới điện. Do vậy, khi mất điện lưới, hệ thống sẽ tự động vận hành dựa trên nguồn điện từ Pin Litium. </Typography.Paragraph>
             </motion.div>
             <Row>
                 <div style={{ position: 'relative', width: '100%', height: '339px' }}>

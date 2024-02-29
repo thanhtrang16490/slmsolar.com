@@ -31,8 +31,8 @@ const ongridData = [
     },
 
     {
-        image: <Image src='/img/hybrid-lithium-icon.svg' alt="Chống nóng cho mái nhà giảm 6 độ" width={35} height={35} />,
-        title: <>Pin<br />Lithium</>
+        image: <Image src='/img/inverter-icon.svg' alt="Sử dụng điện thả ga 20 năm kế tiếp" width={35} height={35} />,
+        title: <>inverter<br />On-Grid</>
 
     },
 ]
@@ -77,7 +77,7 @@ const Ongrid = () => {
                 }}
             >
                 <Typography.Title style={{ textAlign: 'left', margin: '30px 0px 0px 20px', fontSize: '30px', fontWeight: '600' }} >Hệ thống <br />điện mặt trời <br />bám tải On-Grid</Typography.Title>
-                <Typography.Paragraph style={{ textAlign: 'left', margin: '20px 70px 10px 20px', fontSize: '14px', fontWeight: '300' }} >Hệ thống điện mặt trời On-Grid, là hệ thống vận hành kết hợp giữ nguồn điện mặt trời, và nguồn điện lưới, không bao gồm Pin lưu trữ Litium. Do vậy, khi mất điện lưới, hệ thống sẽ không vận hành được. </Typography.Paragraph>
+                <Typography.Paragraph style={{ textAlign: 'left', margin: '20px 70px 10px 20px', fontSize: '14px', fontWeight: '300' }} >Hệ thống điện mặt trời On-Grid, là hệ thống vận hành kết hợp giữa nguồn điện mặt trời, và nguồn điện lưới, không bao gồm Pin lưu trữ Lithium. Do vậy, khi mất điện lưới, hệ thống sẽ không vận hành được. </Typography.Paragraph>
             </motion.div>
 
             <Row>
