@@ -76,7 +76,8 @@ const Ongrid = () => {
                     hidden: { opacity: 0, transform: 'translateY(50px)' }
                 }}
             >
-                <Typography.Title style={{ textAlign: 'left', margin: '30px 0 10px 20px', fontSize: '30px', fontWeight: '600' }} >Hệ thống <br />điện mặt trời <br />bám tải On-Grid</Typography.Title>
+                <Typography.Title style={{ textAlign: 'left', margin: '30px 0px 0px 20px', fontSize: '30px', fontWeight: '600' }} >Hệ thống <br />điện mặt trời <br />bám tải On-Grid</Typography.Title>
+                <Typography.Paragraph style={{ textAlign: 'left', margin: '20px 70px 10px 20px', fontSize: '14px', fontWeight: '300' }} >Hệ thống điện mặt trời On-Grid, là hệ thống vận hành kết hợp giữ nguồn điện mặt trời, và nguồn điện lưới, không bao gồm Pin lưu trữ Litium. Do vậy, khi mất điện lưới, hệ thống sẽ không vận hành được. </Typography.Paragraph>
             </motion.div>
 
             <Row>
