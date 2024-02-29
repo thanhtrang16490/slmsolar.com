@@ -10,22 +10,22 @@ const serviceData = [
     {
         title: <>Hệ bám tải <Button style={{ borderColor: 'black' }}>Ongrid</Button>  <Button style={{ borderColor: 'black', fontWeight: '600' }}> 1 Pha</Button></>,
         path: '/bam-tai-mot-pha',
-        icon: <Image src='/img/ongrid-1-icon.svg' alt='device icon' width={30} height={30} />
+        icon: <Image loading='eager' src='/img/ongrid-1-icon.svg' alt='device icon' width={30} height={30} />
     },
     {
         title: <>Hệ bám tải <Button style={{ borderColor: 'black' }}>Ongrid</Button>  <Button style={{ borderColor: 'black', fontWeight: '600' }}> 3 Pha</Button></>,
         path: '/bam-tai-ba-pha',
-        icon: <Image src='/img/ongrid-2-icon.svg' alt='device icon' width={30} height={30} />
+        icon: <Image loading='eager' src='/img/ongrid-2-icon.svg' alt='device icon' width={30} height={30} />
     },
     {
         title: <>Hệ độc lập <Button style={{ borderColor: 'black' }}>Hybrid</Button>  <Button style={{ borderColor: 'black', fontWeight: '600' }}> 1 Pha</Button></>,
         path: '/hybrid-mot-pha',
-        icon: <Image src='/img/hybrid-1-icon.svg' alt='device icon' width={30} height={30} />
+        icon: <Image loading='eager' src='/img/hybrid-1-icon.svg' alt='device icon' width={30} height={30} />
     },
     {
         title: <>Hệ độc lập <Button style={{ borderColor: 'black' }}>Hybrid</Button>  <Button style={{ borderColor: 'black', fontWeight: '600' }}> 3 Pha</Button></>,
         path: '/hybrid-ba-pha',
-        icon: <Image src='/img/hybrid-2-icon.svg' alt='device icon' width={30} height={30} />
+        icon: <Image loading='eager' src='/img/hybrid-2-icon.svg' alt='device icon' width={30} height={30} />
     },
 
 ];
@@ -34,12 +34,12 @@ const productsData = [
     {
         title: 'Pin mặt trời - Biến tần - Pin Lithium',
         path: '/pin-mat-troi',
-        icon: <Image src='/img/device-icon.svg' alt='device icon' width={30} height={30} />
+        icon: <Image loading='eager' src='/img/device-icon.svg' alt='device icon' width={30} height={30} />
     },
     {
         title: 'Giải pháp hệ khung nhôm',
         path: '/inverter',
-        icon: <Image src='/img/he-khung-nhom-icon.svg' alt='device icon' width={30} height={30} />
+        icon: <Image loading='eager' src='/img/he-khung-nhom-icon.svg' alt='device icon' width={30} height={30} />
     },
 
 ];
@@ -48,17 +48,17 @@ const newsData = [
     {
         title: 'Dự án đã thực hiện',
         path: '/projects',
-        icon: <Image src='/img/project-icon.svg' alt='device icon' width={30} height={30} />
+        icon: <Image loading='eager' src='/img/project-icon.svg' alt='device icon' width={30} height={30} />
     },
     {
         title: 'Bản tin về điện mặt trời',
         path: '/news',
-        icon: <Image src='/img/news-1-icon.svg' alt='device icon' width={30} height={30} />
+        icon: <Image loading='eager' src='/img/news-1-icon.svg' alt='device icon' width={30} height={30} />
     },
     {
         title: 'Mega Story',
         path: '/mega-story',
-        icon: <Image src='/img/mega-story.svg' alt='device icon' width={30} height={30} />
+        icon: <Image loading='eager' src='/img/mega-story.svg' alt='device icon' width={30} height={30} />
     },
 ];
 
