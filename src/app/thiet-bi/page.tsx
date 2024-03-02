@@ -3,6 +3,27 @@ import { Col, Collapse, Divider, Layout, Row, Typography } from "antd";
 import { Content } from "antd/es/layout/layout";
 import { CaretRightOutlined, RightOutlined } from '@ant-design/icons';
 import Image from "next/image";
+import { Descriptions } from 'antd';
+import type { DescriptionsProps } from 'antd';
+
+const items: DescriptionsProps['items'] = [
+  {
+    label: 'Thông số 1',
+    children: 'Nội dung',
+  },
+  {
+    label: 'Thông số 2',
+    children: 'Nội dung',
+  },
+  {
+    label: 'Thông số 3',
+    children: 'Nội dung',
+  },
+  {
+    label: 'Thông số 4',
+    children: 'Nội dung',
+  },
+];
 
 
 
@@ -13,8 +34,15 @@ const itemsSolarData = [
       <div style={{ position: 'relative' }}>
         <Image style={{ zIndex: '1', position: 'absolute', left: '15px', top: '15px', translate: '-50% -50%' }} loading='eager' src='/img/solar-device.png' alt='device icon' width={40} height={65} />
         <div style={{ left: '15px', top: '15px', translate: '-50% -50%', position: 'absolute', borderRadius: '6px', background: '#F2F1F6', width: '60px', height: '70px' }}></div>
-      </div>
-
+      </div>,
+    desc:
+      <Descriptions
+        title="Thông số kỹ thuật"
+        bordered
+        column={{ xs: 1, sm: 2, md: 3, lg: 3, xl: 4, xxl: 4 }}
+        items={items}
+        style={{ margin: '0 0 0 0' }}
+      />
   },
   {
     title: 'Pin mặt trời Canadian Solar',
@@ -22,7 +50,15 @@ const itemsSolarData = [
       <div style={{ position: 'relative' }}>
         <Image style={{ zIndex: '1', position: 'absolute', left: '15px', top: '15px', translate: '-50% -50%' }} loading='eager' src='/img/solar-device.png' alt='device icon' width={40} height={65} />
         <div style={{ left: '15px', top: '15px', translate: '-50% -50%', position: 'absolute', borderRadius: '6px', background: '#F2F1F6', width: '60px', height: '70px' }}></div>
-      </div>
+      </div>,
+    desc:
+      <Descriptions
+        title="Thông số kỹ thuật"
+        bordered
+        column={{ xs: 1, sm: 2, md: 3, lg: 3, xl: 4, xxl: 4 }}
+        items={items}
+        style={{ margin: '0 0 0 0' }}
+      />
   },
   {
     title: 'Pin mặt trời Risen Solar',
@@ -30,7 +66,15 @@ const itemsSolarData = [
       <div style={{ position: 'relative' }}>
         <Image style={{ zIndex: '1', position: 'absolute', left: '15px', top: '15px', translate: '-50% -50%' }} loading='eager' src='/img/solar-device.png' alt='device icon' width={40} height={65} />
         <div style={{ left: '15px', top: '15px', translate: '-50% -50%', position: 'absolute', borderRadius: '6px', background: '#F2F1F6', width: '60px', height: '70px' }}></div>
-      </div>
+      </div>,
+    desc:
+      <Descriptions
+        title="Thông số kỹ thuật"
+        bordered
+        column={{ xs: 1, sm: 2, md: 3, lg: 3, xl: 4, xxl: 4 }}
+        items={items}
+        style={{ margin: '0 0 0 0' }}
+      />
   },
   {
     title: 'Pin mặt trời Longi Solar',
@@ -38,7 +82,15 @@ const itemsSolarData = [
       <div style={{ position: 'relative' }}>
         <Image style={{ zIndex: '1', position: 'absolute', left: '15px', top: '15px', translate: '-50% -50%' }} loading='eager' src='/img/solar-device.png' alt='device icon' width={40} height={65} />
         <div style={{ left: '15px', top: '15px', translate: '-50% -50%', position: 'absolute', borderRadius: '6px', background: '#F2F1F6', width: '60px', height: '70px' }}></div>
-      </div>
+      </div>,
+    desc:
+      <Descriptions
+        title="Thông số kỹ thuật"
+        bordered
+        column={{ xs: 1, sm: 2, md: 3, lg: 3, xl: 4, xxl: 4 }}
+        items={items}
+        style={{ margin: '0 0 0 0' }}
+      />
   },
 ];
 
@@ -49,7 +101,15 @@ const itemsInverterData = [
       <div style={{ position: 'relative' }}>
         <Image style={{ zIndex: '1', position: 'absolute', left: '15px', top: '15px', translate: '-50% -50%' }} loading='eager' src='/img/inverter-deyee-device.png' alt='device icon' width={40} height={65} />
         <div style={{ left: '15px', top: '15px', translate: '-50% -50%', position: 'absolute', borderRadius: '6px', background: '#F2F1F6', width: '60px', height: '70px' }}></div>
-      </div>
+      </div>,
+    desc:
+      <Descriptions
+        title="Thông số kỹ thuật"
+        bordered
+        column={{ xs: 1, sm: 2, md: 3, lg: 3, xl: 4, xxl: 4 }}
+        items={items}
+        style={{ margin: '0 0 0 0' }}
+      />
   },
   {
     title: 'Inverter Luxpower ',
@@ -57,7 +117,15 @@ const itemsInverterData = [
       <div style={{ position: 'relative' }}>
         <Image style={{ zIndex: '1', position: 'absolute', left: '15px', top: '15px', translate: '-50% -50%' }} loading='eager' src='/img/inverter-luxpower-device.png' alt='device icon' width={40} height={62} />
         <div style={{ left: '15px', top: '15px', translate: '-50% -50%', position: 'absolute', borderRadius: '6px', background: '#F2F1F6', width: '60px', height: '70px' }}></div>
-      </div>
+      </div>,
+    desc:
+      <Descriptions
+        title="Thông số kỹ thuật"
+        bordered
+        column={{ xs: 1, sm: 2, md: 3, lg: 3, xl: 4, xxl: 4 }}
+        items={items}
+        style={{ margin: '0 0 0 0' }}
+      />
   },
   {
     title: 'Inverter Huawei',
@@ -65,7 +133,15 @@ const itemsInverterData = [
       <div style={{ position: 'relative' }}>
         <Image style={{ zIndex: '1', position: 'absolute', left: '15px', top: '15px', translate: '-50% -50%' }} loading='eager' src='/img/inverter-huawei-device.png' alt='device icon' width={40} height={40} />
         <div style={{ left: '15px', top: '15px', translate: '-50% -50%', position: 'absolute', borderRadius: '6px', background: '#F2F1F6', width: '60px', height: '70px' }}></div>
-      </div>
+      </div>,
+    desc:
+      <Descriptions
+        title="Thông số kỹ thuật"
+        bordered
+        column={{ xs: 1, sm: 2, md: 3, lg: 3, xl: 4, xxl: 4 }}
+        items={items}
+        style={{ margin: '0 0 0 0' }}
+      />
   },
   {
     title: 'Inverter Growatt',
@@ -73,7 +149,15 @@ const itemsInverterData = [
       <div style={{ position: 'relative' }}>
         <Image style={{ zIndex: '1', position: 'absolute', left: '15px', top: '15px', translate: '-50% -50%' }} loading='eager' src='/img/inverter-growatt-device.png' alt='device icon' width={40} height={47} />
         <div style={{ left: '15px', top: '15px', translate: '-50% -50%', position: 'absolute', borderRadius: '6px', background: '#F2F1F6', width: '60px', height: '70px' }}></div>
-      </div>
+      </div>,
+    desc:
+      <Descriptions
+        title="Thông số kỹ thuật"
+        bordered
+        column={{ xs: 1, sm: 2, md: 3, lg: 3, xl: 4, xxl: 4 }}
+        items={items}
+        style={{ margin: '0 0 0 0' }}
+      />
 
   },
 ];
@@ -85,7 +169,15 @@ const itemsBatteryData = [
       <div style={{ position: 'relative' }}>
         <Image style={{ zIndex: '1', position: 'absolute', left: '15px', top: '15px', translate: '-50% -50%' }} loading='eager' src='/img/smb-device.png' alt='device icon' width={40} height={46} />
         <div style={{ left: '15px', top: '15px', translate: '-50% -50%', position: 'absolute', borderRadius: '6px', background: '#F2F1F6', width: '60px', height: '70px' }}></div>
-      </div>
+      </div>,
+    desc:
+      <Descriptions
+        title="Thông số kỹ thuật"
+        bordered
+        column={{ xs: 1, sm: 2, md: 3, lg: 3, xl: 4, xxl: 4 }}
+        items={items}
+        style={{ margin: '0 0 0 0' }}
+      />
 
   },
   {
@@ -103,7 +195,15 @@ const itemsBatteryData = [
       <div style={{ position: 'relative' }}>
         <Image style={{ zIndex: '1', position: 'absolute', left: '15px', top: '15px', translate: '-50% -50%' }} loading='eager' src='/img/sve-device.png' alt='device icon' width={40} height={18} />
         <div style={{ left: '15px', top: '15px', translate: '-50% -50%', position: 'absolute', borderRadius: '6px', background: '#F2F1F6', width: '60px', height: '70px' }}></div>
-      </div>
+      </div>,
+    desc:
+      <Descriptions
+        title="Thông số kỹ thuật"
+        bordered
+        column={{ xs: 1, sm: 2, md: 3, lg: 3, xl: 4, xxl: 4 }}
+        items={items}
+        style={{ margin: '0 0 0 0' }}
+      />
 
   },
   {
@@ -112,7 +212,15 @@ const itemsBatteryData = [
       <div style={{ position: 'relative' }}>
         <Image style={{ zIndex: '1', position: 'absolute', left: '15px', top: '15px', translate: '-50% -50%' }} loading='eager' src='/img/nadara-device.png' alt='device icon' width={40} height={50} />
         <div style={{ left: '15px', top: '15px', translate: '-50% -50%', position: 'absolute', borderRadius: '6px', background: '#F2F1F6', width: '60px', height: '70px' }}></div>
-      </div>
+      </div>,
+    desc:
+      <Descriptions
+        title="Thông số kỹ thuật"
+        bordered
+        column={{ xs: 1, sm: 2, md: 3, lg: 3, xl: 4, xxl: 4 }}
+        items={items}
+        style={{ margin: '0 0 0 0' }}
+      />
 
 
   },
@@ -151,7 +259,7 @@ export default function ThietBi() {
                           items={[{
                             key: '1',
                             label: <Typography.Title style={{ margin: '20px 0 0 50px', height: '35px', color: '#000', textAlign: 'left', fontWeight: 400, fontSize: '14px' }} >{item.title}</Typography.Title>,
-                            children: <>{item.title}</>,
+                            children: <>{item.desc}</>,
                             extra: <RightOutlined style={{ margin: '20px 0 0 0px' }} />,
 
                           }]}
@@ -159,7 +267,6 @@ export default function ThietBi() {
                           style={{ background: '#ddd', margin: '5px 0', borderRadius: '6px' }}
                         />
                       </Col>
-                      {/* {index !== itemsSolarData.length - 1 && <Divider style={{ margin: '5px 0' }} />} */}
                     </>
                   )
                 }
@@ -184,7 +291,7 @@ export default function ThietBi() {
                           items={[{
                             key: '1',
                             label: <Typography.Title style={{ margin: '20px 0 0 50px', height: '35px', color: '#000', textAlign: 'left', fontWeight: 400, fontSize: '14px' }} >{item.title}</Typography.Title>,
-                            children: <>{item.title}</>,
+                            children: <>{item.desc}</>,
                             extra: <RightOutlined style={{ margin: '20px 0 0 0px' }} />,
 
                           }]}
@@ -216,7 +323,7 @@ export default function ThietBi() {
                           items={[{
                             key: '1',
                             label: <Typography.Title style={{ margin: '20px 0 0 50px', height: '35px', color: '#000', textAlign: 'left', fontWeight: 400, fontSize: '14px' }} >{item.title}</Typography.Title>,
-                            children: <>{item.title}</>,
+                            children: <>{item.desc}</>,
                             extra: <RightOutlined style={{ margin: '20px 0 0 0px' }} />,
 
                           }]}
