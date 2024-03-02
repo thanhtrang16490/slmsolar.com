@@ -5,49 +5,44 @@ import Image from "next/image";
 
 const comboOneFeatureData = [
   {
-    he: '11 kW',
-    pha: '1 Pha',
+    he: '3.3 kW',
+    pha: '3 Pha',
     title: 'Tấm pin mặt trời',
     feature1: 'Thương hiệu Pin top 3 thế giới',
-    feature2: 'Inverter Hybrid 5kW 1 pha',
-    feature3: 'Pin Lithium FePO4 5kWh',
-    price: '220,000,000',
+    feature2: 'Inverter Hybrid 3.3kW - 1 pha',
+    price: <>39,600,000 <Image src='/img/dong-icon.svg' alt="vnd" width={18} height={18} /></>,
+  },
+  {
+    he: '5.5 kW',
+    pha: '3 Pha',
+    title: 'Tấm pin mặt trời',
+    feature1: 'Thương hiệu Pin top 3 thế giới',
+    feature2: 'Inverter Hybrid 5.5kW - 1 pha',
+    price: <>66,000,000 <Image src='/img/dong-icon.svg' alt="vnd" width={18} height={18} /></>,
+  },
+  {
+    he: '8.8 kW',
+    pha: '3 Pha',
+    title: 'Tấm pin mặt trời',
+    feature1: 'Thương hiệu Pin top 3 thế giới',
+    feature2: 'Inverter Hybrid 8.8kW - 1 pha',
+    price: <>105,600,000 <Image src='/img/dong-icon.svg' alt="vnd" width={18} height={18} /></>,
+  },
+  {
+    he: '11 kW',
+    pha: '3 Pha',
+    title: 'Tấm pin mặt trời',
+    feature1: 'Thương hiệu Pin top 3 thế giới',
+    feature2: 'Inverter Hybrid 11kW - 1 pha',
+    price: <>132,000,000 <Image src='/img/dong-icon.svg' alt="vnd" width={18} height={18} /></>,
   },
   {
     he: '16.5 kW',
-    pha: '1 Pha',
+    pha: '3 Pha',
     title: 'Tấm pin mặt trời',
     feature1: 'Thương hiệu Pin top 3 thế giới',
-    feature2: 'Inverter Hybrid 5kW 1 pha',
-    feature3: 'Pin Lithium FePO4 5kWh',
-    price: '330,000,000',
-  },
-  {
-    he: '22 kW',
-    pha: '1 Pha',
-    title: 'Tấm pin mặt trời',
-    feature1: 'Thương hiệu Pin top 3 thế giới',
-    feature2: 'Inverter Hybrid 5kW 1 pha',
-    feature3: 'Pin Lithium FePO4 5kWh',
-    price: '440,000,000',
-  },
-  {
-    he: '22 kW',
-    pha: '1 Pha',
-    title: 'Tấm pin mặt trời',
-    feature1: 'Thương hiệu Pin top 3 thế giới',
-    feature2: 'Inverter Hybrid 5kW 1 pha',
-    feature3: 'Pin Lithium FePO4 5kWh',
-    price: '440,000,000',
-  },
-  {
-    he: '22 kW',
-    pha: '1 Pha',
-    title: 'Tấm pin mặt trời',
-    feature1: 'Thương hiệu Pin top 3 thế giới',
-    feature2: 'Inverter Hybrid 5kW 1 pha',
-    feature3: 'Pin Lithium FePO4 5kWh',
-    price: '440,000,000',
+    feature2: 'Inverter Hybrid 16.5kW - 1 pha',
+    price: <>198,000,000 <Image src='/img/dong-icon.svg' alt="vnd" width={18} height={18} /></>,
   }
 ]
 
@@ -154,7 +149,7 @@ export default function BamTaiBaPha() {
                           alignItems: 'center',
                           justifyContent: 'center',
                         }}
-                        key={index} xs={6} sm={6} md={6}>
+                        key={index} xs={8} sm={8} md={8}>
                         {data.image}
                         <Typography.Paragraph style={{ textAlign: 'left', fontSize: '10px' }}>{data.title}</Typography.Paragraph>
                       </Col>

@@ -33,12 +33,12 @@ const serviceData = [
 const productsData = [
     {
         title: 'Pin mặt trời - Biến tần - Pin Lithium',
-        path: '/pin-mat-troi',
+        path: '/thiet-bi',
         icon: <Image loading='eager' src='/img/device-icon.svg' alt='device icon' width={30} height={30} />
     },
     {
         title: 'Giải pháp hệ khung nhôm',
-        path: '/inverter',
+        path: '/he-khung-nhom',
         icon: <Image loading='eager' src='/img/he-khung-nhom-icon.svg' alt='device icon' width={30} height={30} />
     },
 
@@ -47,7 +47,7 @@ const productsData = [
 const newsData = [
     {
         title: 'Dự án đã thực hiện',
-        path: '/projects',
+        path: '/du-an',
         icon: <Image loading='eager' src='/img/project-icon.svg' alt='device icon' width={30} height={30} />
     },
     {
