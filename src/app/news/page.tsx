@@ -5,36 +5,36 @@ import { RightOutlined, ThunderboltOutlined } from '@ant-design/icons';
 
 const itemsData = [
   {
-    title: 'Tiêu đề 1',
-    path: '/hybrid-mot-pha',
+    title: 'Tin tức 1',
+
     image: <ThunderboltOutlined style={{ color: 'orange', fontSize: '40px', position: 'absolute', top: '50%', left: '50%', translate: '-50% -50%' }} />,
     expert: ' ',
 
   },
   {
-    title: 'Tiêu đề 2',
-    path: '/hybrid-mot-pha',
+    title: 'Tin tức 2',
+
     image: <ThunderboltOutlined style={{ color: 'orange', fontSize: '40px', position: 'absolute', top: '50%', left: '50%', translate: '-50% -50%' }} />,
     expert: ' ',
 
   },
   {
-    title: 'Tiêu đề 3',
-    path: '/hybrid-mot-pha',
+    title: 'Tin tức 3',
+
     image: <ThunderboltOutlined style={{ color: 'orange', fontSize: '40px', position: 'absolute', top: '50%', left: '50%', translate: '-50% -50%' }} />,
     expert: ' ',
 
   },
   {
-    title: 'Tiêu đề 4',
-    path: '/hybrid-mot-pha',
+    title: 'Tin tức 4',
+
     image: <ThunderboltOutlined style={{ color: 'orange', fontSize: '40px', position: 'absolute', top: '50%', left: '50%', translate: '-50% -50%' }} />,
     expert: ' ',
 
   },
   {
-    title: 'Tiêu đề 5',
-    path: '/hybrid-mot-pha',
+    title: 'Tin tức 5',
+
     image: <ThunderboltOutlined style={{ color: 'orange', fontSize: '40px', position: 'absolute', top: '50%', left: '50%', translate: '-50% -50%' }} />,
     expert: ' ',
 
@@ -54,15 +54,12 @@ export default function News() {
           <Row style={{ position: 'relative' }}>
 
             <Col style={{
-              background: 'linear-gradient(to right, #6ef195 , #00e3fd)', width: '100%', height: '265px', margin: '0px 0px 0 0px', padding: '15px', textAlign: 'center', position: 'relative'
+              width: '100%', height: '90px', margin: '50px 0px 0 0px', padding: '0px', textAlign: 'center', position: 'relative'
             }}>
               <div style={{ position: 'absolute', top: 0, left: '50%', translate: '-50% 0%', width: '100%', height: '600px' }}>
-                <Typography.Title style={{ position: 'absolute', top: '100px', left: '50%', translate: '-50% -50%', width: '100%', textTransform: 'uppercase', color: '#fff' }} level={3}>Tin tức ngành điện</Typography.Title>
-                {/* <Typography.Title style={{ position: 'absolute', top: '150px', left: '50%', translate: '-50% -50%', width: '300px', fontSize: '14px', color: '#fff', fontWeight: 300 }} level={5}>Pin lưu trữ</Typography.Title> */}
+                <Typography.Title style={{ textAlign: 'left', margin: '30px 0 0px 20px', fontSize: '30px', fontWeight: '600' }} >Tin tức điện nặng lượng</Typography.Title>
               </div>
             </Col>
-            <div style={{ background: 'linear-gradient(to bottom, #ffffff00, #ffffff60 , #fff)', width: '100%', height: '60px', position: 'absolute', bottom: '-1px' }}>
-            </div>
           </Row>
 
 
