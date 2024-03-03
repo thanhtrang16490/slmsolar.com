@@ -6,158 +6,658 @@ import Image from "next/image";
 import { Descriptions } from 'antd';
 import type { DescriptionsProps } from 'antd';
 
-const items: DescriptionsProps['items'] = [
+const jaSolarItems: DescriptionsProps['items'] = [
   {
-    label: 'Thông số 1',
-    children: 'Nội dung',
+    label: 'Công suất',
+    children: '550 Wp',
   },
   {
-    label: 'Thông số 2',
-    children: 'Nội dung',
+    label: 'Loại Cell',
+    children: 'Mono (đơn tinh thể)',
   },
   {
-    label: 'Thông số 3',
-    children: 'Nội dung',
+    label: 'Bề mặt',
+    children: <>Kính cường lực<br /> dày 3,5mm</>,
   },
   {
-    label: 'Thông số 4',
-    children: 'Nội dung',
+    label: 'Khung pin',
+    children: <>Hợp kim nhôm<br /> dày 3,5mm</>,
   },
+  {
+    label: 'Cân nặng',
+    children: '26,8 kg',
+  },
+  {
+    label: 'Kích thước',
+    children: '2279 x 1134 x 35(mm)',
+  },
+  {
+    label: 'Số lượng Cell',
+    children: '144（6×24)',
+  },
+  {
+    label: <>Bảo hành<br /> hiệu suất</>,
+    children: '25 năm',
+  },
+  {
+    label: <>Hiệu suất <br />quang năng</>,
+    children: '21.3%',
+  },
+];
+
+const canadianSolarItems: DescriptionsProps['items'] = [
+  {
+    label: 'Công suất',
+    children: '550 Wp',
+  },
+  {
+    label: 'Loại Cell',
+    children: 'Mono',
+  },
+  {
+    label: 'Bề mặt',
+    children: <>Kính cường lực<br /> dày 3,5mm</>,
+  },
+  {
+    label: 'Kích thước',
+    children: '2279 x 1134 x 35(mm)',
+  },
+  {
+    label: 'Cân nặng',
+    children: '27,8 kg',
+  },
+  {
+    label: 'Số lượng Cell',
+    children: '144（6×24)',
+  },
+  {
+    label: <>Nhiệt độ<br />vận hành</>,
+    children: '-40°C ~ +85°C',
+  },
+
+  {
+    label: <>Hiệu suất <br />quang năng</>,
+    children: '20.7%',
+  },
+  {
+    label: <>Điện áp<br />cực đại</>,
+    children: <>1500V (IEC/UL)<br /> hoặc 1000V (IEC/UL)</>,
+  },
+  {
+    label: <>Bảo hành<br /> hiệu suất</>,
+    children: '25 năm',
+  },
+];
+
+const risenSolarItems: DescriptionsProps['items'] = [
+  {
+    label: 'Tế bào quang điện',
+    children: 'Monocrystalline, 9BB',
+  },
+  {
+    label: 'Số lượng Cell pin',
+    children: '110 cells',
+  },
+  {
+    label: 'Cân nặng',
+    children: '32,5 kg',
+  },
+  {
+    label: 'Loại cell',
+    children: "Đơn tinh thể half cell 156 cell",
+  },
+  {
+    label: 'Nhiệt độ vận hành',
+    children: '-40°C ~ +85°C',
+  },
+
+  {
+    label: 'Điện áp hệ thống tối đa',
+    children: '1500V DC (IEC), 1500V DC (UL)',
+  },
+  {
+    label: 'Hiệu suất',
+    children: '20.7%',
+  },
+  {
+    label: 'Kích thước',
+    children: '2384 x 1096 x 30(mm)',
+  },
+  {
+    label: <>Bảo hành<br /> hiệu suất</>,
+    children: '25 năm',
+  },
+];
+
+const longgiSolarItems: DescriptionsProps['items'] = [
+  {
+    label: 'Công suất',
+    children: '550 Wp',
+  },
+  {
+    label: 'Loại Cell',
+    children: 'Mono',
+  },
+  {
+    label: 'Kích thước',
+    children: '2256 x 1096 x 30(mm)',
+  },
+  {
+    label: 'Cân nặng',
+    children: '27,5 kg',
+  },
+
+  {
+    label: 'Số lượng Cell',
+    children: '144',
+  },
+  {
+    label: 'Nhiệt độ vận hành',
+    children: '-40C ~ +85C',
+  },
+  {
+    label: 'Khung pin',
+    children: <>Hợp kim nhôm<br /> dày 3,5mm</>,
+  },
+
+  {
+    label: <>Điện áp <br />cực đại</>,
+    children: '1500V (IEC/UL)',
+  },
+  {
+    label: <>Hiệu suất <br />quang năng</>,
+    children: '21.5%',
+  },
+  {
+    label: <>Bảo hành<br /> hiệu suất</>,
+    children: '25 năm',
+  },
+
+];
+
+const inverterDeyeeitems: DescriptionsProps['items'] = [
+  {
+    label: 'Công suất đầu vào DC lớn nhất',
+    children: '6.5 kw',
+  },
+  {
+    label: 'Đầu ra AC lớn nhất ',
+    children: '5.5kW',
+  },
+  {
+    label: 'Hiệu suất',
+    children: '97,6%',
+  },
+  {
+    label: 'Hiệu suất tiêu chuẩn EU',
+    children: '97%',
+  },
+  {
+    label: 'Bảo hành',
+    children: '5 năm',
+  },
+  {
+    label: 'Chống nước, chống bụi',
+    children: 'IP65',
+  },
+  {
+    label: 'Hiển thị',
+    children: 'Màn hình LCD',
+  },
+  {
+    label: 'Kết nối',
+    children: 'Wifi',
+  },
+  {
+    label: 'Ứng dụng theo dõi',
+    children: 'iOS, Android',
+  },
+
+];
+const inverterLuxpoweritems: DescriptionsProps['items'] = [
+  {
+    label: 'Công suất đầu vào DC lớn nhất',
+    children: '15 kw',
+  },
+  {
+    label: 'Đầu ra AC lớn nhất ',
+    children: '10kW',
+  },
+  {
+    label: 'Khả năng ghép',
+    children: 'Tối đa 6 máy thành 1 pha hoặc 3 pha',
+  },
+  {
+    label: 'Bảo hành',
+    children: '5 năm',
+  },
+  {
+    label: 'Chống nước, bụi',
+    children: 'IP65',
+  },
+  {
+    label: 'Hiển thị',
+    children: 'Màn hình LCD',
+  },
+  {
+    label: 'Kết nối',
+    children: 'Wifi',
+  },
+  {
+    label: 'Ứng dụng theo dõi',
+    children: 'iOS, Android',
+  },
+];
+const inverterHuaweiitems: DescriptionsProps['items'] = [
+  {
+    label: 'Điện áp đầu vào tối đa',
+    children: '1,100V',
+  },
+  {
+    label: 'Công suất AC hiệu dụng',
+    children: '10,000W',
+  },
+  {
+    label: 'Hiệu suất',
+    children: '98.6%',
+  },
+  {
+    label: 'Bảo hành',
+    children: '5 năm',
+  },
+  {
+    label: 'Chống nước, bụi',
+    children: 'IP65',
+  },
+  {
+    label: 'Hiển thị',
+    children: 'Màn hình LCD',
+  },
+  {
+    label: 'Kết nối',
+    children: 'Wifi',
+  },
+  {
+    label: 'Ứng dụng theo dõi',
+    children: 'iOS, Android',
+  },
+];
+const inverterGrowattitems: DescriptionsProps['items'] = [
+  {
+    label: 'Công suất đầu vào DC lớn nhất',
+    children: '15kW',
+  },
+  {
+    label: 'Công suất AC hiệu dụng',
+    children: '10kW',
+  },
+  {
+    label: 'Hiệu suất',
+    children: '98.6%',
+  },
+  {
+    label: 'Bảo hành',
+    children: '5 năm',
+  },
+  {
+    label: 'Chống nước, bụi',
+    children: 'IP65',
+  },
+  {
+    label: 'Hiển thị',
+    children: 'Màn hình LCD',
+  },
+  {
+    label: 'Kết nối',
+    children: 'Wifi',
+  },
+  {
+    label: 'Ứng dụng theo dõi',
+    children: 'iOS, Android',
+  },
+];
+
+const lithiumUfoItems: DescriptionsProps['items'] = [
+  {
+    label: 'Dung lượng pin',
+    children: '100Ah',
+  },
+  {
+    label: 'Cell pin',
+    children: '15 cells',
+  },
+  {
+    label: 'Dòng sạc',
+    children: '20A',
+  },
+  {
+    label: 'Điện áp sạc',
+    children: '54.75V',
+  },
+  {
+    label: 'Dòng xả',
+    children: '20A',
+  },
+  {
+    label: 'Điện áp hoạt động',
+    children: '48-49.5V',
+  },
+  {
+    label: 'Điện áp hoạt động',
+    children: '48-49.5V',
+  },
+  {
+    label: 'Điện áp ngừng xả ',
+    children: '37.5V',
+  },
+  {
+    label: 'Điện áp sạc',
+    children: '54-54.75V',
+  },
+  {
+    label: 'Dòng sạc liên tục cực đại',
+    children: '50A',
+  },
+  {
+    label: 'Dòng xả liên tục cực đại',
+    children: '100A',
+  },
+  {
+    label: 'Nhiệt độ sạc',
+    children: '0-45°C ',
+  },
+  {
+    label: 'Nhiệt độ xả',
+    children: '22-55°C',
+  },
+  {
+    label: 'Nhiệt độ xả',
+    children: '22-55°C',
+  },
+  {
+    label: 'Kích thước loại gắn tường',
+    children: '650 x 485 x 200 mm',
+  },
+  {
+    label: 'Trọng lượng loại giá đỡ',
+    children: '57.5 kg',
+  },
+
+];
+const lithiumSveItems: DescriptionsProps['items'] = [
+  {
+    label: 'Công suất',
+    children: '5.12 kWh',
+  },
+  {
+    label: 'Dải điện áp',
+    children: '44.8V - 57.6V',
+  },
+  {
+    label: 'Dòng sạc tối đa',
+    children: '100A',
+  },
+  {
+    label: 'Dòng sạc tiêu chuẩn',
+    children: '< 50A',
+  },
+  {
+    label: 'Dòng xả tối đa',
+    children: '100A',
+  },
+  {
+    label: 'Kích thước',
+    children: '442x470x154 mm',
+  },
+  {
+    label: 'Trọng lượng',
+    children: '148kg',
+  },
+];
+const lithiumLaradaItems: DescriptionsProps['items'] = [
+  {
+    label: 'Điện áp danh định',
+    children: '48Vdc',
+  },
+  {
+    label: 'Dung lượng pin',
+    children: '50Ah',
+  },
+  {
+    label: 'Dòng xả',
+    children: '40A',
+  },
+  {
+    label: 'Điện áp xả',
+    children: '40.5Vdc',
+  },
+  {
+    label: 'Điện áp sạc danh định',
+    children: '54.6V ± 0.5Vdc',
+  },
+  {
+    label: 'Dòng sạc',
+    children: '10A - 40A',
+  },
+  {
+    label: 'Trọng lượng',
+    children: '32 Kg',
+  },
+  {
+    label: 'Kích thước',
+    children: '442 x 390 x 132.5 mm',
+  },
+
+];
+const lithiumSMBItems: DescriptionsProps['items'] = [
+
 ];
 
 
 
 const itemsSolarData = [
   {
-    title: 'Pin mặt trời JA Solar',
+    title: 'Pin mặt trời JA Solar - 550W',
     icon:
       <div style={{ position: 'relative' }}>
         <Image style={{ zIndex: '1', position: 'absolute', left: '15px', top: '15px', translate: '-50% -50%' }} loading='eager' src='/img/solar-device.png' alt='device icon' width={40} height={65} />
         <div style={{ left: '15px', top: '15px', translate: '-50% -50%', position: 'absolute', borderRadius: '6px', background: '#F2F1F6', width: '60px', height: '70px' }}></div>
       </div>,
     desc:
-      <Descriptions
-        title="Thông số kỹ thuật"
-        bordered
-        column={{ xs: 1, sm: 2, md: 3, lg: 3, xl: 4, xxl: 4 }}
-        items={items}
-        style={{ margin: '0 0 0 0' }}
-      />
+      <>
+        <div style={{ display: 'flex', flexWrap: 'wrap', gap: '5px' }}>
+          {jaSolarItems.map((item, index) => {
+            return (
+              <>
+                <div style={{ flex: '1 0 calc(50% - 5px)' }}>
+                  <div style={{ height: '1px', width: '50px', backgroundColor: '#939393' }} ></div>
+                  <Typography.Title style={{ fontSize: '14px', fontWeight: '600' }}>{item.label}</Typography.Title>
+                  <Typography.Paragraph >{item.children}</Typography.Paragraph>
+                </div >
+
+              </>
+            )
+          })}
+        </div >
+      </>
   },
   {
-    title: 'Pin mặt trời Canadian Solar',
+    title: 'Pin mặt trời Canadian Solar - 550W',
     icon:
       <div style={{ position: 'relative' }}>
         <Image style={{ zIndex: '1', position: 'absolute', left: '15px', top: '15px', translate: '-50% -50%' }} loading='eager' src='/img/solar-device.png' alt='device icon' width={40} height={65} />
         <div style={{ left: '15px', top: '15px', translate: '-50% -50%', position: 'absolute', borderRadius: '6px', background: '#F2F1F6', width: '60px', height: '70px' }}></div>
       </div>,
     desc:
-      <Descriptions
-        title="Thông số kỹ thuật"
-        bordered
-        column={{ xs: 1, sm: 2, md: 3, lg: 3, xl: 4, xxl: 4 }}
-        items={items}
-        style={{ margin: '0 0 0 0' }}
-      />
+      <>
+        <div style={{ display: 'flex', flexWrap: 'wrap', gap: '5px' }}>
+          {canadianSolarItems.map((item, index) => {
+            return (
+              <>
+                <div style={{ flex: '1 0 calc(50% - 5px)' }}>
+                  <div style={{ height: '1px', width: '50px', backgroundColor: '#939393' }} ></div>
+                  <Typography.Title style={{ fontSize: '14px', fontWeight: '600' }}>{item.label}</Typography.Title>
+                  <Typography.Paragraph >{item.children}</Typography.Paragraph>
+                </div >
+
+              </>
+            )
+          })}
+        </div >
+      </>
   },
   {
-    title: 'Pin mặt trời Risen Solar',
+    title: 'Pin mặt trời Risen Solar - 550W',
     icon:
       <div style={{ position: 'relative' }}>
         <Image style={{ zIndex: '1', position: 'absolute', left: '15px', top: '15px', translate: '-50% -50%' }} loading='eager' src='/img/solar-device.png' alt='device icon' width={40} height={65} />
         <div style={{ left: '15px', top: '15px', translate: '-50% -50%', position: 'absolute', borderRadius: '6px', background: '#F2F1F6', width: '60px', height: '70px' }}></div>
       </div>,
     desc:
-      <Descriptions
-        title="Thông số kỹ thuật"
-        bordered
-        column={{ xs: 1, sm: 2, md: 3, lg: 3, xl: 4, xxl: 4 }}
-        items={items}
-        style={{ margin: '0 0 0 0' }}
-      />
+      <>
+        <div style={{ display: 'flex', flexWrap: 'wrap', gap: '5px' }}>
+          {risenSolarItems.map((item, index) => {
+            return (
+              <>
+                <div style={{ flex: '1 0 calc(50% - 5px)' }}>
+                  <div style={{ height: '1px', width: '50px', backgroundColor: '#939393' }} ></div>
+                  <Typography.Title style={{ fontSize: '14px', fontWeight: '600' }}>{item.label}</Typography.Title>
+                  <Typography.Paragraph >{item.children}</Typography.Paragraph>
+                </div >
+
+              </>
+            )
+          })}
+        </div >
+      </>
   },
   {
-    title: 'Pin mặt trời Longi Solar',
+    title: 'Pin mặt trời Longi Solar - 550W',
     icon:
       <div style={{ position: 'relative' }}>
         <Image style={{ zIndex: '1', position: 'absolute', left: '15px', top: '15px', translate: '-50% -50%' }} loading='eager' src='/img/solar-device.png' alt='device icon' width={40} height={65} />
         <div style={{ left: '15px', top: '15px', translate: '-50% -50%', position: 'absolute', borderRadius: '6px', background: '#F2F1F6', width: '60px', height: '70px' }}></div>
       </div>,
     desc:
-      <Descriptions
-        title="Thông số kỹ thuật"
-        bordered
-        column={{ xs: 1, sm: 2, md: 3, lg: 3, xl: 4, xxl: 4 }}
-        items={items}
-        style={{ margin: '0 0 0 0' }}
-      />
+      <>
+        <div style={{ display: 'flex', flexWrap: 'wrap', gap: '5px' }}>
+          {longgiSolarItems.map((item, index) => {
+            return (
+              <>
+                <div style={{ flex: '1 0 calc(50% - 5px)' }}>
+                  <div style={{ height: '1px', width: '50px', backgroundColor: '#939393' }} ></div>
+                  <Typography.Title style={{ fontSize: '14px', fontWeight: '600' }}>{item.label}</Typography.Title>
+                  <Typography.Paragraph >{item.children}</Typography.Paragraph>
+                </div >
+
+              </>
+            )
+          })}
+        </div >
+      </>
   },
 ];
 
 const itemsInverterData = [
   {
-    title: 'Inverter Deyee',
+    title: 'Inverter Hybrid Deye - 5kW',
     icon:
       <div style={{ position: 'relative' }}>
         <Image style={{ zIndex: '1', position: 'absolute', left: '15px', top: '15px', translate: '-50% -50%' }} loading='eager' src='/img/inverter-deyee-device.png' alt='device icon' width={40} height={65} />
         <div style={{ left: '15px', top: '15px', translate: '-50% -50%', position: 'absolute', borderRadius: '6px', background: '#F2F1F6', width: '60px', height: '70px' }}></div>
       </div>,
     desc:
-      <Descriptions
-        title="Thông số kỹ thuật"
-        bordered
-        column={{ xs: 1, sm: 2, md: 3, lg: 3, xl: 4, xxl: 4 }}
-        items={items}
-        style={{ margin: '0 0 0 0' }}
-      />
+      <>
+        <div style={{ display: 'flex', flexWrap: 'wrap', gap: '5px' }}>
+          {inverterDeyeeitems.map((item, index) => {
+            return (
+              <>
+                <div style={{ flex: '1 0 calc(50% - 5px)' }}>
+                  <div style={{ height: '1px', width: '50px', backgroundColor: '#939393' }} ></div>
+                  <Typography.Title style={{ fontSize: '14px', fontWeight: '600' }}>{item.label}</Typography.Title>
+                  <Typography.Paragraph >{item.children}</Typography.Paragraph>
+                </div >
+
+              </>
+            )
+          })}
+        </div >
+      </>
   },
   {
-    title: 'Inverter Luxpower ',
+    title: 'Inverter Hybrid Luxpower - 10kW ',
     icon:
       <div style={{ position: 'relative' }}>
         <Image style={{ zIndex: '1', position: 'absolute', left: '15px', top: '15px', translate: '-50% -50%' }} loading='eager' src='/img/inverter-luxpower-device.png' alt='device icon' width={40} height={62} />
         <div style={{ left: '15px', top: '15px', translate: '-50% -50%', position: 'absolute', borderRadius: '6px', background: '#F2F1F6', width: '60px', height: '70px' }}></div>
       </div>,
     desc:
-      <Descriptions
-        title="Thông số kỹ thuật"
-        bordered
-        column={{ xs: 1, sm: 2, md: 3, lg: 3, xl: 4, xxl: 4 }}
-        items={items}
-        style={{ margin: '0 0 0 0' }}
-      />
+      <>
+        <div style={{ display: 'flex', flexWrap: 'wrap', gap: '5px' }}>
+          {inverterLuxpoweritems.map((item, index) => {
+            return (
+              <>
+                <div style={{ flex: '1 0 calc(50% - 5px)' }}>
+                  <div style={{ height: '1px', width: '50px', backgroundColor: '#939393' }} ></div>
+                  <Typography.Title style={{ fontSize: '14px', fontWeight: '600' }}>{item.label}</Typography.Title>
+                  <Typography.Paragraph >{item.children}</Typography.Paragraph>
+                </div >
+
+              </>
+            )
+          })}
+        </div >
+      </>
   },
   {
-    title: 'Inverter Huawei',
+    title: 'Inverter Hybrid Huawei - 10kW',
     icon:
       <div style={{ position: 'relative' }}>
         <Image style={{ zIndex: '1', position: 'absolute', left: '15px', top: '15px', translate: '-50% -50%' }} loading='eager' src='/img/inverter-huawei-device.png' alt='device icon' width={40} height={40} />
         <div style={{ left: '15px', top: '15px', translate: '-50% -50%', position: 'absolute', borderRadius: '6px', background: '#F2F1F6', width: '60px', height: '70px' }}></div>
       </div>,
     desc:
-      <Descriptions
-        title="Thông số kỹ thuật"
-        bordered
-        column={{ xs: 1, sm: 2, md: 3, lg: 3, xl: 4, xxl: 4 }}
-        items={items}
-        style={{ margin: '0 0 0 0' }}
-      />
+      <>
+        <div style={{ display: 'flex', flexWrap: 'wrap', gap: '5px' }}>
+          {inverterHuaweiitems.map((item, index) => {
+            return (
+              <>
+                <div style={{ flex: '1 0 calc(50% - 5px)' }}>
+                  <div style={{ height: '1px', width: '50px', backgroundColor: '#939393' }} ></div>
+                  <Typography.Title style={{ fontSize: '14px', fontWeight: '600' }}>{item.label}</Typography.Title>
+                  <Typography.Paragraph >{item.children}</Typography.Paragraph>
+                </div >
+
+              </>
+            )
+          })}
+        </div >
+      </>
   },
   {
-    title: 'Inverter Growatt',
+    title: 'Inverter Hybrid Growatt 10kW',
     icon:
       <div style={{ position: 'relative' }}>
         <Image style={{ zIndex: '1', position: 'absolute', left: '15px', top: '15px', translate: '-50% -50%' }} loading='eager' src='/img/inverter-growatt-device.png' alt='device icon' width={40} height={47} />
         <div style={{ left: '15px', top: '15px', translate: '-50% -50%', position: 'absolute', borderRadius: '6px', background: '#F2F1F6', width: '60px', height: '70px' }}></div>
       </div>,
     desc:
-      <Descriptions
-        title="Thông số kỹ thuật"
-        bordered
-        column={{ xs: 1, sm: 2, md: 3, lg: 3, xl: 4, xxl: 4 }}
-        items={items}
-        style={{ margin: '0 0 0 0' }}
-      />
+      <>
+        <div style={{ display: 'flex', flexWrap: 'wrap', gap: '5px' }}>
+          {inverterGrowattitems.map((item, index) => {
+            return (
+              <>
+                <div style={{ flex: '1 0 calc(50% - 5px)' }}>
+                  <div style={{ height: '1px', width: '50px', backgroundColor: '#939393' }} ></div>
+                  <Typography.Title style={{ fontSize: '14px', fontWeight: '600' }}>{item.label}</Typography.Title>
+                  <Typography.Paragraph >{item.children}</Typography.Paragraph>
+                </div >
+
+              </>
+            )
+          })}
+        </div >
+      </>
 
   },
 ];
@@ -171,13 +671,22 @@ const itemsBatteryData = [
         <div style={{ left: '15px', top: '15px', translate: '-50% -50%', position: 'absolute', borderRadius: '6px', background: '#F2F1F6', width: '60px', height: '70px' }}></div>
       </div>,
     desc:
-      <Descriptions
-        title="Thông số kỹ thuật"
-        bordered
-        column={{ xs: 1, sm: 2, md: 3, lg: 3, xl: 4, xxl: 4 }}
-        items={items}
-        style={{ margin: '0 0 0 0' }}
-      />
+      <>
+        <div style={{ display: 'flex', flexWrap: 'wrap', gap: '5px' }}>
+          {lithiumSMBItems.map((item, index) => {
+            return (
+              <>
+                <div style={{ flex: '1 0 calc(50% - 5px)' }}>
+                  <div style={{ height: '1px', width: '50px', backgroundColor: '#939393' }} ></div>
+                  <Typography.Title style={{ fontSize: '14px', fontWeight: '600' }}>{item.label}</Typography.Title>
+                  <Typography.Paragraph >{item.children}</Typography.Paragraph>
+                </div >
+
+              </>
+            )
+          })}
+        </div >
+      </>
 
   },
   {
@@ -186,8 +695,24 @@ const itemsBatteryData = [
       <div style={{ position: 'relative' }}>
         <Image style={{ zIndex: '1', position: 'absolute', left: '15px', top: '15px', translate: '-50% -50%' }} loading='eager' src='/img/ufo-device.png' alt='device icon' width={40} height={59} />
         <div style={{ left: '15px', top: '15px', translate: '-50% -50%', position: 'absolute', borderRadius: '6px', background: '#F2F1F6', width: '60px', height: '70px' }}></div>
-      </div>
+      </div>,
+    desc:
+      <>
+        <div style={{ display: 'flex', flexWrap: 'wrap', gap: '5px' }}>
+          {lithiumUfoItems.map((item, index) => {
+            return (
+              <>
+                <div style={{ flex: '1 0 calc(50% - 5px)' }}>
+                  <div style={{ height: '1px', width: '50px', backgroundColor: '#939393' }} ></div>
+                  <Typography.Title style={{ fontSize: '14px', fontWeight: '600' }}>{item.label}</Typography.Title>
+                  <Typography.Paragraph >{item.children}</Typography.Paragraph>
+                </div >
 
+              </>
+            )
+          })}
+        </div >
+      </>
   },
   {
     title: 'Pin lưu trữ lithium SVE',
@@ -197,13 +722,22 @@ const itemsBatteryData = [
         <div style={{ left: '15px', top: '15px', translate: '-50% -50%', position: 'absolute', borderRadius: '6px', background: '#F2F1F6', width: '60px', height: '70px' }}></div>
       </div>,
     desc:
-      <Descriptions
-        title="Thông số kỹ thuật"
-        bordered
-        column={{ xs: 1, sm: 2, md: 3, lg: 3, xl: 4, xxl: 4 }}
-        items={items}
-        style={{ margin: '0 0 0 0' }}
-      />
+      <>
+        <div style={{ display: 'flex', flexWrap: 'wrap', gap: '5px' }}>
+          {lithiumSveItems.map((item, index) => {
+            return (
+              <>
+                <div style={{ flex: '1 0 calc(50% - 5px)' }}>
+                  <div style={{ height: '1px', width: '50px', backgroundColor: '#939393' }} ></div>
+                  <Typography.Title style={{ fontSize: '14px', fontWeight: '600' }}>{item.label}</Typography.Title>
+                  <Typography.Paragraph >{item.children}</Typography.Paragraph>
+                </div >
+
+              </>
+            )
+          })}
+        </div >
+      </>
 
   },
   {
@@ -214,13 +748,22 @@ const itemsBatteryData = [
         <div style={{ left: '15px', top: '15px', translate: '-50% -50%', position: 'absolute', borderRadius: '6px', background: '#F2F1F6', width: '60px', height: '70px' }}></div>
       </div>,
     desc:
-      <Descriptions
-        title="Thông số kỹ thuật"
-        bordered
-        column={{ xs: 1, sm: 2, md: 3, lg: 3, xl: 4, xxl: 4 }}
-        items={items}
-        style={{ margin: '0 0 0 0' }}
-      />
+      <>
+        <div style={{ display: 'flex', flexWrap: 'wrap', gap: '5px' }}>
+          {lithiumLaradaItems.map((item, index) => {
+            return (
+              <>
+                <div style={{ flex: '1 0 calc(50% - 5px)' }}>
+                  <div style={{ height: '1px', width: '50px', backgroundColor: '#939393' }} ></div>
+                  <Typography.Title style={{ fontSize: '14px', fontWeight: '600' }}>{item.label}</Typography.Title>
+                  <Typography.Paragraph >{item.children}</Typography.Paragraph>
+                </div >
+
+              </>
+            )
+          })}
+        </div >
+      </>
 
 
   },
