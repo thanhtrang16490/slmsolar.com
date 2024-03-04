@@ -5,35 +5,42 @@ import { RightOutlined, ThunderboltOutlined } from '@ant-design/icons';
 
 const itemsData = [
   {
-    title: 'Tin tức 1',
+    title: 'Cung ứng điện năm 2024: “Than và thủy” tiếp tục giữ vai trò chủ đạo, năng lượng tái tạo huy động theo nhu cầu',
 
     image: <ThunderboltOutlined style={{ color: 'orange', fontSize: '40px', position: 'absolute', top: '50%', left: '50%', translate: '-50% -50%' }} />,
     expert: ' ',
 
   },
   {
-    title: 'Tin tức 2',
+    title: 'Phát triển điện mặt trời mái nhà: Cần quy định rõ ràng, thống nhất',
 
     image: <ThunderboltOutlined style={{ color: 'orange', fontSize: '40px', position: 'absolute', top: '50%', left: '50%', translate: '-50% -50%' }} />,
     expert: ' ',
 
   },
   {
-    title: 'Tin tức 3',
+    title: 'Ngành điện mặt trời châu Âu “tiến thoái lưỡng nan” vì hàng nhập khẩu giá rẻ từ Trung Quốc',
 
     image: <ThunderboltOutlined style={{ color: 'orange', fontSize: '40px', position: 'absolute', top: '50%', left: '50%', translate: '-50% -50%' }} />,
     expert: ' ',
 
   },
   {
-    title: 'Tin tức 4',
+    title: 'Khủng hoảng năng lượng mặt trời tại châu Âu sẽ còn kéo dài',
 
     image: <ThunderboltOutlined style={{ color: 'orange', fontSize: '40px', position: 'absolute', top: '50%', left: '50%', translate: '-50% -50%' }} />,
     expert: ' ',
 
   },
   {
-    title: 'Tin tức 5',
+    title: 'Mỹ có thể tăng gấp 3 lần khả năng lưu trữ của pin vào năm 2025',
+
+    image: <ThunderboltOutlined style={{ color: 'orange', fontSize: '40px', position: 'absolute', top: '50%', left: '50%', translate: '-50% -50%' }} />,
+    expert: ' ',
+
+  },
+  {
+    title: 'Có đến 3/6 chỉ tiêu đảm bảo an ninh năng lượng quốc gia đang biến động bất lợi',
 
     image: <ThunderboltOutlined style={{ color: 'orange', fontSize: '40px', position: 'absolute', top: '50%', left: '50%', translate: '-50% -50%' }} />,
     expert: ' ',
