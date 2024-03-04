@@ -2,47 +2,48 @@
 import { Card, Col, Divider, Layout, Row, Statistic, Steps, Tabs, Typography } from "antd";
 import { Content } from "antd/es/layout/layout";
 import { RightOutlined, ThunderboltOutlined } from '@ant-design/icons';
+import Image from "next/image";
 
 const itemsData = [
   {
     title: 'Cung ứng điện năm 2024: “Than và thủy” tiếp tục giữ vai trò chủ đạo, năng lượng tái tạo huy động theo nhu cầu',
 
-    image: <ThunderboltOutlined style={{ color: 'orange', fontSize: '40px', position: 'absolute', top: '50%', left: '50%', translate: '-50% -50%' }} />,
+    image: '/img/cung-ung-dien-2024.jpeg',
     expert: ' ',
 
   },
   {
     title: 'Phát triển điện mặt trời mái nhà: Cần quy định rõ ràng, thống nhất',
 
-    image: <ThunderboltOutlined style={{ color: 'orange', fontSize: '40px', position: 'absolute', top: '50%', left: '50%', translate: '-50% -50%' }} />,
+    image: '/img/phat-trien-dien-mat-troi-mai-nha.jpeg',
     expert: ' ',
 
   },
   {
     title: 'Ngành điện mặt trời châu Âu “tiến thoái lưỡng nan” vì hàng nhập khẩu giá rẻ từ Trung Quốc',
 
-    image: <ThunderboltOutlined style={{ color: 'orange', fontSize: '40px', position: 'absolute', top: '50%', left: '50%', translate: '-50% -50%' }} />,
+    image: '/img/nganh-dien-mat-troi-chau-au.png',
     expert: ' ',
 
   },
   {
     title: 'Khủng hoảng năng lượng mặt trời tại châu Âu sẽ còn kéo dài',
 
-    image: <ThunderboltOutlined style={{ color: 'orange', fontSize: '40px', position: 'absolute', top: '50%', left: '50%', translate: '-50% -50%' }} />,
+    image: '/img/cuoc-khung-hoang-nang-luong-tai-chau-au.png',
     expert: ' ',
 
   },
   {
     title: 'Mỹ có thể tăng gấp 3 lần khả năng lưu trữ của pin vào năm 2025',
 
-    image: <ThunderboltOutlined style={{ color: 'orange', fontSize: '40px', position: 'absolute', top: '50%', left: '50%', translate: '-50% -50%' }} />,
+    image: '/img/my-tang-gap-ba.jpeg',
     expert: ' ',
 
   },
   {
     title: 'Có đến 3/6 chỉ tiêu đảm bảo an ninh năng lượng quốc gia đang biến động bất lợi',
 
-    image: <ThunderboltOutlined style={{ color: 'orange', fontSize: '40px', position: 'absolute', top: '50%', left: '50%', translate: '-50% -50%' }} />,
+    image: '/img/co-den-36-chi-tieu-dam-bao-an-ninh-nang-luong-quoc-gia-dang-bien-dong-bat-loi.jpeg',
     expert: ' ',
 
   },
@@ -72,23 +73,41 @@ export default function News() {
 
           <Row>
 
-            <Col style={{ width: '100%', margin: '0 5px 0', padding: '10px', background: '#fff', borderRadius: '8px' }}>
+            <Col style={{ width: '100%', margin: '0 5px 0', background: '#fff', borderRadius: '8px' }}>
               {itemsData.map((item, index) => {
                 return (
                   <>
-                    <Row style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
-                      <Row style={{ display: 'flex', alignItems: 'flex-start', position: 'relative' }}>
-                        <Col style={{ borderRadius: '6px', background: '#F2F1F6', width: '140px', height: '90px' }}>{item.image}</Col>
-                        <Col>
-                          <Typography.Title style={{ color: '#000', margin: '10px 5px 0px 10px', textAlign: 'left', fontWeight: 500 }} level={5}>{item.title}</Typography.Title>
-                          <Typography.Title style={{ color: '#000', margin: '0px 5px 0px 5px', textAlign: 'left', fontWeight: 300, fontSize: '14px' }} level={5}>{item.expert}</Typography.Title>
-                        </Col>
-                      </Row>
-                      {/* <Col>
-                        <RightOutlined />
-                      </Col> */}
+                    <Row >
+                      <Col style={{
+                        display: 'flex',
+                        flexDirection: 'column',
+                        justifyContent: 'space-between',
+                        width: '100%',
+                        margin: '20px 15px 0px 15px',
+                        height: '100%',
+                        padding: '0px',
+                        background: '#fff',
+                        borderRadius: '8px',
+                        boxShadow: '0 1px 2px 0 rgba(60,64,67,.1), 0 2px 6px 2px rgba(60,64,67,.15)'
+                      }}>
+
+                        <Row style={{ position: 'relative' }}>
+
+                          <div style={{ padding: '0px', width: '100%', paddingTop: '56%', position: 'relative' }}>
+                            <Image style={{ borderRadius: '8px 8px 0px 0px', objectFit: 'cover' }} alt={item.title} fill src={item.image} />
+                          </div>
+
+                        </Row>
+                        <div>
+                          <Typography.Title style={{ margin: '10px 20px', fontSize: '14px' }} level={5}>
+                            {item.title}
+                          </Typography.Title>
+
+                        </div>
+
+
+                      </Col>
                     </Row>
-                    {index !== itemsData.length - 1 && <Divider style={{ margin: '5px 0' }} />}
                   </>
                 )
               }

@@ -1,25 +1,18 @@
 'use client'
-import { Card, Col, Divider, Layout, Row, Statistic, Steps, Tabs, Typography } from "antd";
+import { Col, Layout, Row, Typography } from "antd";
 import { Content } from "antd/es/layout/layout";
-import { RightOutlined, ThunderboltOutlined } from '@ant-design/icons';
+import Image from "next/image";
 
 const itemsData = [
 
   {
     title: 'Khám phá dòng điện xanh từ vùng đất đỏ xứ Nghệ',
-
-    image: <ThunderboltOutlined style={{ color: 'orange', fontSize: '40px', position: 'absolute', top: '50%', left: '50%', translate: '-50% -50%' }} />,
-    expert: ' ',
-
+    image: '/img/kham-pha-dong-dien-xanh.webp',
   },
   {
     title: 'Công nghệ 2024: Ai và hơn thế nữa',
-
-    image: <ThunderboltOutlined style={{ color: 'orange', fontSize: '40px', position: 'absolute', top: '50%', left: '50%', translate: '-50% -50%' }} />,
-    expert: ' ',
-
+    image: '/img/cong-nghe-ai-va-hon-the-nua.webp',
   },
-
 ];
 
 
@@ -49,31 +42,46 @@ export default function MegaStory() {
           {itemsData.map((item, index) => {
             return (
               <>
-                <Row>
-                  <Col style={{ width: '100%', margin: '0 5px 0', padding: '10px', background: '#fff', borderRadius: '8px' }}>
-                    <Row style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
-                      <Row style={{ display: 'flex', flexWrap: 'nowrap' }}>
-                        <div style={{ position: 'relative', borderRadius: '6px', background: '#F2F1F6', width: '140px', height: '90px' }}>
-                          {item.image}
-                        </div>
-                        <div style={{ height: '90px' }}>
-                          <Typography.Title style={{ color: '#000', margin: '10px 5px 0px 10px', textAlign: 'left', fontWeight: 500, fontSize: '14px' }}>{item.title}</Typography.Title>
-                        </div>
-                      </Row>
+
+                <Row >
+                  <Col style={{
+                    display: 'flex',
+                    flexDirection: 'column',
+                    justifyContent: 'space-between',
+                    width: '100%',
+                    margin: '20px 15px 0px 15px',
+                    height: '100%',
+                    padding: '0px',
+                    background: '#fff',
+                    borderRadius: '8px',
+                    boxShadow: '0 1px 2px 0 rgba(60,64,67,.1), 0 2px 6px 2px rgba(60,64,67,.15)'
+                  }}>
+
+                    <Row style={{ position: 'relative' }}>
+
+                      <div style={{ padding: '0px', width: '100%', paddingTop: '56%', position: 'relative' }}>
+                        <Image style={{ borderRadius: '8px 8px 0px 0px', objectFit: 'cover' }} alt={item.title} fill src={item.image} />
+                      </div>
 
                     </Row>
+                    <div>
+                      <Typography.Title style={{ margin: '10px 20px', fontSize: '14px' }} level={5}>
+                        {item.title}
+                      </Typography.Title>
+
+                    </div>
+
+
                   </Col>
                 </Row>
-                {/* {index !== itemsData.length - 1 && <Divider style={{ margin: '5px 0' }} />} */}
+
+
               </>
             )
           }
           )}
         </Content>
       </Layout>
-
-
-
     </>
   )
 }

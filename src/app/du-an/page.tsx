@@ -2,40 +2,41 @@
 import { Card, Col, Divider, Layout, Row, Statistic, Steps, Tabs, Typography } from "antd";
 import { Content } from "antd/es/layout/layout";
 import { RightOutlined, ThunderboltOutlined } from '@ant-design/icons';
+import Image from "next/image";
 
 const itemsData = [
   {
     title: 'Dự án 1',
 
-    image: <ThunderboltOutlined style={{ color: 'orange', fontSize: '40px', position: 'absolute', top: '50%', left: '50%', translate: '-50% -50%' }} />,
+    image: '/img/solar-rooftop.png',
     expert: ' ',
 
   },
   {
     title: 'Dự án 2',
 
-    image: <ThunderboltOutlined style={{ color: 'orange', fontSize: '40px', position: 'absolute', top: '50%', left: '50%', translate: '-50% -50%' }} />,
+    image: '/img/solar-rooftop.png',
     expert: ' ',
 
   },
   {
     title: 'Dự án 3',
 
-    image: <ThunderboltOutlined style={{ color: 'orange', fontSize: '40px', position: 'absolute', top: '50%', left: '50%', translate: '-50% -50%' }} />,
+    image: '/img/solar-rooftop.png',
     expert: ' ',
 
   },
   {
     title: 'Dự án 4',
 
-    image: <ThunderboltOutlined style={{ color: 'orange', fontSize: '40px', position: 'absolute', top: '50%', left: '50%', translate: '-50% -50%' }} />,
+    image: '/img/solar-rooftop.png',
     expert: ' ',
 
   },
   {
     title: 'Dự án 5',
 
-    image: <ThunderboltOutlined style={{ color: 'orange', fontSize: '40px', position: 'absolute', top: '50%', left: '50%', translate: '-50% -50%' }} />,
+    image: '/img/solar-rooftop.png',
     expert: ' ',
 
   },
@@ -65,23 +66,42 @@ export default function DuAn() {
 
           <Row>
 
-            <Col style={{ width: '100%', margin: '0 5px 0', padding: '10px', background: '#fff', borderRadius: '8px' }}>
+            <Col style={{ width: '100%', margin: '0 5px 0', background: '#fff', borderRadius: '8px' }}>
               {itemsData.map((item, index) => {
                 return (
                   <>
-                    <Row style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
-                      <Row style={{ display: 'flex', alignItems: 'flex-start', position: 'relative' }}>
-                        <Col style={{ borderRadius: '6px', background: '#F2F1F6', width: '140px', height: '90px' }}>{item.image}</Col>
-                        <Col>
-                          <Typography.Title style={{ color: '#000', margin: '10px 5px 0px 10px', textAlign: 'left', fontWeight: 500 }} level={5}>{item.title}</Typography.Title>
-                          <Typography.Title style={{ color: '#000', margin: '0px 5px 0px 5px', textAlign: 'left', fontWeight: 300, fontSize: '14px' }} level={5}>{item.expert}</Typography.Title>
-                        </Col>
-                      </Row>
-                      {/* <Col>
-                        <RightOutlined />
-                      </Col> */}
+                    <Row >
+                      <Col style={{
+                        display: 'flex',
+                        flexDirection: 'column',
+                        justifyContent: 'space-between',
+                        width: '100%',
+                        margin: '20px 15px 0px 15px',
+                        height: '100%',
+                        padding: '0px',
+                        background: '#fff',
+                        borderRadius: '8px',
+                        boxShadow: '0 1px 2px 0 rgba(60,64,67,.1), 0 2px 6px 2px rgba(60,64,67,.15)'
+                      }}>
+
+                        <Row style={{ position: 'relative' }}>
+
+                          <div style={{ padding: '0px', width: '100%', paddingTop: '56%', position: 'relative' }}>
+                            <Image style={{ borderRadius: '8px 8px 0px 0px', objectFit: 'cover' }} alt={item.title} fill src={item.image} />
+                          </div>
+
+                        </Row>
+                        <div>
+                          <Typography.Title style={{ margin: '10px 20px', fontSize: '14px' }} level={5}>
+                            {item.title}
+                          </Typography.Title>
+
+                        </div>
+
+
+                      </Col>
                     </Row>
-                    {index !== itemsData.length - 1 && <Divider style={{ margin: '5px 0' }} />}
+
                   </>
                 )
               }
