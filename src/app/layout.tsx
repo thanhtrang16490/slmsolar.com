@@ -6,6 +6,7 @@ import NProgressWrapper from '@/lib/nprogress.wrapper'
 import TopNavigation from './component/header/top.navigation'
 import { Barlow } from 'next/font/google'
 import './globals.css'
+import CallBoxModule from './component/footer/call.box'
 
 
 const barlow = Barlow({
@@ -42,7 +43,8 @@ export default function RootLayout({
           <NProgressWrapper>
             <TopNavigation />
             {children}
-            <ChatBoxModule />
+            {/* <ChatBoxModule /> */}
+            <CallBoxModule />
           </NProgressWrapper>
         </StyledComponentsRegistry>
       </body>
