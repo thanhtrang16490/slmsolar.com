@@ -12,6 +12,6 @@ module.exports = nextConfig;
 
 module.exports = {
   images: {
-    domains: ["api.slmglobal.vn"],
+    domains: ["app.slmsolar.com"],
   },
 };
