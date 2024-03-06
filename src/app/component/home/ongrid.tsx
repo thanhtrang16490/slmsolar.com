@@ -102,7 +102,7 @@ const Ongrid = () => {
                         }}
                         key={index} xs={12} sm={12} md={12}>
                         {data.image}
-                        <Typography.Paragraph style={{ textAlign: 'left', fontSize: '12px' }}>{data.title}</Typography.Paragraph>
+                        <Typography.Paragraph style={{ marginBottom: '0', textAlign: 'left', fontSize: '12px' }}>{data.title}</Typography.Paragraph>
                     </Col>
                 ))}
             </Row >

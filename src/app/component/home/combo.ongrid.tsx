@@ -169,7 +169,7 @@ const ComboOngrid = () => {
                                 }}
                                 key={index} xs={8} sm={8} md={8}>
                                 {data.image}
-                                <Typography.Paragraph style={{ textAlign: 'left', fontSize: '10px' }}>{data.title}</Typography.Paragraph>
+                                <Typography.Paragraph style={{ marginBottom: '0', textAlign: 'left', fontSize: '10px' }}>{data.title}</Typography.Paragraph>
                             </Col>
                         ))}
                     </Row >
@@ -231,7 +231,7 @@ const ComboOngrid = () => {
                                 }}
                                 key={index} xs={8} sm={8} md={8}>
                                 {data.image}
-                                <Typography.Paragraph style={{ textAlign: 'left', fontSize: '10px' }}>{data.title}</Typography.Paragraph>
+                                <Typography.Paragraph style={{ marginBottom: '0', textAlign: 'left', fontSize: '10px' }}>{data.title}</Typography.Paragraph>
                             </Col>
                         ))}
                     </Row >

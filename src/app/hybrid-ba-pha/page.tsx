@@ -11,7 +11,8 @@ const comboOneFeatureData = [
     feature1: 'Thương hiệu Pin top 3 thế giới',
     feature2: 'Inverter Hybrid 5kW 1 pha',
     feature3: 'Pin Lithium FePO4 5kWh',
-    price: '220,000,000',
+    price: <>220,000,000 <Image src='/img/dong-icon.svg' alt="vnd" width={18} height={18} /></>,
+
   },
   {
     he: '16.5 kW',
@@ -20,7 +21,8 @@ const comboOneFeatureData = [
     feature1: 'Thương hiệu Pin top 3 thế giới',
     feature2: 'Inverter Hybrid 5kW 1 pha',
     feature3: 'Pin Lithium FePO4 5kWh',
-    price: '330,000,000',
+    price: <>330,000,000 <Image src='/img/dong-icon.svg' alt="vnd" width={18} height={18} /></>,
+
   },
   {
     he: '22 kW',
@@ -29,7 +31,7 @@ const comboOneFeatureData = [
     feature1: 'Thương hiệu Pin top 3 thế giới',
     feature2: 'Inverter Hybrid 5kW 1 pha',
     feature3: 'Pin Lithium FePO4 5kWh',
-    price: '440,000,000',
+    price: <>440,000,000 <Image src='/img/dong-icon.svg' alt="vnd" width={18} height={18} /></>,
   }
 ]
 
@@ -96,18 +98,19 @@ export default function HybridBaPha() {
                     </Col>
                   </Row>
 
-                  <Row style={{ left: '15px', borderRadius: '4px', border: 'solid 1px #000', top: '10px', position: 'absolute', display: 'flex', alignItems: 'center', justifyContent: 'start' }}>
+                  <div style={{ position: 'absolute', display: 'flex', left: '10px', top: '10px', gap: '5px' }}>
+                    <Row style={{ left: '15px', borderRadius: '4px', border: 'solid 1px #000', top: '10px', display: 'flex', alignItems: 'center', justifyContent: 'start' }}>
+                      <Col>
+                        <Typography.Title style={{ color: '#000', margin: '0px 5px 0px 5px', textAlign: 'left', fontWeight: 300, fontSize: '18px' }}>{data.he}</Typography.Title>
+                      </Col>
+                    </Row>
+                    <Row style={{ left: '75px', borderRadius: '4px', backgroundColor: '#000', display: 'flex', alignItems: 'center', justifyContent: 'start' }}>
 
-                    <Col>
-                      <Typography.Title style={{ color: '#000', margin: '0px 5px 0px 5px', textAlign: 'left', fontWeight: 300, fontSize: '18px' }}>{data.he}</Typography.Title>
-                    </Col>
-                  </Row>
-                  <Row style={{ left: '80px', borderRadius: '4px', backgroundColor: '#000', top: '10px', position: 'absolute', display: 'flex', alignItems: 'center', justifyContent: 'start' }}>
-
-                    <Col>
-                      <Typography.Title style={{ color: '#fff', margin: '0px 5px 0px 5px', textAlign: 'left', fontWeight: 300, fontSize: '18px' }}>{data.pha}</Typography.Title>
-                    </Col>
-                  </Row>
+                      <Col>
+                        <Typography.Title style={{ color: '#fff', margin: '0px 5px 0px 5px', textAlign: 'left', fontWeight: 300, fontSize: '18px' }}>{data.pha}</Typography.Title>
+                      </Col>
+                    </Row>
+                  </div>
                   <Row style={{ left: '10px', top: '50px', position: 'absolute', width: '100%', display: 'flex', alignItems: 'center', justifyContent: 'start' }}>
                     <Col>
                       <Image src='/img/stick-green-full.svg' alt="Check" width={20} height={20} />
@@ -149,7 +152,7 @@ export default function HybridBaPha() {
                         }}
                         key={index} xs={6} sm={6} md={6}>
                         {data.image}
-                        <Typography.Paragraph style={{ textAlign: 'left', fontSize: '10px' }}>{data.title}</Typography.Paragraph>
+                        <Typography.Paragraph style={{ marginBottom: '0', textAlign: 'left', fontSize: '10px' }}>{data.title}</Typography.Paragraph>
                       </Col>
                     ))}
                   </Row >

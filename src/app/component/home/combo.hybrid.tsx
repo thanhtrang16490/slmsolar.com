@@ -187,7 +187,7 @@ const ComboHybrid = () => {
                                 }}
                                 key={index} xs={6} sm={6} md={6}>
                                 {data.image}
-                                <Typography.Paragraph style={{ textAlign: 'left', fontSize: '10px' }}>{data.title}</Typography.Paragraph>
+                                <Typography.Paragraph style={{ marginBottom: '0', textAlign: 'left', fontSize: '10px' }}>{data.title}</Typography.Paragraph>
                             </Col>
                         ))}
                     </Row >
@@ -256,7 +256,7 @@ const ComboHybrid = () => {
                                 }}
                                 key={index} xs={6} sm={6} md={6}>
                                 {data.image}
-                                <Typography.Paragraph style={{ textAlign: 'left', fontSize: '10px' }}>{data.title}</Typography.Paragraph>
+                                <Typography.Paragraph style={{ marginBottom: '0', textAlign: 'left', fontSize: '10px' }}>{data.title}</Typography.Paragraph>
                             </Col>
                         ))}
                     </Row >
