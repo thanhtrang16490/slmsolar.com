@@ -92,7 +92,7 @@ const MegaStoryPage = () => {
         </Col>
       </Row>
       <Layout style={{ backgroundColor: '#fff', maxWidth: '1440px', margin: '0 auto', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-        <Row gutter={3}>
+        <Row gutter={0}>
 
           {posts && posts.data && posts.data.map((post: Post) => (
             <Col key={post.id} xs={24} sm={24} md={12} lg={8} xl={6} xxl={6}>
