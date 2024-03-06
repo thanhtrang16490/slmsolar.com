@@ -29,6 +29,14 @@ const serviceData = [
     },
 
 ];
+const solutionData = [
+    {
+        title: <>Hệ Sigenergy cao cấp</>,
+        path: '/bam-tai-mot-pha',
+        icon: <Image loading='eager' src='/img/sigenergy-icon.svg' alt='device icon' width={25} height={40} />
+    },
+
+];
 
 const productsData = [
     {
@@ -87,6 +95,33 @@ const TopNavigationContent = (onClose: any) => {
                                             </Row>
                                         </Link>
                                         {index !== serviceData.length - 1 && <Divider style={{ margin: '5px 0' }} />}
+                                    </>
+
+
+                                );
+                            })}
+                        </Col>
+                    </Row>
+                    <Row>
+                        <Typography.Title style={{ paddingLeft: '25px' }} level={4}>Giải pháp chuyên biệt</Typography.Title>
+                        <Col style={{ width: '100%', margin: '0 15px 0', padding: '10px', background: '#fff', borderRadius: '8px' }}>
+                            {solutionData.map((item, index) => {
+                                return (
+                                    <>
+                                        <Link href={item.path} key={index}>
+                                            <Row onClick={onClose} style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+                                                <div style={{ display: 'flex', alignItems: 'center' }}>
+                                                    <Col>{item.icon}</Col>
+                                                    <Col>
+                                                        <Typography.Title style={{ color: '#000', margin: '0px 5px 0px 5px', textAlign: 'left', fontWeight: 300 }} level={5}>{item.title}</Typography.Title>
+                                                    </Col>
+                                                </div>
+                                                <Col>
+                                                    <RightOutlined />
+                                                </Col>
+                                            </Row>
+                                        </Link>
+                                        {/* {index !== serviceData.length - 1 && <Divider style={{ margin: '5px 0' }} />} */}
                                     </>
 
 
