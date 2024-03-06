@@ -1,5 +1,4 @@
 
-import HeaderMain from '@/app/component/header.main';
 import PostContent from '@/app/component/post.content';
 
 type Params = {
@@ -7,7 +6,9 @@ type Params = {
 };
 
 const getData = async (slug: string) => {
-  const res = await fetch(`${process.env.BACKEND_URL}slugify/slugs/blog/${slug}?populate=*`, { next: { revalidate: 86400 } });
+  const res = await fetch(`${process.env.BACKEND_URL}slugify/slugs/blog/${slug}?populate=*`,
+    // { next: { revalidate: 86400 } }
+  );
   if (!res.ok) {
     throw new Error(res.statusText);
   }
