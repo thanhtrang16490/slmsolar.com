@@ -19,7 +19,7 @@ const PostCard: React.FC<PostCardProps> = ({ post }) => {
                 <Card
                     style={{ width: '100%', height: '100%', position: 'relative', boxShadow: '0 1px 2px 0 rgba(60,64,67,.1), 0 2px 6px 2px rgba(60,64,67,.15)' }}
                     cover={
-                        <Link href={`/blog/${post?.attributes.slug}`}>
+                        <Link href={`/mega-story/${post?.attributes.slug}`}>
                             <div style={{ padding: '10px', width: '100%', paddingTop: '66.66%', position: 'relative' }}>
                                 <Image
                                     layout="fill"
@@ -41,7 +41,7 @@ const PostCard: React.FC<PostCardProps> = ({ post }) => {
                 >
                     <Meta
                         description={
-                            <Link href={`/blog/${post?.attributes.slug}`}>
+                            <Link href={`/mega-story/${post?.attributes.slug}`}>
                                 <Typography.Title style={{ margin: '10px 20px', fontSize: '14px' }} level={5}>
                                     <div style={{ display: '-webkit-box', WebkitLineClamp: 2, WebkitBoxOrient: 'vertical', overflow: 'hidden' }} dangerouslySetInnerHTML={{ __html: post?.attributes?.title }} />
                                 </Typography.Title>
