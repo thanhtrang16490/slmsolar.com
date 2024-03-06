@@ -32,7 +32,7 @@ const serviceData = [
 const solutionData = [
     {
         title: <>Hệ Sigenergy cao cấp</>,
-        path: '/bam-tai-mot-pha',
+        path: '/he-sigenergy-cao-cap',
         icon: <Image loading='eager' src='/img/sigenergy-icon.svg' alt='device icon' width={25} height={40} />
     },
 
