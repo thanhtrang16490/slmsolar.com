@@ -60,7 +60,7 @@ const newsData = [
     },
     {
         title: 'Bản tin về điện mặt trời',
-        path: '/news',
+        path: '/tin-tuc',
         icon: <Image loading='eager' src='/img/news-1-icon.svg' alt='device icon' width={30} height={30} />
     },
     {
