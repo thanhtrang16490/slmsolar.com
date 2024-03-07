@@ -70,7 +70,7 @@ export default function DuAn() {
               {itemsData.map((item, index) => {
                 return (
                   <>
-                    <Row >
+                    <Row key={index} >
                       <Col style={{
                         display: 'flex',
                         flexDirection: 'column',

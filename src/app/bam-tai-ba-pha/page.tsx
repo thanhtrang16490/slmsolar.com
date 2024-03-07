@@ -1,5 +1,5 @@
 'use client'
-import { Card, Col, Divider, Layout, Row, Statistic, Steps, Tabs, Typography } from "antd";
+import { Col, Layout, Row, Typography } from "antd";
 import { Content } from "antd/es/layout/layout";
 import Image from "next/image";
 
@@ -45,36 +45,24 @@ const comboOneFeatureData = [
     price: <>198,000,000 <Image src='/img/dong-icon.svg' alt="vnd" width={18} height={18} /></>,
   }
 ]
-
-
-
 const comboOneData = [
   {
     image: <Image src='/img/solar-hybrid-icon.svg' alt="Hoàn vốn trong 4 năm" width={30} height={30} />,
     title: <>Tấm pin<br />mặt trời</>,
-
   },
   {
     image: <Image src='/img/inverter-icon.svg' alt="Sử dụng điện thả ga 20 năm kế tiếp" width={30} height={30} />,
     title: <>inverter<br />hybrid</>
-
-
   },
-
   {
     image: <Image src='/img/bao-hanh-5-nam.svg' alt="Chống nóng cho mái nhà giảm 6 độ" width={40} height={30} />,
     title: <>năm<br />bảo hành</>
 
   },
 ]
-
-
-
 export default function BamTaiBaPha() {
-
   return (
     <>
-
       <Layout style={{ width: '100%', background: '#fff' }}>
         <Content style={{ display: 'flex', flexDirection: 'column', width: '100%', alignContent: 'center' }}>
           <Row style={{ position: 'relative' }}>
@@ -87,15 +75,10 @@ export default function BamTaiBaPha() {
                 <Typography.Paragraph style={{ textAlign: 'left', margin: '20px 70px 10px 20px', fontSize: '14px', fontWeight: '300' }} >Phù hợp khách hàng có nhu cầu sử dụng điện ban ngày như văn phòng, khách sạn, quán game, spa. Diện tích mái tối thiểu 30 - 50m2 </Typography.Paragraph>
               </div>
             </Col>
-
           </Row>
           {comboOneFeatureData.map((data, index) => (
             <>
-
-
-
-
-              <div style={{ marginTop: '15px' }}>
+              <div key={index} style={{ marginTop: '15px' }}>
 
                 <Row style={{ backgroundColor: '#E8E8EA', position: 'relative', height: '240px', borderRadius: '8px', margin: '0 10px', boxShadow: '0 1px 2px 0 rgba(60,64,67,.1), 0 2px 6px 2px rgba(60,64,67,.15)' }}>
 
@@ -112,7 +95,6 @@ export default function BamTaiBaPha() {
                       </Col>
                     </Row>
                     <Row style={{ left: '75px', borderRadius: '4px', backgroundColor: '#000', display: 'flex', alignItems: 'center', justifyContent: 'start' }}>
-
                       <Col>
                         <Typography.Title style={{ color: '#fff', margin: '0px 5px 0px 5px', textAlign: 'left', fontWeight: 300, fontSize: '18px' }}>{data.pha}</Typography.Title>
                       </Col>
@@ -134,9 +116,7 @@ export default function BamTaiBaPha() {
                       <Typography.Title style={{ color: '#000', margin: '0px 5px 0px 5px', textAlign: 'left', fontWeight: 300, fontSize: '12px' }}>{data.feature2}</Typography.Title>
                     </Col>
                   </Row>
-
                   <Row style={{ left: '15px', borderRadius: '6px', border: 'solid 1px #000', top: '138px', position: 'absolute', display: 'flex', alignItems: 'center', justifyContent: 'start' }}>
-
                     <Col>
                       <Typography.Title style={{ color: '#000', margin: '0px 5px 0px 5px', textAlign: 'left', fontWeight: 500, fontSize: '24px' }}>{data.price}</Typography.Title>
                     </Col>
@@ -157,17 +137,11 @@ export default function BamTaiBaPha() {
                     ))}
                   </Row >
                 </Row>
-              </div></>
-
-
+              </div>
+            </>
           ))}
         </Content>
       </Layout>
-
-
-
-
-
     </>
   )
 }

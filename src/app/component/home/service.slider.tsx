@@ -64,6 +64,7 @@ const ServiceSlider = () => {
       {serviceData.map((item, index) => {
         return (
           <motion.div
+            key={index}
             animate={controls}
             initial="hidden"
             transition={{ duration: 0.5 }}

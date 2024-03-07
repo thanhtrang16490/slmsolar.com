@@ -469,7 +469,7 @@ const itemsSolarData = [
           {jaSolarItems.map((item, index) => {
             return (
               <>
-                <div style={{ flex: '1 0 calc(50% - 5px)' }}>
+                <div key={index} style={{ flex: '1 0 calc(50% - 5px)' }}>
                   <div style={{ height: '1px', width: '50px', backgroundColor: '#939393' }} ></div>
                   <Typography.Title style={{ fontSize: '14px', fontWeight: '600' }}>{item.label}</Typography.Title>
                   <Typography.Paragraph >{item.children}</Typography.Paragraph>
@@ -494,7 +494,7 @@ const itemsSolarData = [
           {canadianSolarItems.map((item, index) => {
             return (
               <>
-                <div style={{ flex: '1 0 calc(50% - 5px)' }}>
+                <div key={index} style={{ flex: '1 0 calc(50% - 5px)' }}>
                   <div style={{ height: '1px', width: '50px', backgroundColor: '#939393' }} ></div>
                   <Typography.Title style={{ fontSize: '14px', fontWeight: '600' }}>{item.label}</Typography.Title>
                   <Typography.Paragraph >{item.children}</Typography.Paragraph>
@@ -519,7 +519,7 @@ const itemsSolarData = [
           {risenSolarItems.map((item, index) => {
             return (
               <>
-                <div style={{ flex: '1 0 calc(50% - 5px)' }}>
+                <div key={index} style={{ flex: '1 0 calc(50% - 5px)' }}>
                   <div style={{ height: '1px', width: '50px', backgroundColor: '#939393' }} ></div>
                   <Typography.Title style={{ fontSize: '14px', fontWeight: '600' }}>{item.label}</Typography.Title>
                   <Typography.Paragraph >{item.children}</Typography.Paragraph>
@@ -544,7 +544,7 @@ const itemsSolarData = [
           {longgiSolarItems.map((item, index) => {
             return (
               <>
-                <div style={{ flex: '1 0 calc(50% - 5px)' }}>
+                <div key={index} style={{ flex: '1 0 calc(50% - 5px)' }}>
                   <div style={{ height: '1px', width: '50px', backgroundColor: '#939393' }} ></div>
                   <Typography.Title style={{ fontSize: '14px', fontWeight: '600' }}>{item.label}</Typography.Title>
                   <Typography.Paragraph >{item.children}</Typography.Paragraph>
@@ -572,7 +572,7 @@ const itemsInverterData = [
           {inverterDeyeeitems.map((item, index) => {
             return (
               <>
-                <div style={{ flex: '1 0 calc(50% - 5px)' }}>
+                <div key={index} style={{ flex: '1 0 calc(50% - 5px)' }}>
                   <div style={{ height: '1px', width: '50px', backgroundColor: '#939393' }} ></div>
                   <Typography.Title style={{ fontSize: '14px', fontWeight: '600' }}>{item.label}</Typography.Title>
                   <Typography.Paragraph >{item.children}</Typography.Paragraph>
@@ -597,7 +597,7 @@ const itemsInverterData = [
           {inverterLuxpoweritems.map((item, index) => {
             return (
               <>
-                <div style={{ flex: '1 0 calc(50% - 5px)' }}>
+                <div key={index} style={{ flex: '1 0 calc(50% - 5px)' }}>
                   <div style={{ height: '1px', width: '50px', backgroundColor: '#939393' }} ></div>
                   <Typography.Title style={{ fontSize: '14px', fontWeight: '600' }}>{item.label}</Typography.Title>
                   <Typography.Paragraph >{item.children}</Typography.Paragraph>
@@ -622,7 +622,7 @@ const itemsInverterData = [
           {inverterHuaweiitems.map((item, index) => {
             return (
               <>
-                <div style={{ flex: '1 0 calc(50% - 5px)' }}>
+                <div key={index} style={{ flex: '1 0 calc(50% - 5px)' }}>
                   <div style={{ height: '1px', width: '50px', backgroundColor: '#939393' }} ></div>
                   <Typography.Title style={{ fontSize: '14px', fontWeight: '600' }}>{item.label}</Typography.Title>
                   <Typography.Paragraph >{item.children}</Typography.Paragraph>
@@ -647,7 +647,7 @@ const itemsInverterData = [
           {inverterGrowattitems.map((item, index) => {
             return (
               <>
-                <div style={{ flex: '1 0 calc(50% - 5px)' }}>
+                <div key={index} style={{ flex: '1 0 calc(50% - 5px)' }}>
                   <div style={{ height: '1px', width: '50px', backgroundColor: '#939393' }} ></div>
                   <Typography.Title style={{ fontSize: '14px', fontWeight: '600' }}>{item.label}</Typography.Title>
                   <Typography.Paragraph >{item.children}</Typography.Paragraph>
@@ -676,7 +676,7 @@ const itemsBatteryData = [
           {lithiumSMBItems.map((item, index) => {
             return (
               <>
-                <div style={{ flex: '1 0 calc(50% - 5px)' }}>
+                <div key={index} style={{ flex: '1 0 calc(50% - 5px)' }}>
                   <div style={{ height: '1px', width: '50px', backgroundColor: '#939393' }} ></div>
                   <Typography.Title style={{ fontSize: '14px', fontWeight: '600' }}>{item.label}</Typography.Title>
                   <Typography.Paragraph >{item.children}</Typography.Paragraph>
@@ -702,7 +702,7 @@ const itemsBatteryData = [
           {lithiumUfoItems.map((item, index) => {
             return (
               <>
-                <div style={{ flex: '1 0 calc(50% - 5px)' }}>
+                <div key={index} style={{ flex: '1 0 calc(50% - 5px)' }}>
                   <div style={{ height: '1px', width: '50px', backgroundColor: '#939393' }} ></div>
                   <Typography.Title style={{ fontSize: '14px', fontWeight: '600' }}>{item.label}</Typography.Title>
                   <Typography.Paragraph >{item.children}</Typography.Paragraph>
@@ -727,7 +727,7 @@ const itemsBatteryData = [
           {lithiumSveItems.map((item, index) => {
             return (
               <>
-                <div style={{ flex: '1 0 calc(50% - 5px)' }}>
+                <div key={index} style={{ flex: '1 0 calc(50% - 5px)' }}>
                   <div style={{ height: '1px', width: '50px', backgroundColor: '#939393' }} ></div>
                   <Typography.Title style={{ fontSize: '14px', fontWeight: '600' }}>{item.label}</Typography.Title>
                   <Typography.Paragraph >{item.children}</Typography.Paragraph>
@@ -753,7 +753,7 @@ const itemsBatteryData = [
           {lithiumLaradaItems.map((item, index) => {
             return (
               <>
-                <div style={{ flex: '1 0 calc(50% - 5px)' }}>
+                <div key={index} style={{ flex: '1 0 calc(50% - 5px)' }}>
                   <div style={{ height: '1px', width: '50px', backgroundColor: '#939393' }} ></div>
                   <Typography.Title style={{ fontSize: '14px', fontWeight: '600' }}>{item.label}</Typography.Title>
                   <Typography.Paragraph >{item.children}</Typography.Paragraph>
@@ -796,7 +796,7 @@ export default function ThietBi() {
                 {itemsSolarData.map((item, index) => {
                   return (
                     <>
-                      <Col style={{ width: '100%', borderRadius: '8px' }}>
+                      <Col key={index} style={{ width: '100%', borderRadius: '8px' }}>
                         <Collapse
                           size="large"
                           items={[{
@@ -828,7 +828,7 @@ export default function ThietBi() {
                 {itemsInverterData.map((item, index) => {
                   return (
                     <>
-                      <Col style={{ width: '100%', borderRadius: '8px' }}>
+                      <Col key={index} style={{ width: '100%', borderRadius: '8px' }}>
                         <Collapse
                           size="large"
                           items={[{
@@ -860,7 +860,7 @@ export default function ThietBi() {
                 {itemsBatteryData.map((item, index) => {
                   return (
                     <>
-                      <Col style={{ width: '100%', borderRadius: '8px' }}>
+                      <Col key={index} style={{ width: '100%', borderRadius: '8px' }}>
                         <Collapse
                           size="large"
                           items={[{

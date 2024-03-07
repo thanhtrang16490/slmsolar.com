@@ -12,6 +12,15 @@ module.exports = nextConfig;
 
 module.exports = {
   images: {
-    domains: ["app.slmsolar.com"],
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "app.slmsolar.com",
+      },
+    ],
   },
+
+  // images: {
+  //   domains: ["app.slmsolar.com"],
+  // },
 };

@@ -91,7 +91,7 @@ export default function BamTaiMotPha() {
           </Row>
           {comboOneFeatureData.map((data, index) => (
             <>
-              <div style={{ marginTop: '20px' }}>
+              <div key={index} style={{ marginTop: '20px' }}>
 
                 <Row style={{ backgroundColor: '#E8E8EA', position: 'relative', height: '240px', borderRadius: '8px', margin: '0 10px', boxShadow: '0 1px 2px 0 rgba(60,64,67,.1), 0 2px 6px 2px rgba(60,64,67,.15)' }}>
 

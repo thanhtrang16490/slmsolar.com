@@ -1,7 +1,4 @@
-'use client'
-import { Layout } from "antd";
 import QuestionAndAnswer from "./component/home/question.answer";
-import { Content } from "antd/es/layout/layout";
 import MetricSlider from "./component/home/metric.slider";
 import ServiceSlider from "./component/home/service.slider";
 import Hero from "./component/home/hero";
@@ -13,16 +10,13 @@ import ComboOngrid from "./component/home/combo.ongrid";
 import AdvantageSlider from "./component/home/advantage.slider";
 import ContactHome from "./component/home/contact";
 
-
-
-
 export default function Home() {
 
   return (
     <>
 
-      <Layout style={{ width: '100%', background: '#F2F1F6' }}>
-        <Content style={{ display: 'flex', flexDirection: 'column', width: '100%', alignContent: 'left' }}>
+      <div style={{ width: '100%', background: '#F2F1F6' }}>
+        <div style={{ display: 'flex', flexDirection: 'column', width: '100%', alignContent: 'left' }}>
           <div style={{ marginTop: '70px' }}>
             <Hero />
           </div>
@@ -64,8 +58,8 @@ export default function Home() {
           <MetricSlider />
 
           <ContactHome />
-        </Content>
-      </Layout>
+        </div>
+      </div>
 
     </>
   )

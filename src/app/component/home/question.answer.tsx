@@ -95,7 +95,7 @@ const QuestionAndAnswer = () => {
             {questionAndAnswer.map((item, index) => {
                 return (
 
-                    <Row >
+                    <Row key={index}>
                         <Col style={{
                             display: 'flex',
                             flexDirection: 'column',

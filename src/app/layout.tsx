@@ -1,6 +1,5 @@
 import type { Metadata } from 'next'
 import StyledComponentsRegistry from '@/lib/antd.registry'
-import ChatBoxModule from './component/footer/chat.box'
 import AnalyticsGoogle from './component/analytics.google'
 import NProgressWrapper from '@/lib/nprogress.wrapper'
 import TopNavigation from './component/header/top.navigation'
@@ -43,7 +42,6 @@ export default function RootLayout({
           <NProgressWrapper>
             <TopNavigation />
             {children}
-            {/* <ChatBoxModule /> */}
             <CallBoxModule />
           </NProgressWrapper>
         </StyledComponentsRegistry>
