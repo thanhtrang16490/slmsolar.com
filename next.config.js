@@ -19,8 +19,4 @@ module.exports = {
       },
     ],
   },
-
-  // images: {
-  //   domains: ["app.slmsolar.com"],
-  // },
 };
