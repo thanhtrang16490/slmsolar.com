@@ -42,7 +42,7 @@ export default function RootLayout({
           <NProgressWrapper>
             <TopNavigation />
             {children}
-            <CallBoxModule />
+            {/* <CallBoxModule /> */}
           </NProgressWrapper>
         </StyledComponentsRegistry>
       </body>
