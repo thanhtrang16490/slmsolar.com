@@ -1,6 +1,8 @@
 
+import Sigeneryframesix from "../component/sigenergy/sigeneryframesix";
 import Sigeneryframeone from "../component/sigenergy/sigeneryframeone";
-import Sigeneryframetwo from "../component/sigenergy/sigeneryframetwo";
+import Sigeneryframefive from "../component/sigenergy/sigeneryframefive";
+import Sigeneryframethree from "../component/sigenergy/sigeneryframethree";
 
 
 
@@ -12,7 +14,9 @@ export default function heSigeneryCaoCap() {
         <div style={{ display: 'flex', flexDirection: 'column', width: '100%', alignContent: 'left' }}>
           <div style={{ marginTop: '70px' }}>
             <Sigeneryframeone />
-
+            <Sigeneryframethree />
+            <Sigeneryframefive />
+            <Sigeneryframesix />
 
           </div>
         </div>
