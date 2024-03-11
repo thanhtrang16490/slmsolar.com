@@ -12,19 +12,19 @@ const heroData =
 
 const serviceData = [
   {
-    image: <Image src='/img/money-icon.svg' alt="Thiết kế hợp nhất" width={20} height={48} />,
+    image: <Image src='/img/sigenergy/sigen-icon-1.png' alt="Thiết kế hợp nhất" width={40} height={40} />,
     title: <>Thiết kế<br />hợp nhất</>,
   },
   {
-    image: <Image src='/img/money-icon.svg' alt="Thiết kế hợp nhất" width={20} height={35} />,
+    image: <Image src='/img/sigenergy/sigen-icon-2.png' alt="An toàn cao độ" width={34} height={40} />,
     title: <>An toàn<br />cao độ</>
   },
   {
-    image: <Image src='/img/money-icon.svg' alt="Thiết kế hợp nhất" width={20} height={35} />,
+    image: <Image src='/img/sigenergy/sigen-icon-3.png' alt="Hệ thống độc lập" width={29} height={40} />,
     title: <>Hệ thống<br />độc lập</>
   },
   {
-    image: <Image src='/img/money-icon.svg' alt="Thiết kế hợp nhất" width={20} height={35} />,
+    image: <Image src='/img/sigenergy/sigen-icon-4.png' alt="Tiết kiệm tối đa" width={40} height={40} />,
     title: <>Tiết kiệm<br />tối đa</>
   },
 ]
@@ -40,28 +40,23 @@ export default function Sigeneryframeone() {
           flexDirection: 'column',
           justifyContent: 'space-between',
           width: '100%',
-          height: '100vh',
-          margin: '-55px 0 80px 0',
+          height: '100%',
+
         }}>
-          <Row style={{ position: 'relative' }}>
-            <div style={{ height: 'calc(40vh + 85px)', width: '100%', position: 'relative' }}>
-              <Image
-                src={heroData.image} alt={heroData.title}
-                fill
-                style={{ objectFit: 'cover' }}
-              />
-            </div>
-            <div style={{ position: 'absolute', top: '200px', left: '50%', translate: '-50% -50px' }}>
-              <Typography.Title style={{ width: '350px', textAlign: 'center', fontSize: '26px', color: '#fff' }} level={5}>
-                {heroData.title}
-              </Typography.Title>
-            </div>
-            <div style={{ position: 'absolute', top: '265px', left: '50%', translate: '-50% -50px', zIndex: 1 }}>
-              <Typography.Title style={{ width: '355px', textAlign: 'center', fontSize: '14px', color: '#fff', fontWeight: 300 }} level={5}>
-                {heroData.content}
-              </Typography.Title>
-            </div>
-            <video style={{ position: 'absolute', top: '400px', left: '50%', translate: '-50% -50px', backgroundColor: '#000' }} width="100%" height="220px" preload="auto" autoPlay muted loop playsInline>
+          <div style={{ position: 'relative', paddingTop: '75%', height: '100%', overflow: 'hidden', maxWidth: '100%' }}>
+            <video style={{
+              position: 'absolute',
+              top: 0,
+              left: 0,
+              bottom: 0,
+              right: 0,
+              width: '100%',
+              height: '100%',
+              objectFit: 'cover',
+            }}
+
+
+              preload="auto" autoPlay muted loop playsInline>
               <source src="/img/sigenergy/sigenergy-5en1.mp4" type="video/mp4" />
               <track
                 src="/img/sigenergy/sigenergy-5en1.mp4"
@@ -71,26 +66,42 @@ export default function Sigeneryframeone() {
               />
               Your browser does not support the video tag.
             </video>
-          </Row>
-          <Row style={{ position: 'absolute', width: '100%', bottom: 0, backgroundColor: '#000', }} gutter={0}>
-            {serviceData.map((data, index) => (
-              <Col
-                style={{
-                  display: 'flex',
-                  flexDirection: 'column',
-                  alignItems: 'center',
-                  justifyContent: 'end',
+          </div>
+          <Row >
+            <div style={{ position: 'absolute', top: '100%', left: '50%', translate: '-50% -50px', zIndex: 1 }}>
+              <Typography.Title style={{ width: '350px', textAlign: 'center', fontSize: '30px', color: '#fff' }} level={5}>
+                {heroData.title}
+              </Typography.Title>
+            </div>
+            <div style={{ position: 'absolute', top: '130%', left: '50%', translate: '-50% -50px', zIndex: 1 }}>
+              <Typography.Title style={{ width: '355px', textAlign: 'center', fontSize: '14px', color: '#fff', fontWeight: 300 }} level={5}>
+                {heroData.content}
+              </Typography.Title>
+            </div>
 
-                }}
-                key={index} xs={6} sm={6} md={6}>
-                {data.image}
-                <Typography.Paragraph style={{ color: '#fff', textAlign: 'center', fontSize: '11px' }}>{data.title}</Typography.Paragraph>
-              </Col>
-            ))}
           </Row>
+          <div style={{ background: 'linear-gradient(to bottom, #00000000, #00000005,#00000040 , #000)', width: '100%', height: '90%', position: 'absolute', bottom: '-1px' }}>
+          </div>
         </Col>
       </Row>
 
+      <Row style={{ width: '100%', bottom: 0, backgroundColor: '#000', }} gutter={0}>
+        {serviceData.map((data, index) => (
+          <Col
+            style={{
+              display: 'flex',
+              flexDirection: 'column',
+              alignItems: 'center',
+              justifyContent: 'end',
+              height: '150px',
+              marginTop: '140px',
+            }}
+            key={index} xs={6} sm={6} md={6}>
+            {data.image}
+            <Typography.Paragraph style={{ marginTop: '5px', lineHeight: '1.4', color: '#fff', textAlign: 'center', fontSize: '14px' }}>{data.title}</Typography.Paragraph>
+          </Col>
+        ))}
+      </Row>
 
     </>
   )

@@ -41,15 +41,15 @@ export default function Sigeneryframethree() {
         <Content style={{ display: 'flex', flexDirection: 'column', width: '100%', alignContent: 'center' }}>
           <Row style={{ position: 'relative' }}>
             <Col style={{
-              width: '100%', height: '100px', margin: '50px 0px 0 0px', padding: '0px', textAlign: 'center', position: 'relative'
+              width: '100%', height: '100px', margin: '10px 0px 0 0px', padding: '0px', textAlign: 'center', position: 'relative'
             }}>
               <div style={{ position: 'absolute', top: 0, left: '50%', translate: '-50% 0%', width: '100%', height: '600px' }}>
                 <Typography.Title style={{ textAlign: 'left', margin: '30px 0 0px 20px', fontSize: '30px', fontWeight: '600' }} >Hệ thống module pin<br />Lithium Sigen</Typography.Title>
               </div>
             </Col>
           </Row>
-          <div style={{ margin: '30px 16px', borderRadius: '8px', backgroundColor: '#000' }}>
-            <video width="100%" height="210" preload="auto" autoPlay muted loop playsInline poster='/img/youtube-thumb.jpeg' >
+          <div style={{ margin: '20px 16px', borderRadius: '8px', backgroundColor: '#000' }}>
+            <video width="100%" height="210" preload="auto" autoPlay muted loop playsInline poster='/img/sigenergy/video-thumb-sigen-lithium.png' >
               <source src="/img/sigenergy/sigen_battery.mp4" type="video/mp4" />
               <track
                 src="/img/sigenergy/sigen_battery.mp4"

@@ -36,7 +36,7 @@ export default function Sigeneryframefive() {
                     <Row style={{ position: 'relative' }}>
 
                         <Col style={{
-                            width: '100%', height: '110px', margin: '50px 0px 0 0px', padding: '0px', textAlign: 'center', position: 'relative'
+                            width: '100%', height: '110px', margin: '10px 0px 0 0px', padding: '0px', textAlign: 'center', position: 'relative'
                         }}>
                             <div style={{ position: 'absolute', top: 0, left: '50%', translate: '-50% 0%', width: '100%', height: '600px' }}>
                                 <Typography.Title style={{ textAlign: 'left', margin: '30px 0 0px 20px', fontSize: '30px', fontWeight: '600' }} >Combo hệ cao cấp<br />SoLarMax Sigenery</Typography.Title>
@@ -51,7 +51,7 @@ export default function Sigeneryframefive() {
 
                                     <Row style={{ translate: '-50% -50%', left: '50%', top: '50%', position: 'absolute', display: 'flex', alignItems: 'center', justifyContent: 'start' }}>
                                         <Col>
-                                            <Image src='/img/combo-hybrid.png' alt="Sử dụng điện thả ga 20 năm kế tiếp" width={240} height={380} />
+                                            <Image src='/img/sigenergy/combo-sigen-1.png' alt="Sử dụng điện thả ga 20 năm kế tiếp" width={240} height={380} />
                                         </Col>
                                     </Row>
                                     <div style={{ position: 'absolute', display: 'flex', right: '10px', bottom: '10px', gap: '5px' }}>

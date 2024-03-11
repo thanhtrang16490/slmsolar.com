@@ -15,8 +15,8 @@ const barlow = Barlow({
 })
 
 export const metadata: Metadata = {
-  title: 'SolarMax',
-  description: 'SoLarMax cung cấp giải pháp điện mặt trời áp mái dành cho hộ gia đình, hộ kinh doanh với chi phí hợp lý, miễn phí khảo sát trực tiếp.',
+  title: 'SolarMax - ĐIỆN XANH MÁI NHÀ VIỆT',
+  description: 'Đến năm 2030, Solarmax hoàn thành lắp đặt 1 triệu m2 tấm pin năng lượng mặt trời cho mái nhà Việt.',
 }
 
 export default function RootLayout({
@@ -42,7 +42,7 @@ export default function RootLayout({
           <NProgressWrapper>
             <TopNavigation />
             {children}
-            {/* <CallBoxModule /> */}
+            <CallBoxModule />
           </NProgressWrapper>
         </StyledComponentsRegistry>
       </body>

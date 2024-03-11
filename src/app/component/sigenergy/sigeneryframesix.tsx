@@ -54,8 +54,9 @@ const Sigeneryframesix = () => {
 
 
     return (
-        <>
+        <div style={{ marginBottom: '100px' }}>
             <motion.div
+
                 animate={controls}
                 initial="hidden"
                 transition={{ duration: 0.5 }}
@@ -64,7 +65,7 @@ const Sigeneryframesix = () => {
                     hidden: { opacity: 0, transform: 'translateY(50px)' }
                 }}
             >
-                <Typography.Title style={{ lineHeight: '44px', textAlign: 'left', margin: '30px 0 10px 20px', fontSize: '30px', fontWeight: '600' }} >Dự án triển khai <br />hệ thống Sigenery</Typography.Title>
+                <Typography.Title style={{ lineHeight: '44px', textAlign: 'left', margin: '10px 0 10px 20px', fontSize: '30px', fontWeight: '600' }} >Dự án triển khai <br />hệ thống Sigenery</Typography.Title>
 
             </motion.div>
 
@@ -77,9 +78,8 @@ const Sigeneryframesix = () => {
                             flexDirection: 'column',
                             justifyContent: 'space-between',
                             width: '100%',
-                            margin: '20px 15px 0px 15px',
+                            margin: '10px 15px 0px 15px',
                             height: '100%',
-                            padding: '0px',
                             background: '#fff',
                             borderRadius: '8px',
                             boxShadow: '0 1px 2px 0 rgba(60,64,67,.1), 0 2px 6px 2px rgba(60,64,67,.15)'
@@ -88,11 +88,10 @@ const Sigeneryframesix = () => {
                             <Row style={{ position: 'relative' }}>
 
                                 <div style={{ padding: '0px', width: '100%', paddingTop: '56%', position: 'relative' }}>
-                                    <Image style={{ borderRadius: '8px', objectFit: 'cover' }} alt={item.title} fill src={item.image} />
+                                    <Image style={{ borderRadius: '8px 8px 0px 0px', objectFit: 'cover' }} alt={item.title} fill src={item.image} />
                                 </div>
 
-                                <div style={{ background: 'linear-gradient(to bottom, #ffffff00, #ffffff60 , #fff)', width: '100%', height: '60px', position: 'absolute', bottom: '-1px' }}>
-                                </div>
+
                             </Row>
                             <div>
                                 <Typography.Title style={{ margin: '10px 20px', fontSize: '14px' }} level={5}>
@@ -108,7 +107,7 @@ const Sigeneryframesix = () => {
             })
 
             }
-        </>
+        </div>
 
     );
 }
