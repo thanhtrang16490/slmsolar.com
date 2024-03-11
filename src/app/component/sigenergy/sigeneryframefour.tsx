@@ -24,52 +24,21 @@ const useScroll = () => {
 
 const hybridData = [
     {
-        image: <Image src='/img/solar-hybrid-icon.svg' alt="Hoàn vốn trong 4 năm" width={35} height={35} />,
-        title: <>Tấm pin<br />mặt trời</>,
+        image: <Image src='/img/sigenergy/sigen-ev-icon-1.png' alt="Hoàn vốn trong 4 năm" width={30} height={30} />,
+        title: <>Tấm pin mặt trời</>,
 
     },
     {
-        image: <Image src='/img/inverter-icon.svg' alt="Sử dụng điện thả ga 20 năm kế tiếp" width={35} height={35} />,
-        title: <>inverter<br />hybrid</>
+        image: <Image src='/img/sigenergy/sigen-ev-icon-2.png' alt="Hoàn vốn trong 4 năm" width={30} height={30} />,
+        title: <>inverter hybrid</>
 
 
     },
     {
-        image: <Image src='/img/hybrid-lithium-icon.svg' alt="Chống nóng cho mái nhà giảm 6 độ" width={35} height={35} />,
-        title: <>Pin<br />Lithium</>
+        image: <Image src='/img/sigenergy/sigen-ev-icon-3.png' alt="Hoàn vốn trong 4 năm" width={30} height={30} />,
+        title: <>Pin Lithium</>
 
     },
-]
-
-const hybridContentData = [
-    {
-        title: 'Nguồn điện từ pin mặt trời',
-    },
-    {
-        title: 'Nguồn điện từ pin lưu trữ',
-    },
-    {
-        title: 'Nguồn điện từ lưới điện',
-    },
-    {
-        title: 'Hoạt động độc lập khi mất điện lưới',
-    },
-]
-
-const serviceData = [
-    {
-        image: <Image src='/img/sigenergy/sigen-icon-1.png' alt="Thiết kế hợp nhất" width={40} height={40} />,
-        title: <>Thiết kế<br />hợp nhất</>,
-    },
-    {
-        image: <Image src='/img/sigenergy/sigen-icon-2.png' alt="An toàn cao độ" width={34} height={40} />,
-        title: <>An toàn<br />cao độ</>
-    },
-    {
-        image: <Image src='/img/sigenergy/sigen-icon-3.png' alt="Hệ thống độc lập" width={29} height={40} />,
-        title: <>Hệ thống<br />độc lập</>
-    },
-
 ]
 
 const Sigeneryframefour = () => {
@@ -97,7 +66,7 @@ const Sigeneryframefour = () => {
                         style={{ objectFit: 'cover' }}
                     />
                     <motion.div
-                        style={{ top: '90px', position: 'absolute', width: '100%', height: '100%', zIndex: 2 }}
+                        style={{ top: '80px', position: 'absolute', width: '100%', height: '100%', zIndex: 2 }}
                         animate={controls}
                         initial="hidden"
                         transition={{ duration: 0.5 }}
@@ -106,13 +75,30 @@ const Sigeneryframefour = () => {
                             hidden: { opacity: 0, transform: 'translateY(50px)' }
                         }}
                     >
-                        <Typography.Title style={{ color: '#fff', textAlign: 'left', margin: '30px 0 0px 20px', fontSize: '20px', fontWeight: '600' }} >Sạc xe điện Sigen EV AC</Typography.Title>
-                        <Typography.Paragraph style={{ color: '#fff', textAlign: 'left', margin: '20px 70px 10px 20px', fontSize: '14px', fontWeight: '300' }} >Khai thác năng lượng mặt trời <br />và công nghệ sạc siêu tốc EV-DC</Typography.Paragraph>
-
+                        <Typography.Title style={{ color: '#fff', textAlign: 'left', margin: '30px 0 5px 20px', fontSize: '30px', fontWeight: '600' }} >Sạc xe điện<br /> Sigen EV AC</Typography.Title>
+                        <Typography.Paragraph style={{ color: '#fff', textAlign: 'left', margin: '0px 70px 10px 20px', fontSize: '14px', fontWeight: '300' }} >Khai thác năng lượng mặt trời và <br />công nghệ sạc siêu tốc EV-DC</Typography.Paragraph>
                     </motion.div>
-                </div>
+
+                    <Row style={{ position: 'absolute', top: '250px', left: '50%', boxShadow: '0 1px 2px 0 rgba(60, 64, 67, .1), 0 2px 6px 2px rgba(60, 64, 67, .15)' }} gutter={5}>
+                        {hybridData.map((data, index) => (
+                            <Col
+                                style={{
+                                    display: 'flex',
+                                    flexDirection: 'row',
+                                    alignItems: 'center',
+                                    justifyContent: 'left',
+                                    padding: '10px 0 0 10px',
+                                }}
+                                key={index} xs={24} sm={24} md={24}>
+                                <div >{data.image}</div>
+                                <Typography.Paragraph style={{ margin: '0 0 0 10px', color: '#fff', marginBottom: '0', textAlign: 'left', fontSize: '14px' }}>{data.title}</Typography.Paragraph>
+                            </Col>
+                        ))}
+                    </Row >
+                </div >
 
             </Row >
+
 
 
 

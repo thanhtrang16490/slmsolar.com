@@ -5,6 +5,7 @@ import Sigeneryframefive from "../component/sigenergy/sigeneryframefive";
 import Sigeneryframethree from "../component/sigenergy/sigeneryframethree";
 import type { Metadata } from 'next'
 import Sigeneryframefour from "../component/sigenergy/sigeneryframefour";
+import Sigeneryframetwo from "../component/sigenergy/sigeneryframetwo";
 
 export const metadata: Metadata = {
   title: 'Hệ Sigenergy cao cấp',
@@ -20,6 +21,7 @@ export default function heSigeneryCaoCap() {
         <div style={{ display: 'flex', flexDirection: 'column', width: '100%', alignContent: 'center' }}>
           <div style={{ marginTop: '70px' }}>
             <Sigeneryframeone />
+            <Sigeneryframetwo />
             <Sigeneryframethree />
             <Sigeneryframefour />
             <Sigeneryframefive />
