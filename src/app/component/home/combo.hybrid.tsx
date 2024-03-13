@@ -105,7 +105,7 @@ const ComboHybrid = () => {
     const controls = useAnimation();
 
     React.useEffect(() => {
-        if (scrollY > 3200) {
+        if (scrollY > 3800) {
             controls.start("visible");
         } else {
             controls.start("hidden");
@@ -113,7 +113,7 @@ const ComboHybrid = () => {
     }, [controls, scrollY]);
 
     return (
-        <>
+        <div style={{ padding: '20px 0 30px 0', backgroundColor: '#999' }}>
             <div><motion.div
                 animate={controls}
                 initial="hidden"
@@ -263,7 +263,7 @@ const ComboHybrid = () => {
                 </Row>
             </div>
 
-        </>
+        </div>
 
     );
 }

@@ -36,7 +36,7 @@ export default function Sigeneryframefive() {
                     <Row style={{ position: 'relative' }}>
 
                         <Col style={{
-                            width: '100%', height: '110px', margin: '10px 0px 0 0px', padding: '0px', textAlign: 'center', position: 'relative'
+                            width: '100%', height: '110px', margin: '20px 0px 0 0px', padding: '0px', textAlign: 'center', position: 'relative'
                         }}>
                             <div style={{ position: 'absolute', top: 0, left: '50%', translate: '-50% 0%', width: '100%', height: '600px' }}>
                                 <Typography.Title style={{ textAlign: 'left', margin: '30px 0 0px 20px', fontSize: '30px', fontWeight: '600' }} >Combo hệ cao cấp<br />SoLarMax Sigenery</Typography.Title>
@@ -47,28 +47,34 @@ export default function Sigeneryframefive() {
                         <>
                             <div key={index} style={{ margin: '8px' }}>
 
-                                <Row style={{ backgroundColor: '#E8E8EA', position: 'relative', height: '450px', borderRadius: '8px', margin: '0 10px', boxShadow: '0 1px 2px 0 rgba(60,64,67,.1), 0 2px 6px 2px rgba(60,64,67,.15)' }}>
+                                <Row style={{ backgroundColor: '#000', position: 'relative', height: '450px', borderRadius: '8px', margin: '5px 10px', boxShadow: '0 1px 2px 0 rgba(60,64,67,.1), 0 2px 6px 2px rgba(60,64,67,.15)' }}>
 
-                                    <Row style={{ translate: '-50% -50%', left: '50%', top: '50%', position: 'absolute', display: 'flex', alignItems: 'center', justifyContent: 'start' }}>
+                                    <Row style={{ translate: '-50% -50%', left: '50%', top: '40%', position: 'absolute', display: 'flex', alignItems: 'center', justifyContent: 'start', zIndex: '2' }}>
                                         <Col>
-                                            <Image src='/img/sigenergy/combo-sigen-1.png' alt="Sử dụng điện thả ga 20 năm kế tiếp" width={240} height={380} />
+                                            <Image src='/img/sigenergy/combo-sigen-3.png' alt="Sử dụng điện thả ga 20 năm kế tiếp" width={280} height={314} />
+                                        </Col>
+                                    </Row>
+                                    <Row style={{ translate: '-50% -50px', left: '50%', bottom: 0, position: 'absolute', display: 'flex', alignItems: 'center', justifyContent: 'start', zIndex: '1' }}>
+                                        <Col>
+                                            <Image src='/img/sigenergy/combo-sigen-shadow.png' alt="Sử dụng điện thả ga 20 năm kế tiếp" width={349} height={145} />
+
                                         </Col>
                                     </Row>
                                     <div style={{ position: 'absolute', display: 'flex', right: '10px', bottom: '10px', gap: '5px' }}>
-                                        <Row style={{ left: '15px', borderRadius: '4px', border: 'solid 1px #000', top: '10px', display: 'flex', alignItems: 'center', justifyContent: 'start' }}>
+                                        <Row style={{ left: '15px', borderRadius: '4px', border: 'solid 1px #fff', top: '10px', display: 'flex', alignItems: 'center', justifyContent: 'start' }}>
                                             <Col>
-                                                <Typography.Title style={{ color: '#000', margin: '0px 5px 0px 5px', textAlign: 'left', fontWeight: 300, fontSize: '18px' }}>{data.he}</Typography.Title>
+                                                <Typography.Title style={{ color: '#fff', margin: '0px 5px 0px 5px', textAlign: 'left', fontWeight: 300, fontSize: '18px' }}>{data.he}</Typography.Title>
                                             </Col>
                                         </Row>
-                                        <Row style={{ left: '75px', borderRadius: '4px', backgroundColor: '#000', display: 'flex', alignItems: 'center', justifyContent: 'start' }}>
+                                        <Row style={{ left: '75px', borderRadius: '4px', backgroundColor: '#fff', display: 'flex', alignItems: 'center', justifyContent: 'start' }}>
                                             <Col>
-                                                <Typography.Title style={{ color: '#fff', margin: '0px 5px 0px 5px', textAlign: 'left', fontWeight: 300, fontSize: '18px' }}>{data.pha}</Typography.Title>
+                                                <Typography.Title style={{ color: '#000', margin: '0px 5px 0px 5px', textAlign: 'left', fontWeight: 300, fontSize: '18px' }}>{data.pha}</Typography.Title>
                                             </Col>
                                         </Row>
                                     </div>
                                     <Row style={{ left: '15px', borderRadius: '6px', bottom: '10px', position: 'absolute', display: 'flex', alignItems: 'center', justifyContent: 'start' }}>
                                         <Col>
-                                            <Typography.Title style={{ color: '#000', margin: '0px 5px 0px 5px', textAlign: 'left', fontWeight: 500, fontSize: '24px' }}>{data.price}</Typography.Title>
+                                            <Typography.Title style={{ color: '#fff', margin: '0px 5px 0px 5px', textAlign: 'left', fontWeight: 500, fontSize: '24px' }}>{data.price}</Typography.Title>
                                         </Col>
                                     </Row>
                                 </Row>

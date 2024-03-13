@@ -65,7 +65,7 @@ const Sigeneryframesix = () => {
                     hidden: { opacity: 0, transform: 'translateY(50px)' }
                 }}
             >
-                <Typography.Title style={{ lineHeight: '44px', textAlign: 'left', margin: '10px 0 10px 20px', fontSize: '30px', fontWeight: '600' }} >Dự án triển khai <br />hệ thống Sigenery</Typography.Title>
+                <Typography.Title style={{ lineHeight: '44px', textAlign: 'left', margin: '30px 0 10px 20px', fontSize: '30px', fontWeight: '600' }} >Dự án triển khai <br />hệ thống Sigenery</Typography.Title>
 
             </motion.div>
 
@@ -94,7 +94,7 @@ const Sigeneryframesix = () => {
 
                             </Row>
                             <div>
-                                <Typography.Title style={{ margin: '10px 20px', fontSize: '14px' }} level={5}>
+                                <Typography.Title style={{ margin: '10px 10px', fontSize: '14px' }} level={5}>
                                     {item.title}
                                 </Typography.Title>
 

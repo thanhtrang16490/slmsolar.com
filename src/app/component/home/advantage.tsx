@@ -2,6 +2,7 @@
 
 import { Col, Row, Typography } from "antd";
 import Image from "next/image";
+import Link from "next/link";
 
 
 
@@ -60,7 +61,9 @@ const Advantage = () => {
         <div style={{ margin: '20px 20px', backgroundColor: 'black', width: '100%', borderRadius: '8px', height: '50px', }}>
           <div style={{ margin: '0 35px', display: 'flex', justifyContent: 'space-evenly' }}>
             <Image src='/img/support-icon-white.svg' alt="Phone" width={50} height={50} />
-            <Typography.Paragraph style={{ color: 'white', fontSize: '32px' }}>09175.999.66</Typography.Paragraph>
+            <Link href="tel:0977879291">
+              <Typography.Paragraph style={{ color: 'white', fontSize: '32px' }}>0977.879.291</Typography.Paragraph>
+            </Link>
           </div>
         </div>
       </Row>

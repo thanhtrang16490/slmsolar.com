@@ -72,7 +72,7 @@ const Sigeneryframetwo: React.FC = () => {
         <Typography.Title style={{ fontSize: '14px', fontWeight: '600', lineHeight: 1 }} >Biến tần Sigen PV</Typography.Title>
         <Typography.Paragraph style={{ fontSize: '14px', fontWeight: '300', lineHeight: 1 }} >Hybrid / On-grid Inverter</Typography.Paragraph>
       </div>,
-      children: <div style={{ padding: '2px', borderRadius: '6px', backgroundColor: '#fff2e8' }}>{noidung1}</div>,
+      children: <div style={{ padding: '2px', borderRadius: '6px' }}>{noidung1}</div>,
       extra:
         <div style={{ position: 'relative' }}>
           <Image style={{ position: 'absolute', top: '0px', right: 0 }} src="/img/sigenergy/pro-3jm-1.png" alt="Picture of the author" width={150} height={60} />
@@ -87,7 +87,7 @@ const Sigeneryframetwo: React.FC = () => {
         <Typography.Paragraph style={{ fontSize: '14px', fontWeight: '300', lineHeight: 1 }} >Sạc siêu tốc EV DC</Typography.Paragraph>
 
       </div>,
-      children: <div style={{ padding: '2px', borderRadius: '6px', backgroundColor: '#fff2e8' }}>{noidung2}</div>,
+      children: <div style={{ padding: '2px', borderRadius: '6px' }}>{noidung2}</div>,
       extra:
         <div style={{ position: 'relative' }}>
           <Image style={{ position: 'absolute', top: '0px', right: 0 }} src="/img/sigenergy/pro-3jm-2.png" alt="Picture of the author" width={150} height={50} />
@@ -102,7 +102,7 @@ const Sigeneryframetwo: React.FC = () => {
         <Typography.Paragraph style={{ fontSize: '14px', fontWeight: '300', lineHeight: 1 }} >Pinlithium hiệu suất cao</Typography.Paragraph>
 
       </div>,
-      children: <div style={{ padding: '2px', borderRadius: '6px', backgroundColor: '#fff2e8' }}>{noidung3}</div>,
+      children: <div style={{ padding: '2px', borderRadius: '6px' }}>{noidung3}</div>,
       extra:
         <div style={{ position: 'relative' }}>
           <Image style={{ position: 'absolute', top: '0px', right: 0 }} src="/img/sigenergy/pro-3jm-3.png" alt="Picture of the author" width={150} height={180} />
@@ -112,31 +112,37 @@ const Sigeneryframetwo: React.FC = () => {
   const itemfour: CollapseProps['items'] = [
     {
       key: '4',
-      label: <div style={{ height: '205px', paddingTop: '5px' }}>
+      label: <div style={{ height: '215px', paddingTop: '5px' }}>
         <Typography.Title style={{ fontSize: '14px', fontWeight: '600', lineHeight: 1 }} >Cổng năng lượng Sigen
         </Typography.Title>
 
       </div>,
-      children: <div style={{ padding: '2px', borderRadius: '6px', backgroundColor: '#fff2e8' }}>{noidung4}</div>,
+      children: <div style={{ padding: '2px', borderRadius: '6px' }}>{noidung4}</div>,
       extra:
-        <div style={{ position: 'relative' }}>
-          <Image style={{ position: 'absolute', top: '20px', right: '20px' }} src="/img/sigenergy/sigen-getway-2.png" alt="Picture of the author" width={100} height={177} />
-        </div>
+        <>
+          <div style={{ position: 'relative' }}>
+            <Image style={{ position: 'absolute', top: '20px', right: '20px' }} src="/img/sigenergy/sigen-getway-2.png" alt="Picture of the author" width={100} height={177} />
+            <Image style={{ position: 'absolute', top: '80px', right: '170px' }} src="/img/sigenergy/sigen-getway-3.png" alt="Picture of the author" width={180} height={112} />
+
+          </div>
+
+        </>
+
     },
   ];
 
   return (
     <>
-      <Layout style={{ width: '100%', background: '#fff' }}>
+      <Layout style={{ width: '100%', background: '#E7E5E5' }}>
         <Content style={{ display: 'flex', flexDirection: 'column', width: '100%', alignContent: 'center' }}>
 
           <Row style={{ position: 'relative' }}>
             <Col style={{
-              width: '100%', height: '120px', margin: '-15px 0px 0 0px', padding: '0px', textAlign: 'center', position: 'relative'
+              width: '100%', height: '120px', margin: '30px 0px 0 0px', padding: '0px', textAlign: 'center', position: 'relative'
             }}>
 
               <div style={{ position: 'absolute', top: 0, left: '50%', translate: '-50% 0%', width: '100%', height: '600px' }}>
-                <Typography.Title style={{ textAlign: 'left', margin: '30px 0 0px 20px', fontSize: '30px', fontWeight: '600' }} >Chi tiết thành phần<br />hệ Sigenergy</Typography.Title>
+                <Typography.Title style={{ textAlign: 'left', margin: '20px 0 0 20px', fontSize: '30px', fontWeight: '600' }} >Chi tiết thành phần<br />hệ Sigenergy</Typography.Title>
               </div>
 
             </Col>
@@ -146,7 +152,7 @@ const Sigeneryframetwo: React.FC = () => {
               components: {
                 Collapse: {
                   headerPadding: '0px 15px',
-                  headerBg: '#fff',
+                  headerBg: '#E7E5E5',
                   contentPadding: '10px 20px',
 
 

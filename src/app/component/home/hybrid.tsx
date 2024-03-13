@@ -61,7 +61,7 @@ const Hybrid = () => {
     const controls = useAnimation();
 
     React.useEffect(() => {
-        if (scrollY > 1600) {
+        if (scrollY > 2500) {
             controls.start("visible");
         } else {
             controls.start("hidden");

@@ -27,18 +27,20 @@ export default function Home() {
           <div style={{ marginTop: '70px' }}>
             <Advantage />
           </div>
-          <div style={{ marginTop: '20px' }}>
-            <Hybrid />
-          </div>
+
           <div style={{ marginTop: '20px' }}>
             <Ongrid />
           </div>
           <div style={{ marginTop: '20px' }}>
-            <ComboHybrid />
+            <Hybrid />
           </div>
           <div style={{ marginTop: '20px' }}>
             <ComboOngrid />
           </div>
+          <div style={{ marginTop: '20px' }}>
+            <ComboHybrid />
+          </div>
+
           <QuestionAndAnswer />
           <div style={{ margin: '30px 16px', borderRadius: '8px', backgroundColor: '#000' }}>
             <video width="100%" height="210" preload="none" controls poster='/img/youtube-thumb.jpeg' >

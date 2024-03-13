@@ -58,7 +58,7 @@ const Ongrid = () => {
     const controls = useAnimation();
 
     React.useEffect(() => {
-        if (scrollY > 2500) {
+        if (scrollY > 1600) {
             controls.start("visible");
         } else {
             controls.start("hidden");
