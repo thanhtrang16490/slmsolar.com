@@ -75,7 +75,7 @@ export default function HybridMotPha() {
             }}>
               <div style={{ position: 'absolute', top: 0, left: '50%', translate: '-50% 0%', width: '100%', height: '600px' }}>
                 <Typography.Title style={{ textAlign: 'left', margin: '30px 0 0px 20px', fontSize: '30px', fontWeight: '600' }} >Điện mặt trời<br />Độc lập Hybrid<br />1 pha</Typography.Title>
-                <Typography.Paragraph style={{ textAlign: 'left', margin: '20px 70px 10px 20px', fontSize: '14px', fontWeight: '300' }} >phù hợp khách hàng kinh doanh nhà trọ cho thuê, kinh doanh nhà hàng, cafe, karaoe, khách hàng tại khu du lịch ven sông, biển, trang trại trên núi. Diện tích mái tối thiểu từ 30 đến 50m2  </Typography.Paragraph>
+                <Typography.Paragraph style={{ textAlign: 'left', margin: '20px 70px 10px 20px', fontSize: '14px', fontWeight: '300' }} >Phù hợp khách hàng kinh doanh nhà trọ cho thuê, kinh doanh nhà hàng, cafe, karaoke, khách hàng tại khu du lịch ven sông, biển, trang trại trên núi. Diện tích mái tối thiểu từ 30 đến 50m2  </Typography.Paragraph>
               </div>
             </Col>
 
