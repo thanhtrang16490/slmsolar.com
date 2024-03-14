@@ -55,9 +55,10 @@ export default function Sigeneryframefive() {
                                         </Col>
                                     </Row>
                                     <Row style={{ translate: '-50% -50px', left: '50%', bottom: 0, position: 'absolute', display: 'flex', alignItems: 'center', justifyContent: 'start', zIndex: '1' }}>
-                                        <Col>
-                                            <Image src='/img/sigenergy/combo-sigen-shadow.png' alt="Sử dụng điện thả ga 20 năm kế tiếp" width={349} height={145} />
-
+                                        <Col >
+                                            <div style={{ position: 'relative', width: '100%', height: '145px' }}>
+                                                <Image style={{ objectFit: 'cover' }} src='/img/sigenergy/combo-sigen-shadow.png' alt="Sử dụng điện thả ga 20 năm kế tiếp" fill />
+                                            </div>
                                         </Col>
                                     </Row>
                                     <div style={{ position: 'absolute', display: 'flex', right: '10px', bottom: '10px', gap: '5px' }}>

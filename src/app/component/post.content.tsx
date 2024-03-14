@@ -13,7 +13,7 @@ const PostContent: React.FC<PostContentProps> = ({ post }) => {
     return (
         <Layout style={{ margin: '70px auto', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
             <Card style={{ width: '100%', border: 'none' }}
-                title={<Typography.Title level={4} style={{ whiteSpace: 'pre-line' }}>{post.data.attributes.title}</Typography.Title>}
+                title={<Typography.Title style={{ fontSize: '32px', whiteSpace: 'pre-line' }}>{post.data.attributes.title}</Typography.Title>}
             >
                 <Meta description={
                     <>
@@ -35,7 +35,7 @@ const PostContent: React.FC<PostContentProps> = ({ post }) => {
                                     : "/img/place-holder.png"
                             }
                         </div>
-                        <Typography.Paragraph style={{ margin: 0 }}>
+                        <Typography.Paragraph style={{ fontSize: '17px', margin: 0 }}>
                             <div dangerouslySetInnerHTML={{ __html: post.data.attributes.Content }} ></div>
                         </Typography.Paragraph>
                     </>
