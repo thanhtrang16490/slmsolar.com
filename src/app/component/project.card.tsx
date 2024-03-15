@@ -41,7 +41,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ post }) => {
                     <Meta
                         description={
                             <Link href={`/du-an/${post?.attributes.slug}`}>
-                                <Typography.Title style={{ margin: '10px 20px', fontSize: '14px' }} level={5}>
+                                <Typography.Title style={{ margin: '10px 0px', fontSize: '17px' }} >
                                     <div style={{ display: '-webkit-box', WebkitLineClamp: 2, WebkitBoxOrient: 'vertical', overflow: 'hidden' }} dangerouslySetInnerHTML={{ __html: post?.attributes?.title }} />
                                 </Typography.Title>
                             </Link>

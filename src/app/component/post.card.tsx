@@ -42,7 +42,7 @@ const PostCard: React.FC<PostCardProps> = ({ post }) => {
                     <Meta
                         description={
                             <Link href={`/mega-story/${post?.attributes.slug}`}>
-                                <Typography.Title style={{ margin: '10px 20px', fontSize: '14px' }} level={5}>
+                                <Typography.Title style={{ margin: '10px 0px', fontSize: '16px' }} level={5}>
                                     <div style={{ display: '-webkit-box', WebkitLineClamp: 2, WebkitBoxOrient: 'vertical', overflow: 'hidden' }} dangerouslySetInnerHTML={{ __html: post?.attributes?.title }} />
                                 </Typography.Title>
                             </Link>

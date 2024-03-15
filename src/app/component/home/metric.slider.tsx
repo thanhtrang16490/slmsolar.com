@@ -223,7 +223,7 @@ const MetricSlider = () => {
 
                             <Row gutter={5}>
                                 <Col span={12}>
-                                    <Link href='tel:+84962736891'>
+                                    <Link href='tel:+84977879291'>
                                         <Button style={{ width: '100%' }} type="primary">Khảo sát trực tiếp</Button>
                                     </Link>
                                 </Col>
