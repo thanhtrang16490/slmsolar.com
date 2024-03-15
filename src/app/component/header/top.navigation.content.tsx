@@ -41,7 +41,7 @@ const solutionData = [
 const productsData = [
     {
         title: 'Pin mặt trời - Biến tần - Pin Lithium',
-        path: '/thiet-bi',
+        path: '/thiet-bi-nang-luong-mat-troi',
         icon: <Image loading='eager' src='/img/device-icon.svg' alt='device icon' width={30} height={30} />
     },
     {

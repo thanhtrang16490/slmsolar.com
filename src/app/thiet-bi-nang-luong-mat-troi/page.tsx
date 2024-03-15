@@ -484,7 +484,20 @@ const lithiumSMBItems: DescriptionsProps['items'] = [
 
 const itemsSolarData = [
   {
-    title: 'Pin mặt trời JA Solar - 550W',
+    title:
+      <div style={{ position: 'relative' }}>
+        <Typography.Title style={{ zIndex: '1', position: 'absolute', left: '70px', top: '-15px', translate: '-50% -50%', fontSize: '14px', fontWeight: '600' }}>Pin mặt trời JA Solar</Typography.Title>
+        <Image style={{ zIndex: '1', position: 'absolute', left: '50px', top: '25px', translate: '-50% -50%' }} loading='eager' src='/img/thiet-bi/ja-solar-logo.png' alt='device icon' width={100} height={44} />
+        <div style={{ position: 'absolute', display: 'flex', left: '1200px', top: '10px', gap: '5px' }}>
+          <Row style={{ left: '75px', borderRadius: '4px', backgroundColor: '#000', display: 'flex', alignItems: 'center', justifyContent: 'start' }}>
+
+            <Col>
+              <Typography.Title style={{ color: '#fff', margin: '0px 5px 0px 5px', textAlign: 'left', fontWeight: 300, fontSize: '18px' }}>550 Wp</Typography.Title>
+            </Col>
+          </Row>
+        </div>
+
+      </div>,
     icon:
       <div style={{ position: 'relative' }}>
         <Image style={{ zIndex: '1', position: 'absolute', left: '15px', top: '15px', translate: '-50% -50%' }} loading='eager' src='/img/solar-device.png' alt='device icon' width={40} height={65} />
@@ -509,7 +522,12 @@ const itemsSolarData = [
       </>
   },
   {
-    title: 'Pin mặt trời Canadian Solar - 550W',
+    title:
+      <div style={{ position: 'relative' }}>
+        <Typography.Title style={{ zIndex: '1', position: 'absolute', left: '70px', top: '-15px', translate: '-50% -50%', fontSize: '14px', fontWeight: '600' }}>Pin mặt trời Canadian</Typography.Title>
+        <Image style={{ zIndex: '1', position: 'absolute', left: '100px', top: '25px', translate: '-50% -50%' }} loading='eager' src='/img/thiet-bi/canadian-solar-logo.png' alt='device icon' width={206} height={44} />
+      </div >,
+
     icon:
       <div style={{ position: 'relative' }}>
         <Image style={{ zIndex: '1', position: 'absolute', left: '15px', top: '15px', translate: '-50% -50%' }} loading='eager' src='/img/solar-device.png' alt='device icon' width={40} height={65} />
@@ -534,7 +552,12 @@ const itemsSolarData = [
       </>
   },
   {
-    title: 'Pin mặt trời Risen Solar - 550W',
+    title:
+      <div style={{ position: 'relative' }}>
+        <Typography.Title style={{ zIndex: '1', position: 'absolute', left: '70px', top: '-15px', translate: '-50% -50%', fontSize: '14px', fontWeight: '600' }}>Pin mặt trời Risen Solar</Typography.Title>
+        <Image style={{ zIndex: '1', position: 'absolute', left: '45px', top: '25px', translate: '-50% -50%' }} loading='eager' src='/img/thiet-bi/risen-solar-logo.png' alt='device icon' width={93} height={28} />
+      </div >,
+
     icon:
       <div style={{ position: 'relative' }}>
         <Image style={{ zIndex: '1', position: 'absolute', left: '15px', top: '15px', translate: '-50% -50%' }} loading='eager' src='/img/solar-device.png' alt='device icon' width={40} height={65} />
@@ -559,7 +582,12 @@ const itemsSolarData = [
       </>
   },
   {
-    title: 'Pin mặt trời Longi Solar - 550W',
+    title:
+      <div style={{ position: 'relative' }}>
+        <Typography.Title style={{ zIndex: '1', position: 'absolute', left: '70px', top: '-15px', translate: '-50% -50%', fontSize: '14px', fontWeight: '600' }}> Pin mặt trời Longi Solar</Typography.Title>
+        <Image style={{ zIndex: '1', position: 'absolute', left: '65px', top: '25px', translate: '-50% -50%' }} loading='eager' src='/img/thiet-bi/longi-solar-logo.png' alt='device icon' width={132} height={44} />
+      </div >,
+
     icon:
       <div style={{ position: 'relative' }}>
         <Image style={{ zIndex: '1', position: 'absolute', left: '15px', top: '15px', translate: '-50% -50%' }} loading='eager' src='/img/solar-device.png' alt='device icon' width={40} height={65} />
@@ -587,7 +615,12 @@ const itemsSolarData = [
 
 const itemsInverterData = [
   {
-    title: 'Inverter Hybrid Deye - 5kW',
+    title:
+      <div style={{ position: 'relative' }}>
+        <Typography.Title style={{ zIndex: '1', position: 'absolute', left: '65px', top: '-15px', translate: '-50% -50%', fontSize: '14px', fontWeight: '600' }}>Inverter Hybrid Deye</Typography.Title>
+        <Image style={{ zIndex: '1', position: 'absolute', left: '35px', top: '25px', translate: '-50% -50%' }} loading='eager' src='/img/thiet-bi/deye-logo.png' alt='device icon' width={70} height={27} />
+      </div >,
+
     icon:
       <div style={{ position: 'relative' }}>
         <Image style={{ zIndex: '1', position: 'absolute', left: '15px', top: '15px', translate: '-50% -50%' }} loading='eager' src='/img/inverter-deyee-device.png' alt='device icon' width={40} height={65} />
@@ -595,6 +628,9 @@ const itemsInverterData = [
       </div>,
     desc:
       <>
+        <div style={{ paddingTop: '100%', position: 'relative' }}>
+          <Image style={{ zIndex: '1', position: 'absolute', left: '50%', top: '50%', translate: '-50% -50%' }} loading='eager' src='/img/inverter-deyee-device.png' alt='device icon' width={186} height={300} />
+        </div>
         <div style={{ display: 'flex', flexWrap: 'wrap', gap: '5px' }}>
           {inverterDeyeeitems.map((item, index) => {
             return (
