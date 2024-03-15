@@ -41,7 +41,9 @@ const TopNavigation = () => {
             <Space style={{
                 position: 'fixed',
                 top: '0px',
-                width: '100%',
+                left: '50%',
+                transform: 'translateX(-50%)',
+                width: '800px',
                 background: isScrolled ? 'rgba(225, 225, 225, 0.55)' : 'transparent',
                 backdropFilter: isScrolled ? 'blur(7.5px)' : 'none',
                 WebkitBackdropFilter: isScrolled ? 'blur(7.5px)' : 'none',

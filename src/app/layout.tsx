@@ -37,11 +37,13 @@ export default function RootLayout({
 
       </head>
       <AnalyticsGoogle />
-      <body style={{ margin: '-18px 0 0 0' }}>
+      <body style={{ maxWidth: '800px', margin: '-18px auto 0', }}>
         <StyledComponentsRegistry>
           <NProgressWrapper>
             <TopNavigation />
+
             {children}
+
             <CallBoxModule />
           </NProgressWrapper>
         </StyledComponentsRegistry>

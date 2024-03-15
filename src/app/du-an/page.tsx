@@ -95,7 +95,7 @@ const ProjectPage = () => {
         <Row gutter={0}>
 
           {posts && posts.data && posts.data.map((post: Post) => (
-            <Col key={post.id} xs={24} sm={24} md={12} lg={8} xl={6} xxl={6}>
+            <Col key={post.id} xs={24} sm={24} md={12} lg={12} xl={12} xxl={12}>
               <ProjectCard post={post} />
             </Col>
           ))}
