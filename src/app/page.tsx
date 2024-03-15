@@ -15,7 +15,8 @@ export default function Home() {
   return (
     <>
 
-      <div style={{ width: '100%', background: '#F2F1F6' }}>
+
+      <div style={{ paddingBottom: '80px', width: '100%', background: '#F2F1F6' }}>
         <div style={{ display: 'flex', flexDirection: 'column', width: '100%', alignContent: 'left' }}>
           <div style={{ marginTop: '70px' }}>
             <Hero />

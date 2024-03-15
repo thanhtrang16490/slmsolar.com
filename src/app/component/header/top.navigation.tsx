@@ -40,6 +40,9 @@ const TopNavigation = () => {
         <>
             <Space style={{
                 position: 'fixed',
+                maxWidth: '1000px',
+                left: '50%',
+                translate: '-50% 0%',
                 top: '0px',
                 width: '100%',
                 background: isScrolled ? 'rgba(225, 225, 225, 0.55)' : 'transparent',

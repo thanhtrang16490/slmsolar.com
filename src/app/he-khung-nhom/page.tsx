@@ -82,7 +82,7 @@ export default function HeKhungNhom() {
 
   return (
     <>
-      <Layout style={{ width: '100%', background: '#fff' }}>
+      <Layout style={{ marginBottom: '100px', width: '100%', background: '#fff' }}>
         <Content style={{ display: 'flex', flexDirection: 'column', width: '100%', alignContent: 'center' }}>
 
 
@@ -90,7 +90,7 @@ export default function HeKhungNhom() {
           <Row style={{ position: 'relative' }}>
 
             <Col style={{
-              width: '100%', height: '265px', margin: '50px 0px 0 0px', padding: '0px', textAlign: 'center', position: 'relative'
+              width: '100%', height: '200px', margin: '50px 0px 0 0px', padding: '0px', textAlign: 'center', position: 'relative'
             }}>
               <div style={{ position: 'absolute', top: 0, left: '50%', translate: '-50% 0%', width: '100%', height: '600px' }}>
                 <Typography.Title style={{ textAlign: 'left', margin: '30px 0 0px 20px', fontSize: '30px', fontWeight: '600' }} >Giải pháp hệ khung nhôm<br /> giá đỡ pin mặt trời</Typography.Title>

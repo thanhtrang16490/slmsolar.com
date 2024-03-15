@@ -37,7 +37,7 @@ export default function RootLayout({
 
       </head>
       <AnalyticsGoogle />
-      <body style={{ maxWidth: '800px', margin: '-18px auto 0', }}>
+      <body style={{ maxWidth: '1000px', margin: '-18px auto 0', }}>
         <StyledComponentsRegistry>
           <NProgressWrapper>
             <TopNavigation />

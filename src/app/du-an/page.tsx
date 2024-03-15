@@ -80,7 +80,8 @@ const ProjectPage = () => {
   }
 
   return (
-    <>
+    <div style={{ marginBottom: '100px' }}>
+
       <Row style={{ position: 'relative' }}>
 
         <Col style={{
@@ -110,7 +111,7 @@ const ProjectPage = () => {
           style={{ margin: '20px 0' }}
         />
       </Layout>
-    </>
+    </div>
   );
 }
 

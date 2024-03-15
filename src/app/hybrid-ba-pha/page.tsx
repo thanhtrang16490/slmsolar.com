@@ -68,7 +68,7 @@ export default function HybridBaPha() {
   return (
     <>
 
-      <Layout style={{ width: '100%', background: '#fff' }}>
+      <Layout style={{ marginBottom: '100px', width: '100%', background: '#fff' }}>
         <Content style={{ display: 'flex', flexDirection: 'column', width: '100%', alignContent: 'center' }}>
           <Row style={{ position: 'relative' }}>
 

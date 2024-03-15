@@ -80,7 +80,7 @@ const TinTucPage = () => {
   }
 
   return (
-    <>
+    <div style={{ marginBottom: '100px' }}>
       <Row style={{ position: 'relative' }}>
 
         <Col style={{
@@ -110,7 +110,7 @@ const TinTucPage = () => {
           style={{ margin: '20px 0' }}
         />
       </Layout>
-    </>
+    </div>
   );
 }
 

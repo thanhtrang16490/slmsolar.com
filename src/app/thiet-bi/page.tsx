@@ -450,7 +450,34 @@ const lithiumLaradaItems: DescriptionsProps['items'] = [
 
 ];
 const lithiumSMBItems: DescriptionsProps['items'] = [
-
+  {
+    label: 'Công suất',
+    children: '5.12 kWh',
+  },
+  {
+    label: 'Dải điện áp',
+    children: '44.8V - 57.6V',
+  },
+  {
+    label: 'Dòng sạc tối đa',
+    children: '100A',
+  },
+  {
+    label: 'Dòng sạc tiêu chuẩn',
+    children: '< 50A',
+  },
+  {
+    label: 'Dòng xả tối đa',
+    children: '100A',
+  },
+  {
+    label: 'Kích thước',
+    children: '442x470x154 mm',
+  },
+  {
+    label: 'Trọng lượng',
+    children: '148kg',
+  },
 ];
 
 
@@ -774,7 +801,7 @@ export default function ThietBi() {
 
   return (
     <>
-      <Layout style={{ width: '100%', background: '#fff' }}>
+      <Layout style={{ marginBottom: '100px', width: '100%', background: '#fff' }}>
         <Content style={{ display: 'flex', flexDirection: 'column', width: '100%', alignContent: 'center' }}>
 
           <Row style={{ position: 'relative' }}>

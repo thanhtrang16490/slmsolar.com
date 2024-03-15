@@ -80,7 +80,7 @@ const MegaStoryPage = () => {
   }
 
   return (
-    <>
+    <div style={{ marginBottom: '100px' }}>
       <Row style={{ position: 'relative' }}>
 
         <Col style={{
@@ -110,7 +110,7 @@ const MegaStoryPage = () => {
           style={{ margin: '20px 0' }}
         />
       </Layout>
-    </>
+    </div>
   );
 }
 
