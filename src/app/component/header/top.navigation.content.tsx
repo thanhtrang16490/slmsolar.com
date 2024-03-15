@@ -46,7 +46,7 @@ const productsData = [
     },
     {
         title: 'Giải pháp hệ khung nhôm',
-        path: '/he-khung-nhom',
+        path: '/he-khung-nhom-nang-luong-mat-troi',
         icon: <Image loading='eager' src='/img/he-khung-nhom-icon.svg' alt='device icon' width={30} height={30} />
     },
 
