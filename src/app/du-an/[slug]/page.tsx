@@ -1,12 +1,12 @@
 
-import PostContent from '@/app/component/post.content';
+import ProjectContent from '@/app/component/project.content';
 
 type Params = {
   slug: string;
 };
 
 const getData = async (slug: string) => {
-  const res = await fetch(`${process.env.BACKEND_URL}slugify/slugs/blog/${slug}?populate=*`,
+  const res = await fetch(`${process.env.BACKEND_URL}slugify/slugs/project/${slug}?populate=*`,
     { next: { revalidate: 43200 } }
   );
   if (!res.ok) {
@@ -15,18 +15,18 @@ const getData = async (slug: string) => {
   return await res.json();
 }
 
-const SingleBlogPage = async ({ params }: { params: Params }) => {
+const SingleProjectPage = async ({ params }: { params: Params }) => {
   const { slug } = params;
   const post = await getData(slug);
 
   return (
     <>
 
-      <PostContent post={post} />
+      <ProjectContent post={post} />
     </>
 
   );
 }
 
-export default SingleBlogPage;
+export default SingleProjectPage;
 

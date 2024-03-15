@@ -4,11 +4,11 @@ import Image from 'next/image';
 import Meta from 'antd/es/card/Meta';
 import styles from './styles.module.css';
 
-type PostContentProps = {
+type ProjectContentProps = {
     post: any;
 };
 
-const PostContent: React.FC<PostContentProps> = ({ post }) => {
+const ProjectContent: React.FC<ProjectContentProps> = ({ post }) => {
 
     return (
         <Layout style={{ margin: '70px auto', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
@@ -49,4 +49,4 @@ const PostContent: React.FC<PostContentProps> = ({ post }) => {
     );
 }
 
-export default PostContent;
+export default ProjectContent;

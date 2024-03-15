@@ -7,7 +7,7 @@ export async function GET(request: NextRequest, response: NextResponse) {
     const current = url.searchParams.get('current');
     const pageSize = url.searchParams.get('pagesize');
 
-    const res = await fetch(`${process.env.BACKEND_URL}blogs?filters[category][$eq]=news&populate=image&pagination[page]=${current}&pagination[pageSize]=${pageSize}`,
+    const res = await fetch(`${process.env.BACKEND_URL}projects?filters[category][$eq]=ongrid-one-pharse&populate=image&pagination[page]=${current}&pagination[pageSize]=${pageSize}`,
         { next: { revalidate: 43200 } }
     );
 
@@ -19,3 +19,5 @@ export async function GET(request: NextRequest, response: NextResponse) {
 
     return NextResponse.json(data);
 }
+
+

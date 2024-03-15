@@ -1,119 +1,117 @@
-'use client'
-import { Card, Col, Divider, Layout, Row, Statistic, Steps, Tabs, Typography } from "antd";
-import { Content } from "antd/es/layout/layout";
-import { RightOutlined, ThunderboltOutlined } from '@ant-design/icons';
-import Image from "next/image";
+'use client';
+import { useEffect, useState } from 'react';
+import { Row, Col, Layout, Pagination, Typography } from 'antd';
+import ProjectCard from '../component/project.card';
 
-const itemsData = [
-  {
-    title: 'Dự án 1',
+type Post = {
+  id: number;
+};
 
-    image: '/img/solar-rooftop.png',
-    expert: ' ',
+type Meta = {
+  total: number;
+  pagination: any;
+};
 
-  },
-  {
-    title: 'Dự án 2',
+type ProjectsData = {
+  data: Post[];
+  meta: Meta;
+};
 
-    image: '/img/solar-rooftop.png',
-    expert: ' ',
-
-  },
-  {
-    title: 'Dự án 3',
-
-    image: '/img/solar-rooftop.png',
-    expert: ' ',
-
-  },
-  {
-    title: 'Dự án 4',
-
-    image: '/img/solar-rooftop.png',
-    expert: ' ',
-
-  },
-  {
-    title: 'Dự án 5',
-
-    image: '/img/solar-rooftop.png',
-    expert: ' ',
-
-  },
-
-];
+const ProjectPage = () => {
+  const [posts, setPosts] = useState<ProjectsData | null>(null);
 
 
+  const [meta, setMeta] = useState({
+    current: 1,
+    pageSize: 20,
+    total: 0,
+    pages: 0,
+  });
 
-export default function DuAn() {
+  useEffect(() => {
+
+    getData();
+  }, []);
+
+
+  const getData = async () => {
+
+    const res = await fetch(`/du-an/api?current=${meta.current}&pagesize=${meta.pageSize}`);
+    if (!res.ok) {
+      throw new Error(res.statusText);
+    }
+    const data = await res.json();
+    setPosts(data);
+    setMeta({
+      current: data.meta.pagination.page,
+      pageSize: data.meta.pagination.pageSize,
+      pages: data.meta.pagination.pageCount,
+      total: data.meta.pagination.total,
+    })
+
+  }
+
+
+
+
+
+
+  if (!posts) {
+    return <div>Loading...</div>;
+  }
+
+  const handleOnChange = async (page: number, pageSize: number) => {
+
+    const res = await fetch(`/du-an/api?current=${page}&pagesize=${pageSize}`);
+    if (!res.ok) {
+      throw new Error(res.statusText);
+    }
+    const data = await res.json();
+    setPosts(data);
+
+    setMeta({
+      current: page,
+      pageSize: pageSize,
+      pages: meta.pages,
+      total: meta.total,
+    })
+
+
+  }
 
   return (
     <>
-      <Layout style={{ width: '100%', background: '#fff' }}>
-        <Content style={{ display: 'flex', flexDirection: 'column', width: '100%', alignContent: 'center' }}>
+      <Row style={{ position: 'relative' }}>
 
-          <Row style={{ position: 'relative' }}>
+        <Col style={{
+          width: '100%', height: '90px', margin: '50px 0px 0 0px', padding: '0px', textAlign: 'center', position: 'relative'
+        }}>
+          <div style={{ position: 'absolute', top: 0, left: '50%', translate: '-50% 0%', width: '100%', height: '600px' }}>
+            <Typography.Title style={{ textAlign: 'left', margin: '30px 0 0px 20px', fontSize: '30px', fontWeight: '600' }} >Dự án triển khai</Typography.Title>
+          </div>
+        </Col>
+      </Row>
+      <Layout style={{ backgroundColor: '#fff', maxWidth: '1440px', margin: '0 auto', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+        <Row gutter={0}>
 
-            <Col style={{
-              width: '100%', height: '90px', margin: '50px 0px 0 0px', padding: '0px', textAlign: 'center', position: 'relative'
-            }}>
-              <div style={{ position: 'absolute', top: 0, left: '50%', translate: '-50% 0%', width: '100%', height: '600px' }}>
-                <Typography.Title style={{ textAlign: 'left', margin: '30px 0 0px 20px', fontSize: '30px', fontWeight: '600' }} >Dự án đã triển khai</Typography.Title>
-              </div>
+          {posts && posts.data && posts.data.map((post: Post) => (
+            <Col key={post.id} xs={24} sm={24} md={12} lg={8} xl={6} xxl={6}>
+              <ProjectCard post={post} />
             </Col>
-          </Row>
-
-
-          <Row>
-
-            <Col style={{ width: '100%', margin: '0 5px 0', background: '#fff', borderRadius: '8px' }}>
-              {itemsData.map((item, index) => {
-                return (
-                  <>
-                    <Row key={index} >
-                      <Col style={{
-                        display: 'flex',
-                        flexDirection: 'column',
-                        justifyContent: 'space-between',
-                        width: '100%',
-                        margin: '20px 15px 0px 15px',
-                        height: '100%',
-                        padding: '0px',
-                        background: '#fff',
-                        borderRadius: '8px',
-                        boxShadow: '0 1px 2px 0 rgba(60,64,67,.1), 0 2px 6px 2px rgba(60,64,67,.15)'
-                      }}>
-
-                        <Row style={{ position: 'relative' }}>
-
-                          <div style={{ padding: '0px', width: '100%', paddingTop: '56%', position: 'relative' }}>
-                            <Image style={{ borderRadius: '8px 8px 0px 0px', objectFit: 'cover' }} alt={item.title} fill src={item.image} />
-                          </div>
-
-                        </Row>
-                        <div>
-                          <Typography.Title style={{ margin: '10px 20px', fontSize: '14px' }} level={5}>
-                            {item.title}
-                          </Typography.Title>
-
-                        </div>
-
-
-                      </Col>
-                    </Row>
-
-                  </>
-                )
-              }
-              )}
-
-            </Col>
-          </Row>
-        </Content>
+          ))}
+        </Row>
+        <Pagination
+          current={meta.current}
+          pageSize={meta.pageSize}
+          showTotal={(total, range) => `${range[0]}-${range[1]} of ${total} items`}
+          total={meta.total}
+          onChange={handleOnChange}
+          showSizeChanger={true}
+          style={{ margin: '20px 0' }}
+        />
       </Layout>
-
-
-
     </>
-  )
+  );
 }
+
+export default ProjectPage;

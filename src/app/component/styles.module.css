@@ -1,0 +1,19 @@
+.myClass img {
+    width: 100%;
+    height: auto;
+}
+
+.p {
+    font-family: -apple-system,
+        "system-ui",
+        "Segoe UI",
+        Roboto,
+        "Helvetica Neue",
+        Arial,
+        "Noto Sans",
+        sans-serif,
+        "Apple Color Emoji",
+        "Segoe UI Emoji",
+        "Segoe UI Symbol",
+        "Noto Color Emoji";
+}

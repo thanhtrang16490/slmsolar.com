@@ -8,7 +8,7 @@ export async function GET(request: NextRequest, response: NextResponse) {
     const pageSize = url.searchParams.get('pagesize');
 
     const res = await fetch(`${process.env.BACKEND_URL}blogs?filters[category][$eq]=mega-story&populate=image&pagination[page]=${current}&pagination[pageSize]=${pageSize}`,
-        { next: { revalidate: 86400 } }
+        { next: { revalidate: 43200 } }
     );
 
     if (!res.ok) {
