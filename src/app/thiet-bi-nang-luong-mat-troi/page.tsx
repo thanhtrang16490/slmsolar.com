@@ -488,15 +488,6 @@ const itemsSolarData = [
       <div style={{ position: 'relative' }}>
         <Typography.Title style={{ zIndex: '1', position: 'absolute', left: '70px', top: '-15px', translate: '-50% -50%', fontSize: '14px', fontWeight: '600' }}>Pin mặt trời JA Solar</Typography.Title>
         <Image style={{ zIndex: '1', position: 'absolute', left: '50px', top: '25px', translate: '-50% -50%' }} loading='eager' src='/img/thiet-bi/ja-solar-logo.png' alt='device icon' width={100} height={44} />
-        <div style={{ position: 'absolute', display: 'flex', left: '1200px', top: '10px', gap: '5px' }}>
-          <Row style={{ left: '75px', borderRadius: '4px', backgroundColor: '#000', display: 'flex', alignItems: 'center', justifyContent: 'start' }}>
-
-            <Col>
-              <Typography.Title style={{ color: '#fff', margin: '0px 5px 0px 5px', textAlign: 'left', fontWeight: 300, fontSize: '18px' }}>550 Wp</Typography.Title>
-            </Col>
-          </Row>
-        </div>
-
       </div>,
     icon:
       <div style={{ position: 'relative' }}>
