@@ -117,9 +117,9 @@ const ComboOngrid = () => {
 
                 <Row style={{ backgroundColor: '#E8E8EA', position: 'relative', height: '240px', borderRadius: '8px', margin: '0 10px', boxShadow: '0 1px 2px 0 rgba(60,64,67,.1), 0 2px 6px 2px rgba(60,64,67,.15)' }}>
 
-                    <Row style={{ left: '65%', top: '10px', position: 'absolute', display: 'flex', alignItems: 'center', justifyContent: 'start' }}>
+                    <Row style={{ left: '58%', top: '10px', position: 'absolute', display: 'flex', alignItems: 'center', justifyContent: 'start' }}>
                         <Col>
-                            <Image src='/img/combo-hybrid.png' alt="Sử dụng điện thả ga 20 năm kế tiếp" width={100} height={170} />
+                            <Image src='/img/combo-ongrid.png' alt="Sử dụng điện thả ga 20 năm kế tiếp" width={151} height={170} />
                         </Col>
                     </Row>
 
@@ -179,9 +179,9 @@ const ComboOngrid = () => {
 
                 <Row style={{ backgroundColor: '#E8E8EA', position: 'relative', height: '240px', borderRadius: '8px', margin: '0 10px', boxShadow: '0 1px 2px 0 rgba(60,64,67,.1), 0 2px 6px 2px rgba(60,64,67,.15)' }}>
 
-                    <Row style={{ left: '65%', top: '10px', position: 'absolute', display: 'flex', alignItems: 'center', justifyContent: 'start' }}>
+                    <Row style={{ left: '58%', top: '10px', position: 'absolute', display: 'flex', alignItems: 'center', justifyContent: 'start' }}>
                         <Col>
-                            <Image src='/img/combo-hybrid.png' alt="Sử dụng điện thả ga 20 năm kế tiếp" width={100} height={170} />
+                            <Image src='/img/combo-ongrid.png' alt="Sử dụng điện thả ga 20 năm kế tiếp" width={151} height={170} />
                         </Col>
                     </Row>
 
