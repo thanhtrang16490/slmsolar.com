@@ -6,6 +6,8 @@ import TopNavigation from './component/header/top.navigation'
 import { Barlow } from 'next/font/google'
 import './globals.css'
 import CallBoxModule from './component/footer/call.box'
+import { GoogleTagManager } from '@next/third-parties/google'
+
 
 
 const barlow = Barlow({
@@ -38,6 +40,7 @@ export default function RootLayout({
       </head>
       <AnalyticsGoogle />
       <body style={{ maxWidth: '1000px', margin: '-18px auto 0', }}>
+
         <StyledComponentsRegistry>
           <NProgressWrapper>
             <TopNavigation />
@@ -47,6 +50,7 @@ export default function RootLayout({
             <CallBoxModule />
           </NProgressWrapper>
         </StyledComponentsRegistry>
+        <GoogleTagManager gtmId="GTM-M8TDZH8K" />
       </body>
     </html >
   )
