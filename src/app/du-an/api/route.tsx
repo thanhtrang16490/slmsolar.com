@@ -7,7 +7,7 @@ export async function GET(request: NextRequest, response: NextResponse) {
     const current = url.searchParams.get('current');
     const pageSize = url.searchParams.get('pagesize');
 
-    const res = await fetch(`${process.env.BACKEND_URL}projects?filters[category][$eq]=ongrid-one-pharse&populate=image&pagination[page]=${current}&pagination[pageSize]=${pageSize}`,
+    const res = await fetch(`${process.env.BACKEND_URL}projects?populate=image&pagination[page]=${current}&pagination[pageSize]=${pageSize}&sort=id:DESC`,
         { next: { revalidate: 7200 } }
     );
 
