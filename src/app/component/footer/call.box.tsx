@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import Link from 'next/link';
 const CallBoxModule: React.FC = () => (
     <>
-        <Link href='tel:+84977879291' target="_blank" >
+        <Link href='tel:+84969663387' target="_blank" >
             <div style={{ width: '80%', position: 'fixed', bottom: 0, left: '50%', translate: '-50% -50%', zIndex: '9999', }}>
                 <motion.div
                     initial={{ scale: 0 }}
