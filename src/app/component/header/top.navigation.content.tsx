@@ -35,6 +35,11 @@ const solutionData = [
         path: '/he-sigenergy-cao-cap',
         icon: <Image loading='eager' src='/img/sigenergy-icon.svg' alt='device icon' width={25} height={40} />
     },
+    {
+        title: <>Máy phát điện mặt trời</>,
+        path: '/may-phat-dien-mat-troi',
+        icon: <Image loading='eager' src='/img/sigenergy-icon.svg' alt='device icon' width={25} height={40} />
+    },
 
 ];
 
@@ -121,7 +126,7 @@ const TopNavigationContent = (onClose: any) => {
                                                 </Col>
                                             </Row>
                                         </Link>
-                                        {/* {index !== serviceData.length - 1 && <Divider style={{ margin: '5px 0' }} />} */}
+                                        {index !== solutionData.length - 1 && <Divider style={{ margin: '5px 0' }} />}
                                     </>
 
 
