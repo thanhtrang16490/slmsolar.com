@@ -1,6 +1,6 @@
 'use client'
 import React from 'react';
-import { Col, Divider, Row, Typography } from "antd";
+import {Button, Col, Divider, Row, Typography } from "antd";
 import Image from "next/image";
 import { useState, useEffect } from 'react';
 import { motion, useAnimation } from 'framer-motion';
@@ -101,11 +101,21 @@ const Generatorfirstframe = () => {
 
     return (
         <div style={{ backgroundColor: '#011422', paddingBottom: '10px' }}>
+            <div>
+
+
+            </div>
             <div style={{ width: '100%' }}>
-                <Typography.Title style={{ color: '#fff', padding: '20px 0 0 20px', textAlign: 'center', fontSize: '24px', fontWeight: '700' }}>GIẢI PHÁP<br />ĐIỆN MẶT TRỜI<br />SOLARMAX</Typography.Title>
+                <Typography.Title style={{ color: '#fff', padding: '20px 0 0 0px', textAlign: 'center', fontSize: '24px', fontWeight: '700' }}>BẠN ĐANG CÓ NHU CẦU</Typography.Title>
+            </div>
+            <div style={{ display: 'flex', justifyContent: 'center', width: '100%' }}>
+            <Button ghost type="dashed">mua</Button>
+            </div>
+                        <div style={{ width: '100%' }}>
+                <Typography.Title style={{ color: '#fff',  textAlign: 'center', fontSize: '24px', fontWeight: '700' }}>MÁY PHÁT ĐIỆN</Typography.Title>
             </div>
             <Row>
-                <div style={{ position: 'relative', height: '220px', left: '40px' }}>
+                <div style={{ position: 'relative', height: '250px', left: '40px' }}>
                     <div style={{ position: 'absolute', top: '20px', width: '324px', height: '220px' }}>
                         <Image
                             src='/img/generator/may-phat-dien-1.png'
@@ -117,8 +127,8 @@ const Generatorfirstframe = () => {
                 </div>
             </Row>
             <Row>
-                <div style={{ position: 'relative', height: '220px', left: '40px' }}>
-                    <div style={{ position: 'absolute', top: '20px', width: '324px', height: '220px' }}>
+                <div style={{ position: 'relative', height: '300px' }}>
+                    <div style={{ position: 'absolute', top: '40px',left:'20px', width: '324px', height: '220px' }}>
                         <Image
                             src='/img/generator/may-phat-dien-2.png'
                             alt="Video"
