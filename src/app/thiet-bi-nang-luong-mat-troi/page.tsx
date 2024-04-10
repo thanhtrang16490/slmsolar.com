@@ -449,36 +449,7 @@ const lithiumLaradaItems: DescriptionsProps['items'] = [
   },
 
 ];
-const lithiumSMBItems: DescriptionsProps['items'] = [
-  {
-    label: 'Công suất',
-    children: '5.12 kWh',
-  },
-  {
-    label: 'Dải điện áp',
-    children: '44.8V - 57.6V',
-  },
-  {
-    label: 'Dòng sạc tối đa',
-    children: '100A',
-  },
-  {
-    label: 'Dòng sạc tiêu chuẩn',
-    children: '< 50A',
-  },
-  {
-    label: 'Dòng xả tối đa',
-    children: '100A',
-  },
-  {
-    label: 'Kích thước',
-    children: '442x470x154 mm',
-  },
-  {
-    label: 'Trọng lượng',
-    children: '148kg',
-  },
-];
+
 
 
 
@@ -741,39 +712,7 @@ const itemsInverterData = [
 ];
 
 const itemsBatteryData = [
-  {
-    title:
-      <div style={{ position: 'relative' }}>
-        <Typography.Title style={{ zIndex: '1', position: 'absolute', left: '52px', top: '-15px', translate: '-50% -50%', fontSize: '14px', fontWeight: '600' }}>Pin lithium SMB</Typography.Title>
-        <Image style={{ zIndex: '1', position: 'absolute', left: '52px', top: '25px', translate: '-50% -50%' }} loading='eager' src='/img/thiet-bi/smb-logo.png' alt='device icon' width={106} height={28} />
-      </div >,
-    icon:
-      <div style={{ position: 'relative' }}>
-        <Image style={{ zIndex: '1', position: 'absolute', left: '15px', top: '15px', translate: '-50% -50%' }} loading='eager' src='/img/smb-device.png' alt='device icon' width={40} height={46} />
-        <div style={{ left: '15px', top: '15px', translate: '-50% -50%', position: 'absolute', borderRadius: '6px', background: '#F2F1F6', width: '60px', height: '70px' }}></div>
-      </div>,
-    desc:
-      <>
-        <div style={{ paddingTop: '100%', position: 'relative' }}>
-          <Image style={{ zIndex: '1', position: 'absolute', left: '50%', top: '50%', translate: '-50% -50%' }} loading='eager' src='/img/smb-device.png' alt='device icon' width={186} height={300} />
-        </div>
-        <div style={{ display: 'flex', flexWrap: 'wrap', gap: '5px' }}>
-          {lithiumSMBItems.map((item, index) => {
-            return (
-              <>
-                <div key={index} style={{ flex: '1 0 calc(50% - 5px)' }}>
-                  <div style={{ height: '1px', width: '50px', backgroundColor: '#939393' }} ></div>
-                  <Typography.Title style={{ fontSize: '14px', fontWeight: '600' }}>{item.label}</Typography.Title>
-                  <Typography.Paragraph >{item.children}</Typography.Paragraph>
-                </div >
 
-              </>
-            )
-          })}
-        </div >
-      </>
-
-  },
   {
     title:
       <div style={{ position: 'relative' }}>

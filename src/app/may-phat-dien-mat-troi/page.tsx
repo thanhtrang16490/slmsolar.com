@@ -4,6 +4,7 @@ import Generatorfourthframe from '../component/generator/generatorfourthframe'
 import Generatorfiveframe from '../component/generator/generatorfiveframe'
 import Generatorthirstframe from '../component/generator/generatorthirstrame'
 import Generatorsecondframe from '../component/generator/generatorsecondframe'
+import Generatorfirstframe from '../component/generator/generatorfirstframe'
 
 export const metadata: Metadata = {
   title: 'Hệ Sigenergy cao cấp',
@@ -18,6 +19,7 @@ export default function mayPhatDienMatTroi() {
       <div style={{ width: '100%', background: '#fff' }}>
         <div style={{ display: 'flex', flexDirection: 'column', width: '100%', alignContent: 'center' }}>
           <div style={{ marginTop: '70px' }}>
+            <Generatorfirstframe />
             <Generatorsecondframe />
             <Generatorthirstframe />
             <Generatorfourthframe />
