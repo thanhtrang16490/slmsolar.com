@@ -61,8 +61,8 @@ const Advantage = () => {
         <div style={{ margin: '20px 20px', backgroundColor: 'black', width: '100%', borderRadius: '8px', height: '50px', }}>
           <div style={{ margin: '0 35px', display: 'flex', justifyContent: 'space-evenly' }}>
             <Image src='/img/support-icon-white.svg' alt="Phone" width={50} height={50} />
-            <Link href="tel:0977879291">
-              <Typography.Paragraph style={{ color: 'white', fontSize: '32px' }}>0977.879.291</Typography.Paragraph>
+            <Link href="tel:0969663387">
+              <Typography.Paragraph style={{ color: 'white', fontSize: '32px' }}>096.966.3387</Typography.Paragraph>
             </Link>
           </div>
         </div>

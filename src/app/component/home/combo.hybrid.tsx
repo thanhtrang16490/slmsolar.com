@@ -25,13 +25,13 @@ const useScroll = () => {
 
 const comboOneFeatureData =
 {
-    he: '5 kW',
+    he: '6 kW',
     pha: '1 Pha',
     title: 'Tấm pin mặt trời',
     feature1: 'Thương hiệu Pin top 3 thế giới',
     feature2: 'Inverter Hybrid 5kW 1 pha',
     feature3: 'Pin Lithium FePO4 5kWh',
-    price: <>122,000,000 <Image src='/img/dong-icon.svg' alt="vnd" width={18} height={18} /></>,
+    price: <>100,130,000 <Image src='/img/dong-icon.svg' alt="vnd" width={18} height={18} /></>,
 
 }
 
@@ -64,13 +64,13 @@ const comboOneData = [
 
 const comboTwoFeatureData =
 {
-    he: '10 kW',
+    he: '11 kW',
     pha: '3 Pha',
     title: 'Tấm pin mặt trời',
     feature1: 'Thương hiệu Pin top 3 thế giới',
     feature2: 'Inverter Hybrid 10kW 3 pha',
     feature3: 'Pin Lithium FePO4 5kWh',
-    price: <>216,000,000 <Image src='/img/dong-icon.svg' alt="vnd" width={18} height={18} /></>,
+    price: <>176,568,000 <Image src='/img/dong-icon.svg' alt="vnd" width={18} height={18} /></>,
 }
 
 const comboTwoData = [

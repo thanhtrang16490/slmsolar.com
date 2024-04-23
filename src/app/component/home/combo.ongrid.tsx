@@ -24,12 +24,12 @@ const useScroll = () => {
 };
 const comboOneFeatureData =
 {
-    he: '5 kW',
+    he: '6 kW',
     pha: '1 Pha',
     title: 'Tấm pin mặt trời',
     feature1: 'Thương hiệu Pin top 3 thế giới',
     feature2: 'Inverter On-Grid 5kW 1 pha',
-    price: <>60,000,000 <Image src='/img/dong-icon.svg' alt="vnd" width={18} height={18} /></>,
+    price: <>62,035,000 <Image src='/img/dong-icon.svg' alt="vnd" width={18} height={18} /></>,
 
 }
 
@@ -58,12 +58,12 @@ const comboOneData = [
 
 const comboTwoFeatureData =
 {
-    he: '10 kW',
+    he: '11 kW',
     pha: '3 Pha',
     title: 'Tấm pin mặt trời',
     feature1: 'Thương hiệu Pin top 3 thế giới',
     feature2: 'Inverter On-Grid 10kW 3 pha',
-    price: <>120,000,000 <Image src='/img/dong-icon.svg' alt="vnd" width={18} height={18} /></>,
+    price: <>98,887,000 <Image src='/img/dong-icon.svg' alt="vnd" width={18} height={18} /></>,
 }
 
 const comboTwoData = [

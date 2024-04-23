@@ -5,7 +5,7 @@ import Image from "next/image";
 
 const comboOneFeatureData = [
   {
-    he: '3.3 kW',
+    he: '3.85 kW',
     pha: '3 Pha',
     title: 'Tấm pin mặt trời',
     feature1: 'Thương hiệu Pin top 3 thế giới',

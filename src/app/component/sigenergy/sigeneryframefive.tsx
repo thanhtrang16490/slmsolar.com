@@ -8,22 +8,22 @@ const comboOneFeatureData = [
     {
         he: '3.3 kW',
         pha: '1 Pha',
-        price: <>124,000,000 <Image src='/img/dong-icon.svg' alt="vnd" width={18} height={18} /></>,
+        price: <>118,499,000 <Image src='/img/dong-icon.svg' alt="vnd" width={18} height={18} /></>,
     },
     {
         he: '5.5 kW',
         pha: '1 Pha',
-        price: <>149,000,000 <Image src='/img/dong-icon.svg' alt="vnd" width={18} height={18} /></>,
+        price: <>137,549,000 <Image src='/img/dong-icon.svg' alt="vnd" width={18} height={18} /></>,
     },
     {
         he: '11 kW',
         pha: '3 Pha',
-        price: <>250,000,000 <Image src='/img/dong-icon.svg' alt="vnd" width={18} height={18} /></>,
+        price: <>231,510,000 <Image src='/img/dong-icon.svg' alt="vnd" width={18} height={18} /></>,
     },
     {
         he: '16.5 kW',
         pha: '3 Pha',
-        price: <>320,000,000 <Image src='/img/dong-icon.svg' alt="vnd" width={18} height={18} /></>,
+        price: <>291,877,000 <Image src='/img/dong-icon.svg' alt="vnd" width={18} height={18} /></>,
     },
 
 ]
