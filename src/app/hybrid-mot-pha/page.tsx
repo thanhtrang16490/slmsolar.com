@@ -9,7 +9,7 @@ const comboOneFeatureData = [
     pha: '1 Pha',
     title: 'Tấm pin mặt trời',
     feature1: 'Thương hiệu Pin top 3 thế giới',
-    feature2: 'Inverter Hybrid 5kW 1 pha',
+    feature2: 'Inverter Hybrid 3 kW 1 pha',
     feature3: 'Pin Lithium FePO4 5kWh',
     price: '220,000,000',
   },
@@ -18,7 +18,7 @@ const comboOneFeatureData = [
     pha: '1 Pha',
     title: 'Tấm pin mặt trời',
     feature1: 'Thương hiệu Pin top 3 thế giới',
-    feature2: 'Inverter Hybrid 5kW 1 pha',
+    feature2: 'Inverter Hybrid 5 kW 1 pha',
     feature3: 'Pin Lithium FePO4 5kWh',
     price: '330,000,000',
   },
@@ -27,10 +27,28 @@ const comboOneFeatureData = [
     pha: '1 Pha',
     title: 'Tấm pin mặt trời',
     feature1: 'Thương hiệu Pin top 3 thế giới',
-    feature2: 'Inverter Hybrid 5kW 1 pha',
+    feature2: 'Inverter Hybrid 6 kW 1 pha',
     feature3: 'Pin Lithium FePO4 5kWh',
     price: '440,000,000',
-  }
+  },
+  {
+    he: '22 kW',
+    pha: '1 Pha',
+    title: 'Tấm pin mặt trời',
+    feature1: 'Thương hiệu Pin top 3 thế giới',
+    feature2: 'Inverter Hybrid 8 kW 1 pha',
+    feature3: 'Pin Lithium FePO4 5kWh',
+    price: '440,000,000',
+  },
+  {
+    he: '22 kW',
+    pha: '1 Pha',
+    title: 'Tấm pin mặt trời',
+    feature1: 'Thương hiệu Pin top 3 thế giới',
+    feature2: 'Inverter Hybrid 10 kW 1 pha',
+    feature3: 'Pin Lithium FePO4 5kWh',
+    price: '440,000,000',
+  },
 ]
 
 

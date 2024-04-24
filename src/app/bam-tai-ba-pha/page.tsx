@@ -5,11 +5,11 @@ import Image from "next/image";
 
 const comboOneFeatureData = [
   {
-    he: '3.85 kW',
+    he: '10 kW',
     pha: '3 Pha',
     title: 'Tấm pin mặt trời',
     feature1: 'Thương hiệu Pin top 3 thế giới',
-    feature2: 'Inverter Hybrid 3.3kW - 1 pha',
+    feature2: 'Inverter Hybrid 10 kW - 1 pha',
     price: <>39,600,000 <Image src='/img/dong-icon.svg' alt="vnd" width={18} height={18} /></>,
   },
   {
@@ -17,7 +17,7 @@ const comboOneFeatureData = [
     pha: '3 Pha',
     title: 'Tấm pin mặt trời',
     feature1: 'Thương hiệu Pin top 3 thế giới',
-    feature2: 'Inverter Hybrid 5.5kW - 1 pha',
+    feature2: 'Inverter Hybrid 15 kW - 1 pha',
     price: <>66,000,000 <Image src='/img/dong-icon.svg' alt="vnd" width={18} height={18} /></>,
   },
   {
@@ -25,7 +25,7 @@ const comboOneFeatureData = [
     pha: '3 Pha',
     title: 'Tấm pin mặt trời',
     feature1: 'Thương hiệu Pin top 3 thế giới',
-    feature2: 'Inverter Hybrid 8.8kW - 1 pha',
+    feature2: 'Inverter Hybrid 20 kW - 1 pha',
     price: <>105,600,000 <Image src='/img/dong-icon.svg' alt="vnd" width={18} height={18} /></>,
   },
   {
@@ -33,7 +33,7 @@ const comboOneFeatureData = [
     pha: '3 Pha',
     title: 'Tấm pin mặt trời',
     feature1: 'Thương hiệu Pin top 3 thế giới',
-    feature2: 'Inverter Hybrid 11kW - 1 pha',
+    feature2: 'Inverter Hybrid 30 kW - 1 pha',
     price: <>132,000,000 <Image src='/img/dong-icon.svg' alt="vnd" width={18} height={18} /></>,
   },
   {
@@ -41,7 +41,7 @@ const comboOneFeatureData = [
     pha: '3 Pha',
     title: 'Tấm pin mặt trời',
     feature1: 'Thương hiệu Pin top 3 thế giới',
-    feature2: 'Inverter Hybrid 16.5kW - 1 pha',
+    feature2: 'Inverter Hybrid 50 kW - 1 pha',
     price: <>198,000,000 <Image src='/img/dong-icon.svg' alt="vnd" width={18} height={18} /></>,
   }
 ]
