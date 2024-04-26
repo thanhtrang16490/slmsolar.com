@@ -22,15 +22,7 @@ const comboOneFeatureData = [
     feature3: 'Pin Lithium FePO4 5kWh',
     price: '100,131,000',
   },
-  {
-    he: '7,7 kW',
-    pha: '1 Pha',
-    title: 'Tấm pin mặt trời',
-    feature1: 'Thương hiệu Pin top 3 thế giới',
-    feature2: 'Inverter Hybrid 6 kW 1 pha',
-    feature3: 'Pin Lithium FePO4 5kWh',
-    price: '111,844,000',
-  },
+
   {
     he: '10,45 kW',
     pha: '1 Pha',
@@ -40,15 +32,7 @@ const comboOneFeatureData = [
     feature3: 'Pin Lithium FePO4 5kWh',
     price: '144,802,000',
   },
-  {
-    he: '11 kW',
-    pha: '1 Pha',
-    title: 'Tấm pin mặt trời',
-    feature1: 'Thương hiệu Pin top 3 thế giới',
-    feature2: 'Inverter Hybrid 10 kW 1 pha',
-    feature3: 'Pin Lithium FePO4 5kWh',
-    price: '144,802,000',
-  },
+
   {
     he: '13,2 kW',
     pha: '1 Pha',
@@ -58,24 +42,7 @@ const comboOneFeatureData = [
     feature3: 'Pin Lithium FePO4 5kWh',
     price: '175,095,000',
   },
-  {
-    he: '16,5 kW',
-    pha: '1 Pha',
-    title: 'Tấm pin mặt trời',
-    feature1: 'Thương hiệu Pin top 3 thế giới',
-    feature2: 'Inverter Hybrid 12 kW 1 pha',
-    feature3: 'Pin Lithium FePO4 5kWh',
-    price: '213,987,000',
-  },
-  {
-    he: '19,8 kW',
-    pha: '1 Pha',
-    title: 'Tấm pin mặt trời',
-    feature1: 'Thương hiệu Pin top 3 thế giới',
-    feature2: 'Inverter Hybrid 12 kW 1 pha',
-    feature3: 'Pin Lithium FePO4 5kWh',
-    price: '245,322,000',
-  },
+
 
 ]
 

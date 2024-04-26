@@ -36,38 +36,7 @@ const comboOneFeatureData = [
     feature2: 'Inverter On-Grid 20 kW - 3 pha',
     price: <>175,789,000 <Image src='/img/dong-icon.svg' alt="vnd" width={18} height={18} /></>,
   },
-  {
-    he: '25,85 kW',
-    pha: '3 Pha',
-    title: 'Tấm pin mặt trời',
-    feature1: 'Thương hiệu Pin top 3 thế giới',
-    feature2: 'Inverter On-Grid 20 kW - 3 pha',
-    price: <>198,520,000 <Image src='/img/dong-icon.svg' alt="vnd" width={18} height={18} /></>,
-  },
-  {
-    he: '27,5 kW',
-    pha: '3 Pha',
-    title: 'Tấm pin mặt trời',
-    feature1: 'Thương hiệu Pin top 3 thế giới',
-    feature2: 'Inverter On-Grid 30 kW - 3 pha',
-    price: <>221,705,000 <Image src='/img/dong-icon.svg' alt="vnd" width={18} height={18} /></>,
-  },
-  {
-    he: '33 kW',
-    pha: '3 Pha',
-    title: 'Tấm pin mặt trời',
-    feature1: 'Thương hiệu Pin top 3 thế giới',
-    feature2: 'Inverter On-Grid 30 kW - 3 pha',
-    price: <>254,727,000 <Image src='/img/dong-icon.svg' alt="vnd" width={18} height={18} /></>,
-  },
-  {
-    he: '38,5 kW',
-    pha: '3 Pha',
-    title: 'Tấm pin mặt trời',
-    feature1: 'Thương hiệu Pin top 3 thế giới',
-    feature2: 'Inverter On-Grid 30 kW - 3 pha',
-    price: <>287,815,000 <Image src='/img/dong-icon.svg' alt="vnd" width={18} height={18} /></>,
-  },
+
 
 ]
 const comboOneData = [

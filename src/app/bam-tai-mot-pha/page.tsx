@@ -20,14 +20,7 @@ const comboOneFeatureData = [
     feature2: 'Inverter On-Grid 5 kW - 1 pha',
     price: <>62,035,000 <Image src='/img/dong-icon.svg' alt="vnd" width={18} height={18} /></>,
   },
-  {
-    he: '7.7 kW',
-    pha: '1 Pha',
-    title: 'Tấm pin mặt trời',
-    feature1: 'Thương hiệu Pin top 3 thế giới',
-    feature2: 'Inverter On-Grid 6 kW - 1 pha',
-    price: <>69,099,000 <Image src='/img/dong-icon.svg' alt="vnd" width={18} height={18} /></>,
-  },
+
   {
     he: '10,45 kW',
     pha: '1 Pha',
