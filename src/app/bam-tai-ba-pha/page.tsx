@@ -5,45 +5,70 @@ import Image from "next/image";
 
 const comboOneFeatureData = [
   {
-    he: '10 kW',
-    pha: '3 Pha',
-    title: 'Tấm pin mặt trời',
-    feature1: 'Thương hiệu Pin top 3 thế giới',
-    feature2: 'Inverter Hybrid 10 kW - 1 pha',
-    price: <>39,600,000 <Image src='/img/dong-icon.svg' alt="vnd" width={18} height={18} /></>,
-  },
-  {
-    he: '5.5 kW',
-    pha: '3 Pha',
-    title: 'Tấm pin mặt trời',
-    feature1: 'Thương hiệu Pin top 3 thế giới',
-    feature2: 'Inverter Hybrid 15 kW - 1 pha',
-    price: <>66,000,000 <Image src='/img/dong-icon.svg' alt="vnd" width={18} height={18} /></>,
-  },
-  {
-    he: '8.8 kW',
-    pha: '3 Pha',
-    title: 'Tấm pin mặt trời',
-    feature1: 'Thương hiệu Pin top 3 thế giới',
-    feature2: 'Inverter Hybrid 20 kW - 1 pha',
-    price: <>105,600,000 <Image src='/img/dong-icon.svg' alt="vnd" width={18} height={18} /></>,
-  },
-  {
     he: '11 kW',
     pha: '3 Pha',
     title: 'Tấm pin mặt trời',
     feature1: 'Thương hiệu Pin top 3 thế giới',
-    feature2: 'Inverter Hybrid 30 kW - 1 pha',
-    price: <>132,000,000 <Image src='/img/dong-icon.svg' alt="vnd" width={18} height={18} /></>,
+    feature2: 'Inverter On-Grid 10 kW - 3 pha',
+    price: <>98,887,000 <Image src='/img/dong-icon.svg' alt="vnd" width={18} height={18} /></>,
+  },
+  {
+    he: '13,2 kW',
+    pha: '3 Pha',
+    title: 'Tấm pin mặt trời',
+    feature1: 'Thương hiệu Pin top 3 thế giới',
+    feature2: 'Inverter On-Grid 10 kW - 3 pha',
+    price: <>110,153,000<Image src='/img/dong-icon.svg' alt="vnd" width={18} height={18} /></>,
   },
   {
     he: '16.5 kW',
     pha: '3 Pha',
     title: 'Tấm pin mặt trời',
     feature1: 'Thương hiệu Pin top 3 thế giới',
-    feature2: 'Inverter Hybrid 50 kW - 1 pha',
-    price: <>198,000,000 <Image src='/img/dong-icon.svg' alt="vnd" width={18} height={18} /></>,
-  }
+    feature2: 'Inverter On-Grid 15 kW - 3 pha',
+    price: <>139,246,000<Image src='/img/dong-icon.svg' alt="vnd" width={18} height={18} /></>,
+  },
+  {
+    he: '22 kW',
+    pha: '3 Pha',
+    title: 'Tấm pin mặt trời',
+    feature1: 'Thương hiệu Pin top 3 thế giới',
+    feature2: 'Inverter On-Grid 20 kW - 3 pha',
+    price: <>175,789,000 <Image src='/img/dong-icon.svg' alt="vnd" width={18} height={18} /></>,
+  },
+  {
+    he: '25,85 kW',
+    pha: '3 Pha',
+    title: 'Tấm pin mặt trời',
+    feature1: 'Thương hiệu Pin top 3 thế giới',
+    feature2: 'Inverter On-Grid 20 kW - 3 pha',
+    price: <>198,520,000 <Image src='/img/dong-icon.svg' alt="vnd" width={18} height={18} /></>,
+  },
+  {
+    he: '27,5 kW',
+    pha: '3 Pha',
+    title: 'Tấm pin mặt trời',
+    feature1: 'Thương hiệu Pin top 3 thế giới',
+    feature2: 'Inverter On-Grid 30 kW - 3 pha',
+    price: <>221,705,000 <Image src='/img/dong-icon.svg' alt="vnd" width={18} height={18} /></>,
+  },
+  {
+    he: '33 kW',
+    pha: '3 Pha',
+    title: 'Tấm pin mặt trời',
+    feature1: 'Thương hiệu Pin top 3 thế giới',
+    feature2: 'Inverter On-Grid 30 kW - 3 pha',
+    price: <>254,727,000 <Image src='/img/dong-icon.svg' alt="vnd" width={18} height={18} /></>,
+  },
+  {
+    he: '38,5 kW',
+    pha: '3 Pha',
+    title: 'Tấm pin mặt trời',
+    feature1: 'Thương hiệu Pin top 3 thế giới',
+    feature2: 'Inverter On-Grid 30 kW - 3 pha',
+    price: <>287,815,000 <Image src='/img/dong-icon.svg' alt="vnd" width={18} height={18} /></>,
+  },
+
 ]
 const comboOneData = [
   {
@@ -52,7 +77,7 @@ const comboOneData = [
   },
   {
     image: <Image src='/img/inverter-icon.svg' alt="Sử dụng điện thả ga 20 năm kế tiếp" width={30} height={30} />,
-    title: <>inverter<br />hybrid</>
+    title: <>inverter<br />On-Grid</>
   },
   {
     image: <Image src='/img/bao-hanh-5-nam.svg' alt="Chống nóng cho mái nhà giảm 6 độ" width={40} height={30} />,
@@ -97,6 +122,12 @@ export default function BamTaiBaPha() {
                     <Row style={{ left: '75px', borderRadius: '4px', backgroundColor: '#000', display: 'flex', alignItems: 'center', justifyContent: 'start' }}>
                       <Col>
                         <Typography.Title style={{ color: '#fff', margin: '0px 5px 0px 5px', textAlign: 'left', fontWeight: 300, fontSize: '18px' }}>{data.pha}</Typography.Title>
+                      </Col>
+                    </Row>
+                    <Row style={{ left: '75px', borderRadius: '4px', backgroundColor: '#ff5b00', display: 'flex', alignItems: 'center', justifyContent: 'start' }}>
+
+                      <Col>
+                        <Typography.Title style={{ color: '#fff', margin: '0px 5px 0px 5px', textAlign: 'left', fontWeight: 300, fontSize: '18px' }}>bám tải</Typography.Title>
                       </Col>
                     </Row>
                   </div>

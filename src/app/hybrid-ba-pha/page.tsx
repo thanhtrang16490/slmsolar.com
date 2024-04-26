@@ -11,45 +11,36 @@ const comboOneFeatureData = [
     feature1: 'Thương hiệu Pin top 3 thế giới',
     feature2: 'Inverter Hybrid 12 kW 1 pha',
     feature3: 'Pin Lithium FePO4 5kWh',
-    price: <>220,000,000 <Image src='/img/dong-icon.svg' alt="vnd" width={18} height={18} /></>,
+    price: <>176,568,000 <Image src='/img/dong-icon.svg' alt="vnd" width={18} height={18} /></>,
 
   },
   {
-    he: '16.5 kW',
+    he: '13.2 kW',
     pha: '3 Pha',
     title: 'Tấm pin mặt trời',
     feature1: 'Thương hiệu Pin top 3 thế giới',
-    feature2: 'Inverter Hybrid 15 kW 1 pha',
+    feature2: 'Inverter Hybrid 12 kW 3 pha',
     feature3: 'Pin Lithium FePO4 5kWh',
-    price: <>330,000,000 <Image src='/img/dong-icon.svg' alt="vnd" width={18} height={18} /></>,
+    price: <>188,189,000 <Image src='/img/dong-icon.svg' alt="vnd" width={18} height={18} /></>,
 
   },
   {
-    he: '22 kW',
+    he: '15,4 kW',
     pha: '3 Pha',
     title: 'Tấm pin mặt trời',
     feature1: 'Thương hiệu Pin top 3 thế giới',
-    feature2: 'Inverter Hybrid 20 kW 1 pha',
+    feature2: 'Inverter Hybrid 12 kW 3 pha',
     feature3: 'Pin Lithium FePO4 5kWh',
-    price: <>440,000,000 <Image src='/img/dong-icon.svg' alt="vnd" width={18} height={18} /></>,
+    price: <>204,742,000 <Image src='/img/dong-icon.svg' alt="vnd" width={18} height={18} /></>,
   },
   {
-    he: '22 kW',
+    he: '19,8 kW',
     pha: '3 Pha',
     title: 'Tấm pin mặt trời',
     feature1: 'Thương hiệu Pin top 3 thế giới',
-    feature2: 'Inverter Hybrid 30 kW 1 pha',
+    feature2: 'Ghép bộ 3 Inverter Hybrid 5 kW 3 pha',
     feature3: 'Pin Lithium FePO4 5kWh',
-    price: <>440,000,000 <Image src='/img/dong-icon.svg' alt="vnd" width={18} height={18} /></>,
-  },
-  {
-    he: '22 kW',
-    pha: '3 Pha',
-    title: 'Tấm pin mặt trời',
-    feature1: 'Thương hiệu Pin top 3 thế giới',
-    feature2: 'Inverter Hybrid 50 kW 1 pha',
-    feature3: 'Pin Lithium FePO4 5kWh',
-    price: <>440,000,000 <Image src='/img/dong-icon.svg' alt="vnd" width={18} height={18} /></>,
+    price: <>250,872,000 <Image src='/img/dong-icon.svg' alt="vnd" width={18} height={18} /></>,
   },
 ]
 
@@ -122,6 +113,12 @@ export default function HybridBaPha() {
 
                       <Col>
                         <Typography.Title style={{ color: '#fff', margin: '0px 5px 0px 5px', textAlign: 'left', fontWeight: 300, fontSize: '18px' }}>{data.pha}</Typography.Title>
+                      </Col>
+                    </Row>
+                    <Row style={{ left: '75px', borderRadius: '4px', backgroundColor: '#02b875', display: 'flex', alignItems: 'center', justifyContent: 'start' }}>
+
+                      <Col>
+                        <Typography.Title style={{ color: '#fff', margin: '0px 5px 0px 5px', textAlign: 'left', fontWeight: 300, fontSize: '18px' }}>hybrid</Typography.Title>
                       </Col>
                     </Row>
                   </div>

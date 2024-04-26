@@ -5,50 +5,78 @@ import Image from "next/image";
 
 const comboOneFeatureData = [
   {
-    he: '11 kW',
+    he: '3,85 kW',
     pha: '1 Pha',
     title: 'Tấm pin mặt trời',
     feature1: 'Thương hiệu Pin top 3 thế giới',
     feature2: 'Inverter Hybrid 3 kW 1 pha',
     feature3: 'Pin Lithium FePO4 5kWh',
-    price: '220,000,000',
+    price: '83,417,000',
   },
   {
-    he: '16.5 kW',
+    he: '6,6 kW',
     pha: '1 Pha',
     title: 'Tấm pin mặt trời',
     feature1: 'Thương hiệu Pin top 3 thế giới',
     feature2: 'Inverter Hybrid 5 kW 1 pha',
     feature3: 'Pin Lithium FePO4 5kWh',
-    price: '330,000,000',
+    price: '100,131,000',
   },
   {
-    he: '22 kW',
+    he: '7,7 kW',
     pha: '1 Pha',
     title: 'Tấm pin mặt trời',
     feature1: 'Thương hiệu Pin top 3 thế giới',
     feature2: 'Inverter Hybrid 6 kW 1 pha',
     feature3: 'Pin Lithium FePO4 5kWh',
-    price: '440,000,000',
+    price: '111,844,000',
   },
   {
-    he: '22 kW',
+    he: '10,45 kW',
     pha: '1 Pha',
     title: 'Tấm pin mặt trời',
     feature1: 'Thương hiệu Pin top 3 thế giới',
     feature2: 'Inverter Hybrid 8 kW 1 pha',
     feature3: 'Pin Lithium FePO4 5kWh',
-    price: '440,000,000',
+    price: '144,802,000',
   },
   {
-    he: '22 kW',
+    he: '11 kW',
     pha: '1 Pha',
     title: 'Tấm pin mặt trời',
     feature1: 'Thương hiệu Pin top 3 thế giới',
     feature2: 'Inverter Hybrid 10 kW 1 pha',
     feature3: 'Pin Lithium FePO4 5kWh',
-    price: '440,000,000',
+    price: '144,802,000',
   },
+  {
+    he: '13,2 kW',
+    pha: '1 Pha',
+    title: 'Tấm pin mặt trời',
+    feature1: 'Thương hiệu Pin top 3 thế giới',
+    feature2: 'Inverter Hybrid 10 kW 1 pha',
+    feature3: 'Pin Lithium FePO4 5kWh',
+    price: '175,095,000',
+  },
+  {
+    he: '16,5 kW',
+    pha: '1 Pha',
+    title: 'Tấm pin mặt trời',
+    feature1: 'Thương hiệu Pin top 3 thế giới',
+    feature2: 'Inverter Hybrid 12 kW 1 pha',
+    feature3: 'Pin Lithium FePO4 5kWh',
+    price: '213,987,000',
+  },
+  {
+    he: '19,8 kW',
+    pha: '1 Pha',
+    title: 'Tấm pin mặt trời',
+    feature1: 'Thương hiệu Pin top 3 thế giới',
+    feature2: 'Inverter Hybrid 12 kW 1 pha',
+    feature3: 'Pin Lithium FePO4 5kWh',
+    price: '245,322,000',
+  },
+
 ]
 
 
@@ -116,10 +144,17 @@ export default function HybridMotPha() {
                         <Typography.Title style={{ color: '#000', margin: '0px 5px 0px 5px', textAlign: 'left', fontWeight: 300, fontSize: '18px' }}>{data.he}</Typography.Title>
                       </Col>
                     </Row>
+
                     <Row style={{ left: '75px', borderRadius: '4px', backgroundColor: '#000', display: 'flex', alignItems: 'center', justifyContent: 'start' }}>
 
                       <Col>
                         <Typography.Title style={{ color: '#fff', margin: '0px 5px 0px 5px', textAlign: 'left', fontWeight: 300, fontSize: '18px' }}>{data.pha}</Typography.Title>
+                      </Col>
+                    </Row>
+                    <Row style={{ left: '75px', borderRadius: '4px', backgroundColor: '#02b875', display: 'flex', alignItems: 'center', justifyContent: 'start' }}>
+
+                      <Col>
+                        <Typography.Title style={{ color: '#fff', margin: '0px 5px 0px 5px', textAlign: 'left', fontWeight: 300, fontSize: '18px' }}>hybrid</Typography.Title>
                       </Col>
                     </Row>
                   </div>

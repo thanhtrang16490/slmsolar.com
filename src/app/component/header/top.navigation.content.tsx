@@ -8,12 +8,12 @@ import Image from "next/image";
 
 const serviceData = [
     {
-        title: <>Hệ bám tải <Button style={{ borderColor: 'black' }}>Ongrid</Button>  <Button style={{ borderColor: 'black', fontWeight: '600' }}> 1 Pha</Button></>,
+        title: <>Hệ bám tải <Button style={{ borderColor: 'black' }}>On-Grid</Button>  <Button style={{ borderColor: 'black', fontWeight: '600' }}> 1 Pha</Button></>,
         path: '/bam-tai-mot-pha',
         icon: <Image loading='eager' src='/img/ongrid-1-icon.svg' alt='device icon' width={30} height={30} />
     },
     {
-        title: <>Hệ bám tải <Button style={{ borderColor: 'black' }}>Ongrid</Button>  <Button style={{ borderColor: 'black', fontWeight: '600' }}> 3 Pha</Button></>,
+        title: <>Hệ bám tải <Button style={{ borderColor: 'black' }}>On-Grid</Button>  <Button style={{ borderColor: 'black', fontWeight: '600' }}> 3 Pha</Button></>,
         path: '/bam-tai-ba-pha',
         icon: <Image loading='eager' src='/img/ongrid-2-icon.svg' alt='device icon' width={30} height={30} />
     },

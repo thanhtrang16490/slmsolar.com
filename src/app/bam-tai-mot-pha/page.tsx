@@ -9,7 +9,7 @@ const comboOneFeatureData = [
     pha: '1 Pha',
     title: 'Tấm pin mặt trời',
     feature1: 'Thương hiệu Pin top 3 thế giới',
-    feature2: 'Inverter Hybrid 3 kW - 1 pha',
+    feature2: 'Inverter On-Grid 3 kW - 1 pha',
     price: <>42,930,000 <Image src='/img/dong-icon.svg' alt="vnd" width={18} height={18} /></>,
   },
   {
@@ -17,7 +17,7 @@ const comboOneFeatureData = [
     pha: '1 Pha',
     title: 'Tấm pin mặt trời',
     feature1: 'Thương hiệu Pin top 3 thế giới',
-    feature2: 'Inverter Hybrid 5 kW - 1 pha',
+    feature2: 'Inverter On-Grid 5 kW - 1 pha',
     price: <>62,035,000 <Image src='/img/dong-icon.svg' alt="vnd" width={18} height={18} /></>,
   },
   {
@@ -25,7 +25,7 @@ const comboOneFeatureData = [
     pha: '1 Pha',
     title: 'Tấm pin mặt trời',
     feature1: 'Thương hiệu Pin top 3 thế giới',
-    feature2: 'Inverter Hybrid 6 kW - 1 pha',
+    feature2: 'Inverter On-Grid 6 kW - 1 pha',
     price: <>69,099,000 <Image src='/img/dong-icon.svg' alt="vnd" width={18} height={18} /></>,
   },
   {
@@ -33,7 +33,7 @@ const comboOneFeatureData = [
     pha: '1 Pha',
     title: 'Tấm pin mặt trời',
     feature1: 'Thương hiệu Pin top 3 thế giới',
-    feature2: 'Inverter Hybrid 8 kW - 1 pha',
+    feature2: 'Inverter On-Grid 8 kW - 1 pha',
     price: <>92,010,000 <Image src='/img/dong-icon.svg' alt="vnd" width={18} height={18} /></>,
   },
   {
@@ -41,7 +41,7 @@ const comboOneFeatureData = [
     pha: '1 Pha',
     title: 'Tấm pin mặt trời',
     feature1: 'Thương hiệu Pin top 3 thế giới',
-    feature2: 'Inverter Hybrid 10 kW - 1 pha',
+    feature2: 'Inverter On-Grid 10 kW - 1 pha',
     price: <>136,720,000 <Image src='/img/dong-icon.svg' alt="vnd" width={18} height={18} /></>,
   }
 ]
@@ -56,7 +56,7 @@ const comboOneData = [
   },
   {
     image: <Image src='/img/inverter-icon.svg' alt="Sử dụng điện thả ga 20 năm kế tiếp" width={30} height={30} />,
-    title: <>inverter<br />hybrid</>
+    title: <>inverter<br />On-Grid</>
 
 
   },
@@ -110,6 +110,12 @@ export default function BamTaiMotPha() {
 
                       <Col>
                         <Typography.Title style={{ color: '#fff', margin: '0px 5px 0px 5px', textAlign: 'left', fontWeight: 300, fontSize: '18px' }}>{data.pha}</Typography.Title>
+                      </Col>
+                    </Row>
+                    <Row style={{ left: '75px', borderRadius: '4px', backgroundColor: '#ff5b00', display: 'flex', alignItems: 'center', justifyContent: 'start' }}>
+
+                      <Col>
+                        <Typography.Title style={{ color: '#fff', margin: '0px 5px 0px 5px', textAlign: 'left', fontWeight: 300, fontSize: '18px' }}>bám tải</Typography.Title>
                       </Col>
                     </Row>
                   </div>
